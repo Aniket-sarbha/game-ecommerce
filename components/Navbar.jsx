@@ -12,9 +12,9 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className="fixed top-0 left-0 right-0 z-[100] mt-4">
       {/* Navbar */}
-      <nav className="justify-center max-w-5xl mx-auto ">
+      <nav className="justify-center max-w-5xl mx-auto">
         {/* Desktop Navigation - Rounded top when menu is open, fully rounded when closed */}
         <div className={`bg-gradient-to-r from-black via-gray-900 to-red-900 ${isMenuOpen ? 'rounded-t-md' : 'rounded-full'}`}>
           <div className="mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,7 +25,7 @@ const Navbar = () => {
               </div>
 
               {/* Desktop Search Bar */}
-              <div className="hidden md:block flex-1 max-w-md mx-4">
+              <div className="hidden md:block flex-1 max-w-sm mx-4 ">
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <Search className="h-5 w-5 text-gray-300" />

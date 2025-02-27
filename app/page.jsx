@@ -6,6 +6,7 @@ import Image from "next/image"
 import Tabs from "@/components/Tabs";
 import Vortex from "@/components/Vortex";
 import Footer from "@/components/Footer";
+import Card from "@/components/Card";
 
 export default function Home() {
 
@@ -100,18 +101,21 @@ export default function Home() {
   ]
   
   return (
-    <><div className="bg-black pt-3">
+    <>
       <Navbar></Navbar>
+    <div className="bg-black pt-20">
       <Vortex>
       <div className="flex flex-col items-center justify-center h-[30rem]">
       <TypewriterEffectSmooth words={words} />
       </div>
       </Vortex>
       </div>
-      <div className="gradient-container py-8">
+      <div className="bg-black py-8">
       <Carousel></Carousel>
       <Popularitems></Popularitems>
-      <Tabs className = "" tabs={tabs} > </Tabs>
+      <Tabs className = "" tabs={tabs} >
+      <Card/>
+      </Tabs>
       <div className="bg-red-800 h-1 mx-auto max-w-7xl rounded-full justify-center"></div>
       </div>
       <Footer></Footer>

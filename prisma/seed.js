@@ -1,61 +1,45 @@
-// prisma/seed.js
-const { PrismaClient } = require('@prisma/client')
-const bcryptjs = require('bcryptjs')
-const prisma = new PrismaClient()
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
+
+// Your original games list data
+const gamesList = [
+  { id: 1, name: "Dragon’s Dogma 2" },
+];
 
 async function main() {
-  // Create test user
-  const hashedPassword = await bcryptjs.hash('password123', 10)
-  const user = await prisma.user.create({
-    data: {
-      email: 'test@example.com',
-      password: hashedPassword,
-      storeName: 'Test Store',
-      mobileNumber: '1234567890',
-      apiKey: 'test_api_key_12345'
-    },
-  })
-
-  // Create test merchant
-  await prisma.merchant.create({
-    data: {
-      userId: user.id,
-      merchantType: 'HDFC',
-      merchantId: 'HDFC123',
-      merchantName: 'HDFC SmartHub',
-      upiId: 'teststore@hdfc',
-      isActive: true
-    },
-  })
-
-  // Create test transactions
-  const statuses = ['SUCCESS', 'FAILED', 'CREATED']
-  const amounts = [100, 500, 1000, 1500, 2000]
-
-  for (let i = 0; i < 10; i++) {
-    await prisma.transaction.create({
-      data: {
-        userId: user.id,
-        amount: amounts[Math.floor(Math.random() * amounts.length)],
-        pInfo: `Test Product ${i}`,
-        customerName: `Customer ${i}`,
-        customerEmail: `customer${i}@example.com`,
-        customerMobile: `123456789${i}`,
-        redirectUrl: 'https://example.com/return',
-        merchantName: 'HDFC SmartHub',
-        upiId: 'teststore@hdfc',
-        status: statuses[Math.floor(Math.random() * statuses.length)],
-        transactionId: `TXN${Date.now()}${i}`
-      },
-    })
+  console.log('Starting to seed database...');
+  
+  // Transform the data to match your schema
+  const transformedGames = gamesList.map(game => ({
+    gameId: game.id,
+    gameName: game.name
+  }));
+  
+  // Create games in batches to avoid potential issues with large datasets
+  const batchSize = 100;
+  let totalCreated = 0;
+  
+  for (let i = 0; i < transformedGames.length; i += batchSize) {
+    const batch = transformedGames.slice(i, i + batchSize);
+    
+    // Use createMany for efficient bulk insertion
+    const result = await prisma.game.createMany({
+      data: batch,
+      skipDuplicates: true, // Skip records that would cause unique constraint violations
+    });
+    
+    totalCreated += result.count;
+    console.log(`Processed batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(transformedGames.length / batchSize)}`);
   }
+  
+  console.log(`Successfully seeded ${totalCreated} games.`);
 }
 
 main()
   .catch((e) => {
-    console.error(e)
-    process.exit(1)
+    console.error('Error seeding database:', e);
+    process.exit(1);
   })
   .finally(async () => {
-    await prisma.$disconnect()
-  })
+    await prisma.$disconnect();
+  });

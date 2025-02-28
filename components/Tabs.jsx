@@ -27,7 +27,7 @@ const Tabs = ({
   return (<>
     <div
       className={cn(
-        "flex flex-row items-center justify-center flex-wrap [perspective:1000px] relative overflow-hidden no-visible-scrollbar max-w-full w-full mt-[7rem]",
+        "flex flex-row items-center justify-center flex-wrap [perspective:1000px] relative overflow-hidden no-visible-scrollbar max-w-full w-full mt-[4rem] ",
         containerClassName
       )}>
       {propTabs.map((tab, idx) => (
@@ -41,7 +41,7 @@ const Tabs = ({
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
             className={cn(
-              "relative px-4 py-2 rounded-full w-full sm:w-auto text-center",
+              "relative px-4 py-2 rounded-full w-full sm:w-auto text-center b",
               tabClassName
             )}
             style={{
@@ -86,7 +86,7 @@ const FadeInDiv = ({
     return tab.value === tabs[0].value;
   };
   return (
-    <div className="relative w-full max-w-4xl min-h-[50rem] mx-auto px-4 ">
+    <div className="relative w-full max-w-6xl min-h-[50rem] mx-auto px-4">
       {tabs.map((tab, idx) => (
         <motion.div
           key={tab.value}

@@ -1,22 +1,21 @@
 "use client";
 
-
-import React, { useState, useEffect, useCallback } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useState, useEffect, useCallback } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
   {
-    url: 'https://sin1.contabostorage.com/b1d79b8bbee7475eab6c15cd3d13cd4d:yokcash/p/168361458982331on_(2)%20(1).webp',
-    alt: 'Scenic mountain landscape with a lake reflecting the surrounding peaks'
+    url: "https://sin1.contabostorage.com/b1d79b8bbee7475eab6c15cd3d13cd4d:yokcash/p/168361458982331on_(2)%20(1).webp",
+    alt: "Scenic mountain landscape with a lake reflecting the surrounding peaks",
   },
   {
-    url: 'https://sin1.contabostorage.com/b1d79b8bbee7475eab6c15cd3d13cd4d:yokcash/p/168361463182349on_(2).webp',
-    alt: 'Forest path through tall trees with sunlight streaming through'
+    url: "https://sin1.contabostorage.com/b1d79b8bbee7475eab6c15cd3d13cd4d:yokcash/p/168361463182349on_(2).webp",
+    alt: "Forest path through tall trees with sunlight streaming through",
   },
   {
-    url: 'https://sin1.contabostorage.com/b1d79b8bbee7475eab6c15cd3d13cd4d:yokcash/p/168361458982331on_(2)%20(1).webp',
-    alt: 'Serene beach scene with waves rolling onto white sand'
-  }
+    url: "https://sin1.contabostorage.com/b1d79b8bbee7475eab6c15cd3d13cd4d:yokcash/p/168361458982331on_(2)%20(1).webp",
+    alt: "Serene beach scene with waves rolling onto white sand",
+  },
 ];
 
 const Carousel = () => {
@@ -29,7 +28,9 @@ const Carousel = () => {
   }, []);
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
   };
 
   const handleDotClick = (index) => {
@@ -42,11 +43,12 @@ const Carousel = () => {
 
   const handleTouchEnd = (e) => {
     if (touchStart === null) return;
-    
+
     const touchEnd = e.changedTouches[0].clientX;
     const diff = touchStart - touchEnd;
 
-    if (Math.abs(diff) > 50) { // Minimum swipe distance
+    if (Math.abs(diff) > 50) {
+      // Minimum swipe distance
       if (diff > 0) {
         nextSlide();
       } else {
@@ -71,8 +73,10 @@ const Carousel = () => {
   }, [isPaused, nextSlide]);
 
   return (
-    <div className="mt-[7rem] px-4 max-w-[900px] mx-auto"> {/* Added wrapper with padding */}
-      <div 
+    <div className="mt-[7rem] px-4 max-w-[900px] mx-auto">
+      {" "}
+      {/* Added wrapper with padding */}
+      <div
         className="rounded-3xl relative w-full aspect-[3/1] overflow-hidden group"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
@@ -85,7 +89,7 @@ const Carousel = () => {
             <div
               key={index}
               className={`absolute inset-0 transition-opacity duration-500 ${
-                index === currentIndex ? 'opacity-100' : 'opacity-0'
+                index === currentIndex ? "opacity-100" : "opacity-0"
               }`}
             >
               <img
@@ -121,8 +125,8 @@ const Carousel = () => {
               onClick={() => handleDotClick(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 index === currentIndex
-                  ? 'bg-white scale-110'
-                  : 'bg-white/50 hover:bg-white/75'
+                  ? "bg-white scale-110"
+                  : "bg-white/50 hover:bg-white/75"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />

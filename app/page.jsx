@@ -1,11 +1,11 @@
-import Navbar from "@/components/Navbar";
-import Carousel from "@/components/Carousel";
-import Popularitems from "@/components/Popularitems";
-import TypewriterEffectSmooth from "@/components/Typewriter";
-import CardsGrid from "@/components/CardsGrid";
-import Vortex from "@/components/Vortex";
-import Footer from "@/components/Footer";
-import ImageGallery from "@/components/ImageGallery";
+import Navbar from "@/app/components/Navbar";
+import Carousel from "@/app/components/Carousel";
+import Popularitems from "@/app/components/Popularitems";
+import TypewriterEffectSmooth from "@/app/components/Typewriter";
+import CardsGrid from "@/app/components/CardsGrid";
+import Vortex from "@/app/components/Vortex";
+import Footer from "@/app/components/Footer";
+import ImageGallery from "@/app/components/ImageGallery";
 
 export default function Home() {
   const words = [
@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <>
-      <Navbar ></Navbar>
+      <Navbar></Navbar>
       <div className="bg-black pt-20">
         <Vortex>
           <div className="flex flex-col items-center justify-center h-[30rem]">
@@ -46,12 +46,10 @@ export default function Home() {
       <div className="bg-black py-8">
         <Carousel></Carousel>
         <Popularitems></Popularitems>
-
+        <ImageGallery />
         <div className="bg-red-800 h-1 mx-auto max-w-7xl rounded-full justify-center"></div>
       </div>
-        <ImageGallery></ImageGallery>
-        <CardsGrid/>
-
+      {/* <ImageGallery></ImageGallery> */}
       <Footer></Footer>
     </>
   );

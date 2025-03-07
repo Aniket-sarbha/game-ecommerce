@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function CardsGrid() {
@@ -9,60 +9,131 @@ export default function CardsGrid() {
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
-  const pageSize = 6;
+  const pageSize = 12;
+  
+  // Use AbortController for fetch requests
+  const fetchGames = useCallback(async (page) => {
+    const controller = new AbortController();
+    const signal = controller.signal;
+    
+    try {
+      setLoading(true);
+      const response = await fetch(
+        `/api/games?page=${page}&pageSize=${pageSize}`,
+        { signal }
+      );
 
-  useEffect(() => {
-    async function fetchGames() {
-      try {
-        setLoading(true);
-        const response = await fetch(`/api/games?page=${currentPage}&pageSize=${pageSize}`);
+      if (!response.ok) {
+        throw new Error("Failed to fetch games");
+      }
 
-        if (!response.ok) {
-          throw new Error("Failed to fetch games");
-        }
-
-        const data = await response.json();
-        setGames(data.games);
-        setTotalPages(data.pagination.totalPages);
-      } catch (err) {
+      const data = await response.json();
+      setGames(data.games);
+      setTotalPages(data.pagination.totalPages);
+      
+      // Cache the results in sessionStorage
+      sessionStorage.setItem(
+        `games_page_${page}`, 
+        JSON.stringify({
+          games: data.games,
+          pagination: data.pagination,
+          timestamp: Date.now()
+        })
+      );
+    } catch (err) {
+      if (err.name !== 'AbortError') {
         setError("Error loading games. Please try again later.");
         console.error(err);
-      } finally {
-        setLoading(false);
+      }
+    } finally {
+      setLoading(false);
+    }
+    
+    return controller;
+  }, [pageSize]);
+
+  // Use session storage for caching
+  useEffect(() => {
+    let controller;
+    
+    const loadGames = async () => {
+      // Try to get cached data first
+      const cachedData = sessionStorage.getItem(`games_page_${currentPage}`);
+      
+      if (cachedData) {
+        const { games, pagination, timestamp } = JSON.parse(cachedData);
+        const cacheAge = Date.now() - timestamp;
+        
+        // Use cache if it's less than 5 minutes old
+        if (cacheAge < 5 * 60 * 1000) {
+          setGames(games);
+          setTotalPages(pagination.totalPages);
+          setLoading(false);
+          return;
+        }
+      }
+      
+      // Fetch fresh data if cache is missing or stale
+      controller = await fetchGames(currentPage);
+    };
+
+    loadGames();
+    
+    // Cleanup function to abort fetch if component unmounts or dependencies change
+    return () => {
+      if (controller) controller.abort();
+    };
+  }, [currentPage, fetchGames]);
+
+  // Prefetch next page data when user is close to pagination
+  useEffect(() => {
+    if (currentPage < totalPages) {
+      const nextPage = currentPage + 1;
+      const cachedData = sessionStorage.getItem(`games_page_${nextPage}`);
+      
+      if (!cachedData) {
+        // Use a small timeout to avoid immediate loading
+        const timer = setTimeout(() => {
+          fetch(`/api/games?page=${nextPage}&pageSize=${pageSize}`)
+            .then(res => res.json())
+            .then(data => {
+              sessionStorage.setItem(
+                `games_page_${nextPage}`, 
+                JSON.stringify({
+                  games: data.games,
+                  pagination: data.pagination,
+                  timestamp: Date.now()
+                })
+              );
+            })
+            .catch(err => console.log("Prefetch error:", err));
+        }, 1000);
+        
+        return () => clearTimeout(timer);
       }
     }
-
-    fetchGames();
-  }, [currentPage]); // Re-fetch when page changes
+  }, [currentPage, totalPages, pageSize]);
 
   const handlePageChange = (page) => {
     if (page < 1 || page > totalPages) return;
     setCurrentPage(page);
+    
+    // Get the grid element and scroll to it instead of the page top
+    const gridElement = document.querySelector('.grid');
+    if (gridElement) {
+      gridElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
   };
 
+  // Use loading spinner for loading state
   if (loading) {
     return (
-      <div className="max-w-6xl flex flex-col justify-center items-center mx-auto mt-8">
-        <div className="grid grid-cols-2 gap-3 p-4 xs:grid-cols-3 sm:grid-cols-3 sm:gap-4 md:grid-cols-3 md:gap-5 lg:grid-cols-3 xl:grid-cols-3 xl:gap-6">
-          {/* Generate skeleton cards based on pageSize */}
-          {Array(pageSize).fill(0).map((_, index) => (
-            <div key={index} className="flex flex-col items-center mb-4 overflow-hidden border-2 border-gray-700 shadow-lg rounded-lg">
-              {/* Image skeleton */}
-              <div className="w-full aspect-[0.9] bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-pulse"></div>
-              
-              {/* Title skeleton */}
-              <div className="m-1 text-center w-full p-2">
-                <div className="h-4 w-3/4 mx-auto rounded-md bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-pulse"></div>
-              </div>
-            </div>
-          ))}
-        </div>
-        
-        {/* Skeleton pagination */}
-        <div className="mt-6 flex items-center justify-center">
-          <div className="inline-flex items-center rounded-md bg-gray-800 p-1">
-            <div className="w-20 h-7 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-pulse rounded-sm"></div>
+      <div className="max-w-6xl mx-auto mt-8 flex justify-center items-center min-h-[400px]">
+        <div className="loader-container">
+          <div className="spinner-border animate-spin inline-block w-12 h-12 border-4 rounded-full border-t-transparent border-white" role="status">
+            <span className="sr-only">Loading...</span>
           </div>
+          <p className="mt-4 text-white">Loading games...</p>
         </div>
       </div>
     );
@@ -73,27 +144,29 @@ export default function CardsGrid() {
   return (
     <>
       <div className="max-w-6xl flex flex-col justify-center items-center mx-auto mt-8">
-        <div className="grid grid-cols-2 gap-3 p-4 xs:grid-cols-3 sm:grid-cols-3 sm:gap-4 md:grid-cols-3 md:gap-5 lg:grid-cols-3 xl:grid-cols-3 xl:gap-6">
+        <div className="grid grid-cols-3 gap-2 p-3 xs:grid-cols-4 sm:grid-cols-5 sm:gap-3 md:grid-cols-5 md:gap-4 lg:grid-cols-6 xl:grid-cols-6 xl:gap-4">
           {games.map((game) => (
-            <div key={game.gameId} className="flex flex-col items-center mb-4 overflow-hidden border-2 border-white shadow-lg transition-transform duration-300 hover:scale-105 rounded-lg cursor-pointer">
-              <div>
-                <div className="w-full aspect-[0.9]">
+            <div key={game.gameId} className="flex flex-col items-center mb-2 overflow-hidden border border-blue-300/50 bg-gray-900/80 shadow-lg shadow-blue-900/30 transition-all duration-300 hover:scale-105 hover:shadow-blue-700/40 hover:border-blue-400 rounded-lg cursor-pointer max-w-[150px]">
+              <div className="w-full">
+                <div className="w-full aspect-[0.8] relative">
                   <img
                     src="/images/download.jpeg"
                     alt={`${game.gameName} image`}
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover brightness-[1.02] hover:brightness-110 transition-all"
+                    loading="lazy"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-20"></div>
                 </div>
               </div>
-              <div className="m-1 text-center w-full">
-                <h3 className="text-white text-sm sm:text-base px-2">
+              <div className="py-1 px-0.5 text-center w-full bg-gradient-to-b from-gray-800 to-gray-900">
+                <div className="text-white text-xs sm:text-sm px-1 flex justify-center font-medium ">
                   {game.gameName}
-                </h3>
+                </div>
               </div>
             </div>
           ))}
         </div>
-        
+   
         {/* Compact Pagination controls */}
         <div className="mt-6 flex items-center justify-center">
           <div className="inline-flex items-center rounded-md bg-gray-800 p-1">

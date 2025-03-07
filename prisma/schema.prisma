@@ -1,9 +1,4 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
+// schema.prisma
 generator client {
   provider = "prisma-client-js"
 }
@@ -13,14 +8,21 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Game {
-  gameId       Int     @id @default(autoincrement())
-  gameName     String
+model Store {
+  id         String     @id @default(uuid())
+  itemName   String     @unique // Matches "itemname" in your JSON
+  isActive   Boolean    @default(false)
+  storeItems StoreItem[]
 }
 
-model User {
-  userId       Int     @id @default(autoincrement())
-  userEmail    String  @unique
-  userPassword String
-  userName     String?
+model StoreItem {
+  id        String   @id @default(uuid())
+  productId String   @unique // Matches "productid" in your JSON
+  name      String
+  price     Decimal  // Matches "price" in your JSON
+  mrp       Decimal  // Matches "mrp" in your JSON
+  img       String   // Matches "img" in your JSON
+  isActive  Boolean  @default(true)
+  storeId   String
+  store     Store    @relation(fields: [storeId], references: [id], onDelete: Cascade)
 }

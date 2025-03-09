@@ -49,6 +49,7 @@ export default function Home() {
         <ImageGallery />
         <div className="bg-red-800 h-1 mx-auto max-w-7xl rounded-full justify-center"></div>
       </div>
+      {/* <CardsGrid></CardsGrid> */}
       {/* <ImageGallery></ImageGallery> */}
       <Footer></Footer>
     </>

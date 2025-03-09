@@ -1,4 +1,5 @@
-// schema.prisma
+
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -9,20 +10,26 @@ datasource db {
 }
 
 model Store {
-  id         String     @id @default(uuid())
-  itemName   String     @unique // Matches "itemname" in your JSON
-  isActive   Boolean    @default(false)
+  id         Int         @id @default(autoincrement())
+  name       String      @unique
+  isActive   Boolean     @default(false)
   storeItems StoreItem[]
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
 }
 
 model StoreItem {
-  id        String   @id @default(uuid())
-  productId String   @unique // Matches "productid" in your JSON
-  name      String
-  price     Decimal  // Matches "price" in your JSON
-  mrp       Decimal  // Matches "mrp" in your JSON
-  img       String   // Matches "img" in your JSON
-  isActive  Boolean  @default(true)
-  storeId   String
-  store     Store    @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  id         Int      @id @default(autoincrement())
+  productId  String   @unique
+  name       String
+  price      Decimal  @db.Decimal(10, 2)
+  mrp        Decimal  @db.Decimal(10, 2)
+  image      String?
+  isActive   Boolean  @default(false)
+  store      Store    @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  storeId    Int
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([storeId])
 }

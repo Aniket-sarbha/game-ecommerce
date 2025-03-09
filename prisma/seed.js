@@ -1,43 +1,86 @@
-// prisma/seed.js
-const { PrismaClient } = require('@prisma/client');
-const fs = require('fs');
-const path = require('path');
+import { PrismaClient } from '@prisma/client';
+import * as fs from 'fs';
+import * as path from 'path';
+import { fileURLToPath } from 'url';
 
 const prisma = new PrismaClient();
 
+// Get directory path in ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 async function main() {
-  // Read JSON files from a directory
-  const dataDir = path.join(__dirname, '../data'); // Adjust this path as needed
-  const files = fs.readdirSync(dataDir).filter(file => file.endsWith('.json'));
+  // Path to the directory containing JSON files
+  const dataDir = path.join(__dirname, '../data'); // Adjust path as needed
   
-  for (const file of files) {
-    const filePath = path.join(dataDir, file);
-    const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  console.log('Starting database seeding...');
+  
+  try {
+    // Read all files in the directory
+    const files = fs.readdirSync(dataDir);
     
-    // Create store
-    const store = await prisma.store.create({
-      data: {
-        itemName: data.itemname.S,
-        isActive: data.isactive.S.toLowerCase() === 'true',
-      },
-    });
-    
-    // Create store items
-    for (const item of data.storeitems.L) {
-      await prisma.storeItem.create({
-        data: {
-          productId: item.M.productid.S,
-          name: item.M.name.S,
-          price: parseFloat(item.M.price.S),
-          mrp: parseFloat(item.M.mrp.S),
-          img: item.M.img.S,
-          isActive: item.M.isactive.S.toLowerCase() === 'true',
-          storeId: store.id,
-        },
-      });
+    // Process each JSON file
+    for (const file of files) {
+      if (file.endsWith('.json')) {
+        console.log(`Processing ${file}...`);
+        
+        // Read and parse the JSON file
+        const filePath = path.join(dataDir, file);
+        const fileContent = fs.readFileSync(filePath, 'utf8');
+        const data = JSON.parse(fileContent);
+        
+        // Extract store name from itemname, stripping the "store-" prefix
+        const storeName = data.itemname.S.replace('store-', '');
+        const isActive = data.isactive.S === 'true';
+        
+        // Create or update the store
+        const store = await prisma.store.upsert({
+          where: { name: storeName },
+          update: { isActive },
+          create: {
+            name: storeName,
+            isActive
+          }
+        });
+        
+        console.log(`Store "${storeName}" processed`);
+        
+        // Process each store item
+        if (data.storeitems && data.storeitems.L) {
+          for (const item of data.storeitems.L) {
+            const storeItem = item.M;
+            const isItemActive = storeItem.isactive.S === 'true';
+            
+            await prisma.storeItem.upsert({
+              where: { productId: storeItem.productid.S },
+              update: {
+                name: storeItem.name.S,
+                price: storeItem.price.S,
+                mrp: storeItem.mrp.S,
+                image: storeItem.img?.S || null,
+                isActive: isItemActive
+              },
+              create: {
+                productId: storeItem.productid.S,
+                name: storeItem.name.S,
+                price: storeItem.price.S,
+                mrp: storeItem.mrp.S,
+                image: storeItem.img?.S || null,
+                isActive: isItemActive,
+                storeId: store.id
+              }
+            });
+          }
+        }
+        
+        console.log(`Processed ${data.storeitems?.L?.length || 0} items for ${storeName}`);
+      }
     }
     
-    console.log(`Seeded data from ${file}`);
+    console.log('Database seeding completed successfully!');
+  } catch (error) {
+    console.error('Error during seeding:', error);
+    throw error;
   }
 }
 

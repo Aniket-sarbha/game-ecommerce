@@ -16,6 +16,9 @@ model Store {
   storeItems StoreItem[]
   createdAt  DateTime    @default(now())
   updatedAt  DateTime    @updatedAt
+  image     String?
+  backgroundImage String?
+  description String?
 }
 
 model StoreItem {

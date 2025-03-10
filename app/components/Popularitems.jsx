@@ -11,7 +11,7 @@ const Popularitems = () => {
         </div>
 
         <div className="overflow-hidden">
-          {/* <Card id={1} /> */}
+           {/* <Card/>  */}
         </div>
       </div>
 

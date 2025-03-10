@@ -84,7 +84,7 @@ const CardsGrid = () => {
   return (
     <div className="flex flex-col items-center w-full max-w-4xl mx-auto px-3 sm:px-4 py-6 sm:py-8">
       {/* Cards Grid */}
-      <div className="grid grid-cols-3 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 w-full">
+      <div className="grid grid-cols-3 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 w-full">
         {paginatedStores.map((store) => (
           <Card key={store.id} store={store} />
         ))}

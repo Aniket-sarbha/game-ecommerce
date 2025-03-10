@@ -11,9 +11,12 @@ export async function GET() {
         id: true,
         name: true,
         isActive: true
+      },
+      orderBy: {
+        name: 'asc'
       }
     });
-    console.log("Fetched stores:", stores); // Debugging log
+    // console.log("Fetched stores:", stores); 
     return NextResponse.json(stores);
   } catch (error) {
     console.error('Failed to fetch stores:', error);

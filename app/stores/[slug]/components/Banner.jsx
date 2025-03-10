@@ -6,7 +6,7 @@ const Banner = () => {
   // All data is now contained within the component
   const backgroundImage = "https://wallpapers.com/images/featured/mobile-legends-v0u46grjbqc6h9ga.jpg";
   const profileImage = "https://sin1.contabostorage.com/b1d79b8bbee7475eab6c15cd3d13cd4d:yokcash/p/17020915152886511zon_11zon.webp";
-  const name = "Mobile legends";
+  const name = "Mobile Legends";
   const bio = "Mobile Legends: Bang Bang, the brand new 5v5 MOBA showdown, and fight against real players! Choose your favorite heroes and build the perfect team with your comrades-in-arms!";
 
   return (

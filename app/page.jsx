@@ -7,6 +7,7 @@ import Vortex from "@/app/components/Vortex";
 import Footer from "@/app/components/Footer";
 import ImageGallery from "@/app/components/ImageGallery";
 
+
 export default function Home() {
   const words = [
     {

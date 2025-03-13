@@ -1,3 +1,5 @@
+// app/page.jsx
+
 import Navbar from "@/app/components/Navbar";
 import Carousel from "@/app/components/Carousel";
 import Popularitems from "@/app/components/Popularitems";

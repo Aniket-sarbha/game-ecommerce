@@ -5,6 +5,9 @@ CREATE TABLE "Store" (
     "isActive" BOOLEAN NOT NULL DEFAULT false,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
+    "image" TEXT,
+    "backgroundImage" TEXT,
+    "description" TEXT,
 
     CONSTRAINT "Store_pkey" PRIMARY KEY ("id")
 );

@@ -80,7 +80,7 @@ export default function PaymentComponent() {
   }
 
   return (
-    <div className="w-full max-w-md mx-auto bg-gray-900 rounded-xl shadow-2xl overflow-hidden border border-gray-800">
+    <div className=" max-w-md mx-auto bg-gray-900 rounded-xl shadow-2xl overflow-hidden border border-gray-800">
       <div className="px-6 py-5 bg-gray-800 border-b border-gray-700">
         <h2 className="text-xl font-bold text-white">Payment Details</h2>
         <p className="text-sm text-gray-400 mt-1">Enter your information to complete the payment.</p>

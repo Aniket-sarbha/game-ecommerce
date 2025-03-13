@@ -1,30 +1,27 @@
+// app/stores/slug]/components/Banner.jsx
+
 "use client";
 
 import React from 'react';
 
-const Banner = ({slug}) => {
-  // All data is now contained within the component
-  const backgroundImage = "https://wallpapers.com/images/featured/mobile-legends-v0u46grjbqc6h9ga.jpg";
-  const profileImage = "https://sin1.contabostorage.com/b1d79b8bbee7475eab6c15cd3d13cd4d:yokcash/p/17020915152886511zon_11zon.webp";
-  const name = "Mobile Legends";
-  const bio = "Mobile Legends: Bang Bang, the brand new 5v5 MOBA showdown, and fight against real players! Choose your favorite heroes and build the perfect team with your comrades-in-arms!";
+const Banner = ({storeData}) => {
 
-  const formattedName = slug
-  .split("-")
-  .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-  .join(" ");
-
+  const formattedName = decodeURIComponent(storeData.name)
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+    
   return (
     <div 
       className="mt-[10rem] relative max-w-6xl h-[50vh] mx-auto overflow-hidden rounded-xl shadow-lg"
       role="banner"
-      aria-label={`Profile hero for ${name}`}
+      aria-label={`Profile hero for ${storeData.name}`}
     >
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         {/* Image with lazy loading for performance */}
         <img
-          src={backgroundImage}
+          src={storeData.backgroundImage}
           alt=""
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
@@ -42,8 +39,8 @@ const Banner = ({slug}) => {
         {/* Profile image with rounded corners - added flex-shrink-0 to prevent shrinking */}
         <div className="w-[80px] h-[80px] md:w-[150px] md:h-[150px] flex-shrink-0 rounded-lg overflow-hidden border-2 border-white shadow-lg transition-transform duration-300 hover:scale-105">
           <img 
-            src={profileImage} 
-            alt={`${name}'s profile`}
+            src={storeData.image} 
+            alt={`${storeData.name}'s profile`}
             className="w-full h-full object-cover"
             onError={(e) => {
               e.target.onerror = null;
@@ -58,7 +55,7 @@ const Banner = ({slug}) => {
              {formattedName}
           </h1>
           <p className="text-xs md:text-sm text-white/90 max-w-[250px] md:max-w-[300px] drop-shadow-md">
-            {bio}
+            {storeData.description}
           </p>
         </div>
       </div>

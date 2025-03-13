@@ -10,7 +10,8 @@ export async function GET() {
       select: {
         id: true,
         name: true,
-        isActive: true
+        isActive: true,
+        image: true,
       },
       orderBy: {
         name: 'asc'

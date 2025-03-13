@@ -16,7 +16,7 @@ const Navbar = () => {
       {/* Navbar */}
       <nav className="justify-center max-w-5xl mx-auto">
         {/* Desktop Navigation - Rounded top when menu is open, fully rounded when closed */}
-        <div className={`bg-gradient-to-r from-black via-gray-900 to-red-900 ${isMenuOpen ? 'rounded-t-md' : 'rounded-full'}`}>
+        <div className={`bg-gradient-to-r from-black via-gray-900 to-red-900 ${isMenuOpen ? 'rounded-t-md' : 'rounded-3xl'}`}>
           <div className="mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
               {/* Logo and Brand */}

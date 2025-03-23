@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Search, X, Menu } from 'lucide-react';
+import { Search, X, Menu, User } from 'lucide-react';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,14 +43,9 @@ const Navbar = () => {
               </div>
 
               {/* Desktop Navigation Items */}
-              <div className="hidden md:flex items-center space-x-4">
-                <button className="text-white hover:bg-white/20 px-4 py-2 transition duration-150 ease-in-out rounded-full">
-                  Login
-                </button>
-                <button className="bg-red-600 text-white hover:bg-red-700 px-4 py-2 rounded-full transition duration-150 ease-in-out">
-                  Sign Up
-                </button>
-              </div>
+              <Link className="hidden md:flex items-center space-x-4 cursor-pointer" href={'/login'} >
+               <User/>
+              </Link>
 
               {/* Mobile Menu Button */}
               <div className="md:hidden">

@@ -2,7 +2,9 @@
 
 import React, { useState, useRef } from "react"
 import { useForm } from "react-hook-form"
-import { User, Globe, Tag, CreditCard, ChevronDown, Check, Loader, Shield, Lock } from "lucide-react"
+import { User, Globe, Tag, CreditCard, ChevronDown, Check, Loader, Shield, Lock, DollarSign } from "lucide-react"
+import { createPayment } from "@/app/actions/payment"
+
 
 export default function PaymentComponent() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -32,6 +34,7 @@ export default function PaymentComponent() {
       server: "",
       promoCode: "",
       upiId: "",
+      amount: 100, // Default amount, you can modify this
     },
   })
 
@@ -67,20 +70,29 @@ export default function PaymentComponent() {
     setIsSubmitting(true)
 
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1500))
-
-      console.log(data)
-      alert("Payment initiated successfully!")
+      // Call the server action to create a payment
+      const result = await createPayment(data)
+      
+      if (result.success && result.data.paymentUrl) {
+        // Store transaction ID if needed
+        if (result.data.transactionId) {
+          localStorage.setItem('current_transaction', result.data.transactionId)
+        }
+        // Redirect to the payment gateway
+        window.location.href = result.data.paymentUrl
+      } else {
+        throw new Error(result.error || "Payment initialization failed")
+      }
     } catch (error) {
-      alert("There was a problem processing your payment.")
+      console.error("Payment error:", error)
+      alert("There was a problem processing your payment: " + error.message)
     } finally {
       setIsSubmitting(false)
     }
   }
 
   return (
-    <div className=" max-w-md mx-auto bg-gray-900 rounded-xl shadow-2xl overflow-hidden border border-gray-800">
+    <div className="max-w-md mx-auto bg-gray-900 rounded-xl shadow-2xl overflow-hidden border border-gray-800">
       <div className="px-6 py-5 bg-gray-800 border-b border-gray-700">
         <h2 className="text-xl font-bold text-white">Payment Details</h2>
         <p className="text-sm text-gray-400 mt-1">Enter your information to complete the payment.</p>
@@ -191,6 +203,39 @@ export default function PaymentComponent() {
               )}
             </div>
 
+            {/* Amount Field (New) */}
+            <div className="space-y-1">
+              <label htmlFor="amount" className="block text-sm font-medium text-gray-300">
+                Amount (INR)
+              </label>
+              <div className="relative">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <DollarSign size={16} className="text-gray-500" />
+                </div>
+                <input
+                  id="amount"
+                  type="number"
+                  placeholder="Enter amount"
+                  className={`w-full pl-10 pr-3 py-2 bg-gray-800 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
+                    errors.amount ? "border-red-500" : "border-gray-700"
+                  } text-white placeholder-gray-500`}
+                  {...register("amount", {
+                    required: "Amount is required",
+                    min: {
+                      value: 10,
+                      message: "Amount must be at least 10 INR",
+                    },
+                  })}
+                  aria-invalid={errors.amount ? "true" : "false"}
+                />
+              </div>
+              {errors.amount && (
+                <p className="mt-1 text-sm text-red-400" role="alert">
+                  {errors.amount.message}
+                </p>
+              )}
+            </div>
+
             {/* Promo Code Field (Optional) */}
             <div className="space-y-1">
               <label htmlFor="promoCode" className="block text-sm font-medium text-gray-300">
@@ -278,4 +323,3 @@ export default function PaymentComponent() {
     </div>
   )
 }
-

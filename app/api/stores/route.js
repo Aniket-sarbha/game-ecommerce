@@ -1,3 +1,4 @@
+// app/api/stores/route.js
 import prisma from '@/lib/prisma';
 import { NextResponse } from 'next/server';
 
@@ -12,12 +13,15 @@ export async function GET() {
         name: true,
         isActive: true,
         image: true,
+        userId: true,
+        serverId: true,
+        server: true,
       },
       orderBy: {
         name: 'asc'
       }
     });
-    // console.log("Fetched stores:", stores); 
+    
     return NextResponse.json(stores);
   } catch (error) {
     console.error('Failed to fetch stores:', error);

@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "Store" ADD COLUMN     "server" BOOLEAN NOT NULL DEFAULT false,
+ADD COLUMN     "serverId" BOOLEAN NOT NULL DEFAULT false,
+ADD COLUMN     "userId" BOOLEAN NOT NULL DEFAULT false;

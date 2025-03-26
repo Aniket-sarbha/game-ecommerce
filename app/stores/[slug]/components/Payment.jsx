@@ -1,12 +1,11 @@
 "use client"
 
-import React, { useState, useRef } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import { useForm } from "react-hook-form"
 import { User, Globe, Tag, CreditCard, ChevronDown, Check, Loader, Shield, Lock, DollarSign } from "lucide-react"
 import { createPayment } from "@/app/actions/payment"
 
-
-export default function PaymentComponent() {
+export default function PaymentComponent({ storeData }) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [serverDropdownOpen, setServerDropdownOpen] = useState(false)
   const [selectedServer, setSelectedServer] = useState(null)
@@ -31,10 +30,11 @@ export default function PaymentComponent() {
   } = useForm({
     defaultValues: {
       userId: "",
+      serverId: "",
       server: "",
       promoCode: "",
       upiId: "",
-      amount: 100, // Default amount, you can modify this
+      amount: 100,
     },
   })
 
@@ -71,7 +71,10 @@ export default function PaymentComponent() {
 
     try {
       // Call the server action to create a payment
-      const result = await createPayment(data)
+      const result = await createPayment({
+        ...data,
+        storeId: storeData.id,
+      })
       
       if (result.success && result.data.paymentUrl) {
         // Store transaction ID if needed
@@ -91,6 +94,14 @@ export default function PaymentComponent() {
     }
   }
 
+  if (!storeData) {
+    return (
+      <div className="flex justify-center items-center h-40">
+        <Loader size={24} className="animate-spin text-indigo-500" />
+      </div>
+    )
+  }
+
   return (
     <div className="max-w-md mx-auto bg-gray-900 rounded-xl shadow-2xl overflow-hidden border border-gray-800">
       <div className="px-6 py-5 bg-gray-800 border-b border-gray-700">
@@ -101,109 +112,146 @@ export default function PaymentComponent() {
       <div className="p-6">
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           <div className="space-y-5">
-            <h3 className="text-sm font-medium text-indigo-400 flex items-center">
-              <User size={16} className="mr-2" />
-              User Information
-            </h3>
+            {(storeData.userId || storeData.serverId || storeData.server) && (
+              <h3 className="text-sm font-medium text-indigo-400 flex items-center">
+                <User size={16} className="mr-2" />
+                User Information
+              </h3>
+            )}
 
-            {/* User ID Field */}
-            <div className="space-y-1">
-              <label htmlFor="userId" className="block text-sm font-medium text-gray-300">
-                User ID
-              </label>
-              <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <User size={16} className="text-gray-500" />
-                </div>
-                <input
-                  id="userId"
-                  type="text"
-                  placeholder="Enter your user ID"
-                  className={`w-full pl-10 pr-3 py-2 bg-gray-800 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
-                    errors.userId ? "border-red-500" : "border-gray-700"
-                  } text-white placeholder-gray-500`}
-                  {...register("userId", {
-                    required: "User ID is required",
-                    minLength: {
-                      value: 3,
-                      message: "User ID must be at least 3 characters",
-                    },
-                  })}
-                  aria-invalid={errors.userId ? "true" : "false"}
-                />
-              </div>
-              {errors.userId && (
-                <p className="mt-1 text-sm text-red-400" role="alert">
-                  {errors.userId.message}
-                </p>
-              )}
-            </div>
-
-            {/* Server Selection Field */}
-            <div className="space-y-1" ref={dropdownRef}>
-              <label htmlFor="server" className="block text-sm font-medium text-gray-300">
-                Server Selection
-              </label>
-              <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <Globe size={16} className="text-gray-500" />
-                </div>
-                <button
-                  type="button"
-                  className={`w-full pl-10 pr-10 py-2 text-left bg-gray-800 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
-                    errors.server ? "border-red-500" : "border-gray-700"
-                  } ${!selectedServer ? "text-gray-500" : "text-white"}`}
-                  onClick={() => setServerDropdownOpen(!serverDropdownOpen)}
-                  aria-haspopup="listbox"
-                  aria-expanded={serverDropdownOpen}
-                >
-                  {selectedServer ? selectedServer.label : "Select a server"}
-                  <span className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                    <ChevronDown size={16} className="text-gray-500" />
-                  </span>
-                </button>
-
-                {serverDropdownOpen && (
-                  <div className="absolute z-10 w-full mt-1 bg-gray-800 rounded-lg shadow-lg max-h-60 overflow-auto border border-gray-700">
-                    <ul className="py-1" role="listbox" aria-labelledby="server-selection">
-                      {servers.map((server) => (
-                        <li
-                          key={server.value}
-                          className={`px-3 py-2 text-sm cursor-pointer hover:bg-gray-700 flex items-center ${
-                            selectedServer && selectedServer.value === server.value
-                              ? "bg-indigo-900 text-indigo-200"
-                              : "text-white"
-                          }`}
-                          role="option"
-                          aria-selected={selectedServer && selectedServer.value === server.value}
-                          onClick={() => handleServerSelect(server)}
-                        >
-                          {selectedServer && selectedServer.value === server.value && (
-                            <Check size={16} className="mr-2 text-indigo-400" />
-                          )}
-                          {server.label}
-                        </li>
-                      ))}
-                    </ul>
+            {/* User ID Field - Only show if required */}
+            {storeData.userId && (
+              <div className="space-y-1">
+                <label htmlFor="userId" className="block text-sm font-medium text-gray-300">
+                  User ID
+                </label>
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <User size={16} className="text-gray-500" />
                   </div>
+                  <input
+                    id="userId"
+                    type="text"
+                    placeholder="Enter your user ID"
+                    className={`w-full pl-10 pr-3 py-2 bg-gray-800 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
+                      errors.userId ? "border-red-500" : "border-gray-700"
+                    } text-white placeholder-gray-500`}
+                    {...register("userId", {
+                      required: "User ID is required",
+                      minLength: {
+                        value: 3,
+                        message: "User ID must be at least 3 characters",
+                      },
+                    })}
+                    aria-invalid={errors.userId ? "true" : "false"}
+                  />
+                </div>
+                {errors.userId && (
+                  <p className="mt-1 text-sm text-red-400" role="alert">
+                    {errors.userId.message}
+                  </p>
                 )}
-
-                <input
-                  type="hidden"
-                  id="server"
-                  {...register("server", {
-                    required: "Please select a server",
-                  })}
-                />
               </div>
-              {errors.server && (
-                <p className="mt-1 text-sm text-red-400" role="alert">
-                  {errors.server.message}
-                </p>
-              )}
-            </div>
+            )}
 
-            {/* Amount Field (New) */}
+            {/* Server ID Field - Only show if required */}
+            {storeData.serverId && (
+              <div className="space-y-1">
+                <label htmlFor="serverId" className="block text-sm font-medium text-gray-300">
+                  Server ID
+                </label>
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <Globe size={16} className="text-gray-500" />
+                  </div>
+                  <input
+                    id="serverId"
+                    type="text"
+                    placeholder="Enter your server ID"
+                    className={`w-full pl-10 pr-3 py-2 bg-gray-800 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
+                      errors.serverId ? "border-red-500" : "border-gray-700"
+                    } text-white placeholder-gray-500`}
+                    {...register("serverId", {
+                      required: "Server ID is required",
+                    })}
+                    aria-invalid={errors.serverId ? "true" : "false"}
+                  />
+                </div>
+                {errors.serverId && (
+                  <p className="mt-1 text-sm text-red-400" role="alert">
+                    {errors.serverId.message}
+                  </p>
+                )}
+              </div>
+            )}
+
+            {/* Server Selection Field - Only show if required */}
+            {storeData.server && (
+              <div className="space-y-1" ref={dropdownRef}>
+                <label htmlFor="server" className="block text-sm font-medium text-gray-300">
+                  Server Selection
+                </label>
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <Globe size={16} className="text-gray-500" />
+                  </div>
+                  <button
+                    type="button"
+                    className={`w-full pl-10 pr-10 py-2 text-left bg-gray-800 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
+                      errors.server ? "border-red-500" : "border-gray-700"
+                    } ${!selectedServer ? "text-gray-500" : "text-white"}`}
+                    onClick={() => setServerDropdownOpen(!serverDropdownOpen)}
+                    aria-haspopup="listbox"
+                    aria-expanded={serverDropdownOpen}
+                  >
+                    {selectedServer ? selectedServer.label : "Select a server"}
+                    <span className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                      <ChevronDown size={16} className="text-gray-500" />
+                    </span>
+                  </button>
+
+                  {serverDropdownOpen && (
+                    <div className="absolute z-10 w-full mt-1 bg-gray-800 rounded-lg shadow-lg max-h-60 overflow-auto border border-gray-700">
+                      <ul className="py-1" role="listbox" aria-labelledby="server-selection">
+                        {servers.map((server) => (
+                          <li
+                            key={server.value}
+                            className={`px-3 py-2 text-sm cursor-pointer hover:bg-gray-700 flex items-center ${
+                              selectedServer && selectedServer.value === server.value
+                                ? "bg-indigo-900 text-indigo-200"
+                                : "text-white"
+                            }`}
+                            role="option"
+                            aria-selected={selectedServer && selectedServer.value === server.value}
+                            onClick={() => handleServerSelect(server)}
+                          >
+                            {selectedServer && selectedServer.value === server.value && (
+                              <Check size={16} className="mr-2 text-indigo-400" />
+                            )}
+                            {server.label}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  <input
+                    type="hidden"
+                    id="server"
+                    {...register("server", {
+                      required: storeData.server ? "Please select a server" : false,
+                    })}
+                  />
+                </div>
+                {errors.server && (
+                  <p className="mt-1 text-sm text-red-400" role="alert">
+                    {errors.server.message}
+                  </p>
+                )}
+              </div>
+            )}
+
+            {/* Amount Field (Always shown) */}
             <div className="space-y-1">
               <label htmlFor="amount" className="block text-sm font-medium text-gray-300">
                 Amount (INR)

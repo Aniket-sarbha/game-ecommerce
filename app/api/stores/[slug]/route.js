@@ -17,6 +17,9 @@ export async function GET(request, { params }) {
         image: true,
         backgroundImage: true,
         description: true,
+        userId: true,      
+        serverId: true,    
+        server: true,      
         storeItems: {
           where: {
             isActive: true  // Only fetch active items

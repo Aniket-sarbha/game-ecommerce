@@ -1,0 +1,165 @@
+// page.jsx
+"use client"
+
+import { useEffect, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
+import { CheckCircle, XCircle, Loader, Download } from 'lucide-react';
+import Link from 'next/link';
+import { pdf } from '@react-pdf/renderer';
+import axios from 'axios';
+import PaymentReceipt from '../stores/[slug]/components/PaymentReceipt';
+
+export default function PaymentCallback() {
+  const [status, setStatus] = useState('loading');
+  const [message, setMessage] = useState('');
+  const [isGeneratingPdf, setIsGeneratingPdf] = useState(false);
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    // Get status from URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const txnStatus = urlParams.get('status');
+    
+    console.log("URL parameters using URLSearchParams:", Object.fromEntries(urlParams.entries()));
+    console.log("Status using URLSearchParams:", txnStatus);
+    
+    if (txnStatus === 'SUCCESS') {
+      setStatus('success');
+      setMessage('Your payment was successful! Thank you for your purchase.');
+    } else if (txnStatus && txnStatus.toUpperCase() === 'SUCCESS') {
+      setStatus('success');
+      setMessage('Your payment was successful! Thank you for your purchase.');
+    } else if (txnStatus === 'failed' || txnStatus === 'FAILED') {
+      setStatus('failed');
+      setMessage('Your payment was not successful. Please try again.');
+    } else if (txnStatus === 'pending' || txnStatus === 'PENDING') {
+      setStatus('pending');
+      setMessage('Your payment is being processed. We will update you once completed.');
+    } else {
+      setStatus('unknown');
+      setMessage('Payment status unknown. Please contact support if you have questions.');
+    }
+  }, [searchParams]);
+
+  const handleDownloadReceipt = async () => {
+    try {
+      setIsGeneratingPdf(true);
+      
+      // Get transaction ID from URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const txnId = urlParams.get('transactionId') || urlParams.get('txnId');
+      
+      if (!txnId) {
+        alert('Transaction ID not found');
+        setIsGeneratingPdf(false);
+        return;
+      }
+      
+      // Fetch payment details from your API
+      const response = await axios.get(`/api/payment-details?txnId=${txnId}`);
+      
+      if (!response.data.success) {
+        throw new Error(response.data.error || 'Failed to fetch payment details');
+      }
+      
+      const paymentData = response.data.data;
+      console.log("Payment data from API:", paymentData);
+      
+      // Generate PDF with the payment data
+      const blob = await pdf(
+        <PaymentReceipt data={paymentData} />
+      ).toBlob();
+      
+      // Create a URL for the blob
+      const url = URL.createObjectURL(blob);
+      
+      // Create a link and trigger download
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', `receipt-${txnId}.pdf`);
+      document.body.appendChild(link);
+      link.click();
+      
+      // Clean up
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+      
+    } catch (error) {
+      console.error('Error generating PDF:', error);
+      alert('Failed to generate receipt. Please try again later.');
+    } finally {
+      setIsGeneratingPdf(false);
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-900 flex flex-col items-center justify-center p-4">
+      <div className="max-w-md w-full bg-gray-800 rounded-xl shadow-2xl overflow-hidden border border-gray-700">
+        <div className="p-6 text-center">
+          {status === 'loading' && (
+            <Loader size={60} className="animate-spin text-indigo-500 mx-auto mb-4" />
+          )}
+          {status === 'success' && (
+            <CheckCircle size={60} className="text-green-500 mx-auto mb-4" />
+          )}
+          {status === 'failed' && (
+            <XCircle size={60} className="text-red-500 mx-auto mb-4" />
+          )}
+          {status === 'pending' && (
+            <Loader size={60} className="text-yellow-500 mx-auto mb-4" />
+          )}
+          {status === 'unknown' && (
+            <div className="text-gray-400 mx-auto mb-4 text-5xl">?</div>
+          )}
+          
+          <h2 className="text-2xl font-bold text-white mb-2">
+            {status === 'loading' ? 'Processing...' : 
+             status === 'success' ? 'Payment Successful!' :
+             status === 'failed' ? 'Payment Failed' :
+             status === 'pending' ? 'Payment Pending' : 'Unknown Status'}
+          </h2>
+          
+          <p className="text-gray-300 mb-6">{message}</p>
+          
+          <div className="space-y-3">
+            {status === 'success' && (
+              <button
+                onClick={handleDownloadReceipt}
+                disabled={isGeneratingPdf}
+                className="block w-full px-4 py-3 text-sm font-medium text-white bg-gradient-to-r from-green-600 to-emerald-600 rounded-lg hover:from-green-500 hover:to-emerald-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-all disabled:opacity-50"
+              >
+                {isGeneratingPdf ? (
+                  <span className="flex items-center justify-center">
+                    <Loader size={18} className="mr-2 animate-spin" />
+                    Generating receipt...
+                  </span>
+                ) : (
+                  <span className="flex items-center justify-center">
+                    <Download size={18} className="mr-2" />
+                    Download Receipt
+                  </span>
+                )}
+              </button>
+            )}
+            
+            <Link 
+              href="/"
+              className="block w-full px-4 py-3 text-sm font-medium text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all"
+            >
+              Return to Home
+            </Link>
+            
+            {status === 'failed' && (
+              <Link
+                href="/payment"
+                className="block w-full px-4 py-3 text-sm font-medium text-indigo-300 bg-transparent border border-indigo-600 rounded-lg hover:bg-indigo-900/30 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all"
+              >
+                Try Again
+              </Link>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

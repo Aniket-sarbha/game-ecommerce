@@ -2,13 +2,14 @@
 
 import React, { useState, useRef, useEffect } from "react"
 import { useForm } from "react-hook-form"
-import { User, Globe, Tag, CreditCard, ChevronDown, Check, Loader, Shield, Lock, DollarSign } from "lucide-react"
-import { createPayment } from "@/app/actions/payment"
+import { User, Globe, Tag, CreditCard, ChevronDown, Check, Loader, Shield, Lock, IndianRupee } from "lucide-react"
+import axios from "axios"
 
-export default function PaymentComponent({ storeData }) {
+export default function PaymentComponent({ storeData, amount }) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [serverDropdownOpen, setServerDropdownOpen] = useState(false)
   const [selectedServer, setSelectedServer] = useState(null)
+  const [paymentError, setPaymentError] = useState(null)
   const dropdownRef = useRef(null)
 
   // Server options
@@ -26,7 +27,6 @@ export default function PaymentComponent({ storeData }) {
     handleSubmit,
     formState: { errors },
     setValue,
-    watch,
   } = useForm({
     defaultValues: {
       userId: "",
@@ -34,12 +34,19 @@ export default function PaymentComponent({ storeData }) {
       server: "",
       promoCode: "",
       upiId: "",
-      amount: 100,
+      amount: amount,
     },
   })
 
+  // Update amount when it changes from props
+  useEffect(() => {
+    if (amount) {
+      setValue("amount", amount);
+    }
+  }, [amount, setValue]);
+
   // Close dropdown when clicking outside
-  React.useEffect(() => {
+  useEffect(() => {
     function handleClickOutside(event) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setServerDropdownOpen(false)
@@ -65,34 +72,65 @@ export default function PaymentComponent({ storeData }) {
     return upiRegex.test(value) || "Please enter a valid UPI ID (e.g., username@bankname)"
   }
 
-  // Handle form submission
   const onSubmit = async (data) => {
-    setIsSubmitting(true)
-
+    setIsSubmitting(true);
+    setPaymentError(null);
+  
     try {
-      // Call the server action to create a payment
-      const result = await createPayment({
-        ...data,
-        storeId: storeData.id,
-      })
+      console.log("Payment submission data:", {
+        amount: data.amount,
+        upiId: data.upiId,
+        userId: data.userId || '',
+        serverId: data.serverId || '',
+        server: data.server || '',
+        promoCode: data.promoCode || '',
+        storeId: storeData.id
+      });
+  
+      // Generate a unique transaction ID
+      const transactionId = `TXN_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`;
       
-      if (result.success && result.data.paymentUrl) {
-        // Store transaction ID if needed
-        if (result.data.transactionId) {
-          localStorage.setItem('current_transaction', result.data.transactionId)
-        }
-        // Redirect to the payment gateway
-        window.location.href = result.data.paymentUrl
+      // Call our backend API to create the payment
+      console.log("Sending request to /api/create-payment...");
+      const response = await axios.post('/api/create-payment', {
+        amount: data.amount,
+        upiId: data.upiId,
+        transactionId: transactionId,
+        userId: data.userId || '',
+        serverId: data.serverId || '',
+        server: data.server || '',
+        promoCode: data.promoCode || '',
+        storeId: storeData.id
+      });
+      
+      console.log("Backend response:", response.data);
+      
+      if (response.data.success && response.data.data && response.data.data.paymentUrl) {
+        console.log("Success! Redirecting to:", response.data.data.paymentUrl);
+        window.location.href = response.data.data.paymentUrl;
       } else {
-        throw new Error(result.error || "Payment initialization failed")
+        console.error("Payment failed - Invalid response structure:", response.data);
+        throw new Error(response.data.error || "Payment initialization failed - Invalid response format");
       }
     } catch (error) {
-      console.error("Payment error:", error)
-      alert("There was a problem processing your payment: " + error.message)
+      console.error("Payment error:", error);
+      console.error("Error response:", error.response);
+      console.error("Error data:", error.response?.data);
+      
+      // More descriptive error message
+      const errorMessage = 
+        error.response?.data?.error || 
+        error.response?.data?.message || 
+        error.message || 
+        "There was a problem processing your payment";
+        
+      console.error("Final error message:", errorMessage);
+      setPaymentError(errorMessage);
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
-  }
+  };
+  
 
   if (!storeData) {
     return (
@@ -110,6 +148,12 @@ export default function PaymentComponent({ storeData }) {
       </div>
 
       <div className="p-6">
+        {paymentError && (
+          <div className="mb-6 p-3 bg-red-900/50 border border-red-600 rounded-lg">
+            <p className="text-sm text-red-200">{paymentError}</p>
+          </div>
+        )}
+        
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           <div className="space-y-5">
             {(storeData.userId || storeData.serverId || storeData.server) && (
@@ -258,7 +302,7 @@ export default function PaymentComponent({ storeData }) {
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <DollarSign size={16} className="text-gray-500" />
+                  <IndianRupee size={16} className="text-gray-500" />
                 </div>
                 <input
                   id="amount"
@@ -270,11 +314,12 @@ export default function PaymentComponent({ storeData }) {
                   {...register("amount", {
                     required: "Amount is required",
                     min: {
-                      value: 10,
+                      value: 1,
                       message: "Amount must be at least 10 INR",
                     },
                   })}
                   aria-invalid={errors.amount ? "true" : "false"}
+                  readOnly={true} // Make amount field readonly
                 />
               </div>
               {errors.amount && (

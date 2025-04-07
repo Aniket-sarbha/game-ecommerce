@@ -22,7 +22,9 @@ const Navbar = () => {
             <div className="flex items-center justify-between h-16">
               {/* Logo and Brand */}
               <div className="flex-shrink-0 flex items-center">
-                <span className="ml-2 text-white font-bold text-xl">Yokcash</span>
+                <Link href="/" className="flex items-center">
+                <span className="ml-2 text-white font-bold text-xl" >Yokcash</span>
+                </Link>
               </div>
 
               {/* Desktop Search Bar */}

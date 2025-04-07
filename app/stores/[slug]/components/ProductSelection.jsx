@@ -1,13 +1,9 @@
 // app/stores/[slug]/components/ProductSelection.jsx
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 
-const ProductSelection = ({ storeData }) => {
-  const [selectedItem, setSelectedItem] = useState(
-    storeData.storeItems.length > 0 ? storeData.storeItems[0].id : null
-  );
-
+const ProductSelection = ({ storeData, selectedProductId, onProductSelect }) => {
   // Format price to currency display
   const formatPrice = (price) => {
     return new Intl.NumberFormat('en-IN', {
@@ -37,11 +33,11 @@ const ProductSelection = ({ storeData }) => {
             <div 
               key={item.id}
               className={`border rounded-lg p-3 cursor-pointer transition-all hover:shadow-glow ${
-                selectedItem === item.id 
+                selectedProductId === item.id 
                   ? 'border-purple-500 bg-gray-800 shadow-md shadow-purple-900/30' 
                   : 'border-gray-700 bg-gray-800 hover:border-purple-400'
               }`}
-              onClick={() => setSelectedItem(item.id)}
+              onClick={() => onProductSelect(item.id)}
             >
               <div className="flex flex-col items-center">
                 {item.image && (
@@ -72,9 +68,9 @@ const ProductSelection = ({ storeData }) => {
                   </div>
                   <div className="mt-2 flex justify-center">
                     <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
-                      selectedItem === item.id ? 'border-purple-500 bg-purple-500' : 'border-gray-500'
+                      selectedProductId === item.id ? 'border-purple-500 bg-purple-500' : 'border-gray-500'
                     }`}>
-                      {selectedItem === item.id && (
+                      {selectedProductId === item.id && (
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-4 h-4">
                           <path fillRule="evenodd" d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z" clipRule="evenodd" />
                         </svg>

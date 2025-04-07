@@ -11,11 +11,14 @@ import Footer from "@/app/components/Footer";
 import { useParams } from 'next/navigation';
 
 const Page = () => {
-
   const { slug } = useParams();
   const [storeData, setStoreData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  
+  // Add state for selected product and amount
+  const [selectedProductId, setSelectedProductId] = useState(null);
+  const [selectedProductAmount, setSelectedProductAmount] = useState(100);
 
   useEffect(() => {
     const fetchStoreData = async () => {
@@ -28,6 +31,12 @@ const Page = () => {
 
         const data = await response.json();
         setStoreData(data);
+        
+        // Initialize with the first product if available
+        if (data.storeItems && data.storeItems.length > 0) {
+          setSelectedProductId(data.storeItems[0].id);
+          setSelectedProductAmount(data.storeItems[0].price);
+        }
       } catch (err) {
         console.error('Error fetching store:', err);
         setError(err.message);
@@ -35,13 +44,22 @@ const Page = () => {
         setLoading(false);
       }
     };
-    console.log(slug);
     
-
     if (slug) {
       fetchStoreData();
     }
   }, [slug]);
+
+  // Handle product selection
+  const handleProductSelect = (productId) => {
+    if (storeData && storeData.storeItems) {
+      const selectedProduct = storeData.storeItems.find(item => item.id === productId);
+      if (selectedProduct) {
+        setSelectedProductId(productId);
+        setSelectedProductAmount(selectedProduct.price);
+      }
+    }
+  };
 
   if (loading) {
     return (
@@ -74,7 +92,6 @@ const Page = () => {
     );
   }
 
-
   return (
     <>
       <div>
@@ -82,18 +99,24 @@ const Page = () => {
           <Navbar />
         </div>
         <div>
-          <Banner storeData = {storeData} />
-          {/* {store.image} */}
+          <Banner storeData={storeData} />
         </div>
         <div className="bg-gray-800">
         </div>
         <div className="w-full px-4 md:px-8 lg:px-16 my-4">
           <div className="flex flex-col md:flex-row ">
             <div className="w-full md:w-0.1 ">
-              <ProductSelection storeData = {storeData} />
+              <ProductSelection 
+                storeData={storeData} 
+                selectedProductId={selectedProductId}
+                onProductSelect={handleProductSelect}
+              />
             </div>
             <div className="w-full md:w-0.1">
-              <Payment storeData = {storeData} />
+              <Payment 
+                storeData={storeData} 
+                amount={selectedProductAmount}
+              />
             </div>
           </div>
         </div>

@@ -76,6 +76,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#D1FAE5',
     borderRadius: 4,
   },
+  storeName: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: '#4F46E5',
+    marginBottom: 10,
+  },
 });
 
 // Create Document Component
@@ -103,6 +110,7 @@ const PaymentReceipt = ({ data }) => {
         </View>
 
         <Text style={styles.title}>Payment Receipt</Text>
+        
         <Text style={styles.successful}>Payment Successful</Text>
 
         <View style={styles.section}>
@@ -112,19 +120,15 @@ const PaymentReceipt = ({ data }) => {
           </View>
           <View style={styles.row}>
             <Text style={styles.label}>Amount</Text>
-            <Text style={styles.value}>₹ {data.amount}</Text>
+            <Text style={styles.value}>{data.amount}</Text>
           </View>
           <View style={styles.row}>
             <Text style={styles.label}>Customer Name</Text>
             <Text style={styles.value}>{data.userId || 'Guest User'}</Text>
           </View>
           <View style={styles.row}>
-            <Text style={styles.label}>UPI ID</Text>
-            <Text style={styles.value}>{data.upiId}</Text>
-          </View>
-          <View style={styles.row}>
             <Text style={styles.label}>Payment For</Text>
-            <Text style={styles.value}>{`Order for Store ${data.storeId}`}</Text>
+            <Text style={styles.value}>{data.storeName || `Order for Store ${data.storeId}`}</Text>
           </View>
           {data.serverId && (
             <View style={styles.row}>

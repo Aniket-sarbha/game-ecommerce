@@ -1,7 +1,20 @@
 // next.config.mjs (for ES modules)
 export default {
-    images: {
-      domains: ["sin1.contabostorage.com", "wallpapers.com"], 
-    },
-  };
-  
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+        pathname: '/a/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'sin1.contabostorage.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'wallpapers.com',
+      },
+    ],
+  },
+};

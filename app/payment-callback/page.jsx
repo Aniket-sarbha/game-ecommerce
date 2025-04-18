@@ -13,6 +13,7 @@ export default function PaymentCallback() {
   const [status, setStatus] = useState('loading');
   const [message, setMessage] = useState('');
   const [isGeneratingPdf, setIsGeneratingPdf] = useState(false);
+  const [orderSaved, setOrderSaved] = useState(false);
   const searchParams = useSearchParams();
 
   useEffect(() => {
@@ -26,9 +27,17 @@ export default function PaymentCallback() {
     if (txnStatus === 'SUCCESS') {
       setStatus('success');
       setMessage('Your payment was successful! Thank you for your purchase.');
+      
+      // Save order to database when payment is successful
+      saveOrderToDatabase(urlParams);
+      
     } else if (txnStatus && txnStatus.toUpperCase() === 'SUCCESS') {
       setStatus('success');
       setMessage('Your payment was successful! Thank you for your purchase.');
+      
+      // Save order to database when payment is successful
+      saveOrderToDatabase(urlParams);
+      
     } else if (txnStatus === 'failed' || txnStatus === 'FAILED') {
       setStatus('failed');
       setMessage('Your payment was not successful. Please try again.');
@@ -40,6 +49,50 @@ export default function PaymentCallback() {
       setMessage('Payment status unknown. Please contact support if you have questions.');
     }
   }, [searchParams]);
+
+  // Function to save order to database
+  const saveOrderToDatabase = async (urlParams) => {
+    try {
+      // Get necessary data from URL parameters
+      const transactionId = urlParams.get('transactionId') || urlParams.get('clientTrxId');
+      const amount = parseFloat(urlParams.get('amount') || '0');
+      const merchantName = urlParams.get('merchantName');
+      const customerName = urlParams.get('customerName');
+      const udf1 = urlParams.get('udf1'); // This might contain user ID or additional info
+      
+      // Get store ID from the merchant name or from URL params if available
+      // This is a simple example - you may need to map the merchant name to a store ID in your database
+      const storeId = parseInt(urlParams.get('storeId') || '1');
+      
+      // Get store item ID if available
+      const itemId = parseInt(urlParams.get('itemId') || '1');
+      
+      // Create order data
+      const orderData = {
+        transactionId,
+        storeId,
+        itemId,
+        amount,
+        merchantName,
+        customerName,
+        userId: udf1
+      };
+      
+      console.log("Saving order data:", orderData);
+      
+      // Call the API to save the order
+      const response = await axios.post('/api/orders/create', orderData);
+      
+      if (response.data.success) {
+        console.log("Order saved successfully:", response.data);
+        setOrderSaved(true);
+      } else {
+        console.error("Failed to save order:", response.data);
+      }
+    } catch (error) {
+      console.error("Error saving order to database:", error);
+    }
+  };
 
   const handleDownloadReceipt = async () => {
     try {
@@ -147,6 +200,13 @@ export default function PaymentCallback() {
               className="block w-full px-4 py-3 text-sm font-medium text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all"
             >
               Return to Home
+            </Link>
+            
+            <Link 
+              href="/account"
+              className="block w-full px-4 py-3 text-sm font-medium text-indigo-300 bg-transparent border border-indigo-600 rounded-lg hover:bg-indigo-900/30 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all"
+            >
+              View Order History
             </Link>
             
             {status === 'failed' && (

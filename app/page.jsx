@@ -39,18 +39,17 @@ export default function Home() {
   return (
     <>
       <Navbar></Navbar>
-      <div className="bg-black pt-20">
+      <div className="bg-white dark:bg-black pt-20 transition-colors duration-300">
         <Vortex>
           <div className="flex flex-col items-center justify-center h-[30rem]">
             <TypewriterEffectSmooth words={words} />
           </div>
         </Vortex>
       </div>
-      <div className="bg-black py-8">
+      <div className="bg-gray-100 dark:bg-black py-8 transition-colors duration-300">
         <Carousel></Carousel>
         <Popularitems></Popularitems>
         <ImageGallery />
-        <div className="bg-red-800 h-1 mx-auto max-w-7xl rounded-full justify-center"></div>
       </div>
       {/* <CardsGrid></CardsGrid> */}
       {/* <ImageGallery></ImageGallery> */}

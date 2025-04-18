@@ -1,13 +1,17 @@
 "use client";
 
 import { cn } from "@/utils/cn";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { createNoise3D } from "simplex-noise";
 import { motion } from "framer-motion";
+import { useTheme } from "../providers/theme-provider";
 
 const Vortex = (props) => {
   const canvasRef = useRef(null);
   const containerRef = useRef(null);
+  const { theme } = useTheme() || { theme: 'dark' };
+  const [mounted, setMounted] = useState(false);
+  
   const particleCount = props.particleCount || 700;
   const particlePropCount = 9;
   const particlePropsLength = particleCount * particlePropCount;
@@ -24,11 +28,21 @@ const Vortex = (props) => {
   const xOff = 0.00125;
   const yOff = 0.00125;
   const zOff = 0.0005;
-  const backgroundColor = props.backgroundColor || "#000000";
+  
+  // Update background color based on theme
+  const backgroundColor = mounted && theme === 'light' 
+    ? props.lightBackgroundColor || "#ffffff" 
+    : props.backgroundColor || "#000000";
+    
   let tick = 0;
   const noise3D = createNoise3D();
   let particleProps = new Float32Array(particlePropsLength);
   let center = [0, 0];
+
+  // Use effect to handle mounting state to prevent hydration mismatch
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const HALF_PI = 0.5 * Math.PI;
   const TAU = 2 * Math.PI;
@@ -232,7 +246,7 @@ const Vortex = (props) => {
         className="absolute h-full w-full inset-0 z-0 bg-transparent flex items-center justify-center">
         <canvas ref={canvasRef}></canvas>
       </motion.div>
-      <div className={cn("relative z-10  px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto", props.className)}>
+      <div className={cn("relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto", props.className)}>
         {props.children}
       </div>
     </div>

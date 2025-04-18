@@ -20,22 +20,22 @@ const ProductSelection = ({ storeData, selectedProductId, onProductSelect }) => 
   };
 
   return (
-    <div className="bg-gray-900 rounded-lg shadow-lg border border-gray-700 p-4 mb-6 md:mb-0 md:mr-4">
-      <h2 className="text-xl font-semibold mb-4 text-gray-100">Select Product</h2>
+    <div className="bg-gray-900 rounded-lg shadow-lg border border-gray-700 p-6 glass-effect shadow-purple-900/20">
+      <h2 className="text-xl font-semibold mb-5 text-gray-100 gradient-text">Select Product</h2>
       
       {storeData.storeItems.length === 0 ? (
-        <div className="text-center p-6 bg-gray-800 rounded-md border border-gray-700">
+        <div className="text-center p-6 bg-gray-800/70 rounded-md border border-gray-700">
           <p className="text-gray-300">No products available for this store</p>
         </div>
       ) : (
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           {storeData.storeItems.map((item) => (
             <div 
               key={item.id}
-              className={`border rounded-lg p-3 cursor-pointer transition-all hover:shadow-glow ${
+              className={`border rounded-lg p-4 cursor-pointer transition-all duration-200 hover:transform hover:scale-[1.03] ${
                 selectedProductId === item.id 
-                  ? 'border-purple-500 bg-gray-800 shadow-md shadow-purple-900/30' 
-                  : 'border-gray-700 bg-gray-800 hover:border-purple-400'
+                  ? 'border-indigo-500 bg-gray-800 shadow-glow' 
+                  : 'border-gray-700 bg-gray-800/70 hover:border-indigo-400'
               }`}
               onClick={() => onProductSelect(item.id)}
             >
@@ -55,12 +55,12 @@ const ProductSelection = ({ storeData, selectedProductId, onProductSelect }) => 
                 )}
                 <div className="w-full text-center">
                   <h3 className="font-medium text-gray-100 text-sm truncate">{item.name}</h3>
-                  <div className="flex flex-wrap justify-center items-center mt-1">
+                  <div className="flex flex-wrap justify-center items-center mt-2">
                     <span className="font-semibold text-gray-50 text-sm">{formatPrice(item.price)}</span>
                     {item.mrp > item.price && (
                       <div className="flex items-center mt-1 w-full justify-center">
                         <span className="text-xs text-gray-400 line-through mr-1">{formatPrice(item.mrp)}</span>
-                        <span className="text-xs text-purple-400">
+                        <span className="text-xs text-indigo-400">
                           {calculateDiscount(item.price, item.mrp)}% off
                         </span>
                       </div>
@@ -68,7 +68,7 @@ const ProductSelection = ({ storeData, selectedProductId, onProductSelect }) => 
                   </div>
                   <div className="mt-2 flex justify-center">
                     <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
-                      selectedProductId === item.id ? 'border-purple-500 bg-purple-500' : 'border-gray-500'
+                      selectedProductId === item.id ? 'border-indigo-500 bg-indigo-500 shadow-glow' : 'border-gray-500'
                     }`}>
                       {selectedProductId === item.id && (
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-4 h-4">

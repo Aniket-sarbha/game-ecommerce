@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import axios from "axios";
 
 export async function POST(request) {
+
   try {
     console.log("API: Payment request received");
     const body = await request.json();
@@ -16,6 +17,7 @@ export async function POST(request) {
       server,
       promoCode,
       storeId,
+      storeName,
     } = body;
 
     console.log("API: Request data:", {
@@ -27,6 +29,7 @@ export async function POST(request) {
       server,
       promoCode,
       storeId,
+      storeName
     });
 
     // Validate required fields

@@ -84,7 +84,11 @@ export default function PaymentComponent({ storeData, amount }) {
         serverId: data.serverId || '',
         server: data.server || '',
         promoCode: data.promoCode || '',
-        storeId: storeData.id
+        storeId: storeData.id,
+        storeName:   storeData.name
+        .split("-")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ")
       });
   
       // Generate a unique transaction ID
@@ -100,7 +104,11 @@ export default function PaymentComponent({ storeData, amount }) {
         serverId: data.serverId || '',
         server: data.server || '',
         promoCode: data.promoCode || '',
-        storeId: storeData.id
+        storeId: storeData.id,
+        storeName:  storeData.name
+        .split("-")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ")
       });
       
       console.log("Backend response:", response.data);
@@ -141,15 +149,15 @@ export default function PaymentComponent({ storeData, amount }) {
   }
 
   return (
-    <div className="max-w-md mx-auto bg-gray-900 rounded-xl shadow-2xl overflow-hidden border border-gray-800">
-      <div className="px-6 py-5 bg-gray-800 border-b border-gray-700">
-        <h2 className="text-xl font-bold text-white">Payment Details</h2>
+    <div className="max-w-md mx-auto bg-gray-900 rounded-xl shadow-2xl overflow-hidden border border-gray-800 glass-effect shadow-purple-900/20">
+      <div className="px-6 py-5 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border-b border-gray-700">
+        <h2 className="text-xl font-bold text-gray-100">Payment Details</h2>
         <p className="text-sm text-gray-400 mt-1">Enter your information to complete the payment.</p>
       </div>
 
       <div className="p-6">
         {paymentError && (
-          <div className="mb-6 p-3 bg-red-900/50 border border-red-600 rounded-lg">
+          <div className="mb-6 p-4 bg-red-900/50 border border-red-600 rounded-lg">
             <p className="text-sm text-red-200">{paymentError}</p>
           </div>
         )}
@@ -403,7 +411,7 @@ export default function PaymentComponent({ storeData, amount }) {
         </form>
       </div>
 
-      <div className="px-6 py-4 bg-gray-800 border-t border-gray-700 flex items-center justify-between">
+      <div className="px-6 py-4 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border-t border-gray-700 flex items-center justify-between">
         <div className="flex items-center text-gray-400">
           <Shield size={14} className="mr-1" />
           <p className="text-xs">Secure Payment</p>

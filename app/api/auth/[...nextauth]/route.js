@@ -68,9 +68,18 @@ export const authOptions = {
       }
       return token;
     },
-    // Add this redirect callback to go to home page
+    // Properly handle redirect to support callbackUrl
     async redirect({ url, baseUrl }) {
-      return baseUrl // This redirects to the root URL (home page)
+      // If the URL is absolute and belongs to our app, use it
+      if (url.startsWith(baseUrl)) {
+        return url;
+      }
+      // If the URL is relative (starts with /), join it with the base URL
+      else if (url.startsWith('/')) {
+        return `${baseUrl}${url}`;
+      }
+      // Otherwise, return to the base URL
+      return baseUrl;
     }
   },
   debug: process.env.NODE_ENV === 'development',

@@ -2,14 +2,13 @@
 
 import React, { useState, Suspense, lazy } from "react";
 
-
 // Use lazy loading for CardsGrid
 const CardsGrid = lazy(() => import("./CardsGrid"));
 
 // Simple fallback for lazy loaded components
 const TabLoadingFallback = () => (
   <div className="flex justify-center items-center h-64">
-    <div className="text-white text-xl">Loading tab content...</div>
+    <div className="text-gray-800 dark:text-white text-xl">Loading tab content...</div>
   </div>
 );
 
@@ -26,20 +25,22 @@ const ImageGallery = () => {
       {/* Tab Navigation */}
       <div className="justify-center flex">
         <div
-          className="mb-8 bg-white flex justify-center rounded-3xl max-w-4xl"
+          className="mb-8 bg-white dark:bg-gray-800 flex justify-center rounded-3xl max-w-4xl shadow-md transition-colors duration-300"
           aria-label="Gallery categories"
         >
           <div
             role="tablist"
-            className="flex border-b border-gray-200 rounded-3xl"
+            className="flex border-b border-gray-200 dark:border-gray-700 rounded-3xl"
           >
             <button
               role="tab"
               aria-selected={activeTab === "nature"}
               aria-controls="nature-panel"
               id="nature-tab"
-              className={`py-3 px-6 font-medium text-sm  transition-all duration-300  ${
-                activeTab === "nature" ? "bg-red-500 text-white rounded-3xl" : ""
+              className={`py-3 px-6 font-medium text-sm transition-all duration-300 ${
+                activeTab === "nature" 
+                  ? "bg-red-500 dark:bg-red-600 text-white rounded-3xl" 
+                  : "text-gray-700 dark:text-gray-300"
               }`}
               onClick={() => handleTabChange("nature")}
             >
@@ -50,8 +51,10 @@ const ImageGallery = () => {
               aria-selected={activeTab === "architecture"}
               aria-controls="architecture-panel"
               id="architecture-tab"
-              className={`py-3 px-6 font-medium text-sm  transition-all duration-300 ${
-                activeTab === "architecture" ? "bg-red-500 text-white rounded-3xl" : ""
+              className={`py-3 px-6 font-medium text-sm transition-all duration-300 ${
+                activeTab === "architecture" 
+                  ? "bg-red-500 dark:bg-red-600 text-white rounded-3xl" 
+                  : "text-gray-700 dark:text-gray-300"
               }`}
               onClick={() => handleTabChange("architecture")}
             >
@@ -62,8 +65,10 @@ const ImageGallery = () => {
               aria-selected={activeTab === "food"}
               aria-controls="food-panel"
               id="food-tab"
-              className={`py-3 px-6 font-medium text-sm  transition-all duration-300 ${
-                activeTab === "food" ? "bg-red-500 text-white rounded-3xl" : ""
+              className={`py-3 px-6 font-medium text-sm transition-all duration-300 ${
+                activeTab === "food" 
+                  ? "bg-red-500 dark:bg-red-600 text-white rounded-3xl" 
+                  : "text-gray-700 dark:text-gray-300"
               }`}
               onClick={() => handleTabChange("food")}
             >
@@ -74,8 +79,10 @@ const ImageGallery = () => {
               aria-selected={activeTab === "travel"}
               aria-controls="travel-panel"
               id="travel-tab"
-              className={`py-3 px-6 font-medium text-sm  transition-all duration-300 ${
-                activeTab === "travel" ? "bg-red-500 text-white rounded-3xl" : ""
+              className={`py-3 px-6 font-medium text-sm transition-all duration-300 ${
+                activeTab === "travel" 
+                  ? "bg-red-500 dark:bg-red-600 text-white rounded-3xl" 
+                  : "text-gray-700 dark:text-gray-300"
               }`}
               onClick={() => handleTabChange("travel")}
             >
@@ -107,7 +114,7 @@ const ImageGallery = () => {
           className={activeTab === "architecture" ? "block" : "hidden"}
         >
           <div className="flex justify-center items-center h-64">
-            <p className="text-white">Voucher content coming soon</p>
+            <p className="text-gray-800 dark:text-white">Voucher content coming soon</p>
           </div>
         </section>
 
@@ -118,7 +125,7 @@ const ImageGallery = () => {
           className={activeTab === "food" ? "block" : "hidden"}
         >
           <div className="flex justify-center items-center h-64">
-            <p className="text-white">PLN content coming soon</p>
+            <p className="text-gray-800 dark:text-white">PLN content coming soon</p>
           </div>
         </section>
 
@@ -129,7 +136,7 @@ const ImageGallery = () => {
           className={activeTab === "travel" ? "block" : "hidden"}
         >
           <div className="flex justify-center items-center h-64">
-            <p className="text-white">Live Apps content coming soon</p>
+            <p className="text-gray-800 dark:text-white">Live Apps content coming soon</p>
           </div>
         </section>
       </div>

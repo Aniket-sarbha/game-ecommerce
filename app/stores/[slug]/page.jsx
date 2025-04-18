@@ -66,7 +66,7 @@ const Page = () => {
       <>
         <Navbar />
         <div className="min-h-[400px] flex items-center justify-center mt-20">
-          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-indigo-500"></div>
         </div>
       </>
     );
@@ -77,12 +77,12 @@ const Page = () => {
       <>
         <Navbar />
         <div className="min-h-[400px] flex items-center justify-center mt-20">
-          <div className="text-center p-4 rounded-lg bg-red-50 text-red-600">
-            <h3 className="text-lg font-medium mb-2">Something went wrong</h3>
-            <p>{error || 'Store not found'}</p>
+          <div className="text-center p-6 rounded-lg glass-effect bg-red-900/30 border border-red-700 shadow-lg">
+            <h3 className="text-lg font-medium mb-2 text-red-200">Something went wrong</h3>
+            <p className="text-red-300">{error || 'Store not found'}</p>
             <button
               onClick={() => window.location.reload()}
-              className="mt-4 px-4 py-2 bg-red-100 hover:bg-red-200 rounded-md transition-colors"
+              className="mt-4 px-4 py-2 bg-red-800 hover:bg-red-700 text-white rounded-md transition-colors"
             >
               Try again
             </button>
@@ -94,25 +94,24 @@ const Page = () => {
 
   return (
     <>
-      <div>
+      <div className=" min-h-screen">
         <div>
           <Navbar />
         </div>
         <div>
           <Banner storeData={storeData} />
         </div>
-        <div className="bg-gray-800">
-        </div>
-        <div className="w-full px-4 md:px-8 lg:px-16 my-4">
-          <div className="flex flex-col md:flex-row ">
-            <div className="w-full md:w-0.1 ">
+       
+        <div className="w-full px-4 md:px-8 lg:px-16 my-8">
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="w-full md:w-7/12">
               <ProductSelection 
                 storeData={storeData} 
                 selectedProductId={selectedProductId}
                 onProductSelect={handleProductSelect}
               />
             </div>
-            <div className="w-full md:w-0.1">
+            <div className="w-full md:w-5/12">
               <Payment 
                 storeData={storeData} 
                 amount={selectedProductAmount}

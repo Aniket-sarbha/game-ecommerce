@@ -18,7 +18,6 @@ export async function GET(request) {
     console.log("API: Fetching payment details for transaction:", txnId);
 
     // Fetch payment details from your payment gateway
-    // Replace with your actual payment gateway API call
     try {
       const response = await axios.get(
         `https://gateway.mobalegends.in/api/payments/status/${txnId}`,
@@ -32,6 +31,13 @@ export async function GET(request) {
 
       console.log("API: Payment gateway response:", response.data);
       
+      // Extract store ID from pInfo
+      const storeId = response.data.pInfo ? response.data.pInfo.replace('Order for Store ', '') : null;
+      
+      // Get store name from the database or other source based on storeId
+      // For now, we'll include a placeholder that the frontend can replace
+      const storeName = "8 Ball Pool"; // This would typically come from your database
+
       // Return formatted payment details
       return NextResponse.json({
         success: true,
@@ -40,12 +46,12 @@ export async function GET(request) {
           amount: response.data.amount,
           userId: response.data.udf1 || response.data.customerName,
           upiId: response.data.upiId,
-          storeId: response.data.pInfo ? response.data.pInfo.replace('Order for Store ', '') : null,
+          storeId: storeId,
+          storeName: storeName, // Add store name here
           serverId: response.data.udf2,
           promoCode: response.data.udf3,
           status: response.data.status,
           paymentDate: response.data.paymentDate || new Date().toISOString(),
-          // Include any other relevant fields
         },
       });
       
@@ -56,9 +62,14 @@ export async function GET(request) {
         gatewayError.response?.data
       );
 
-      // If API call fails, use data from the database or any other fallback
-      // For demonstration, we're using mock data
-      
+      // Return error response when gateway call fails
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Payment gateway error: " + (gatewayError.response?.data || gatewayError.message),
+        },
+        { status: 502 }
+      );
     }
   } catch (error) {
     console.error("API: General error:", error.message);

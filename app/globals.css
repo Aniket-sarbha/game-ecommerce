@@ -58,28 +58,6 @@
   display: none;
 }
 
-/* Adding modern scrollbar styling for browsers that support it */
-@media (min-width: 768px) {
-  ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: rgba(212, 14, 14, 0.1);
-    border-radius: 8px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: rgba(148, 163, 184, 0.5);
-    border-radius: 8px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgba(148, 163, 184, 0.7);
-  }
-}
-
 /* Modern styling enhancements */
 .glass-effect {
   backdrop-filter: blur(8px);

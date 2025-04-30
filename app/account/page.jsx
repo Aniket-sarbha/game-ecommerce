@@ -411,7 +411,7 @@ export default function AccountPage() {
                             <div className="mt-2 text-sm text-gray-600">
                               <p>Date: {new Date(order.createdAt).toLocaleDateString()}</p>
                               <p>Status: <span className="font-medium text-green-600 capitalize">{order.status}</span></p>
-                              <p className="font-medium">Total: ${parseFloat(order.totalAmount).toFixed(2)}</p>
+                              <p className="font-medium">Total: ₹ {parseFloat(order.totalAmount).toFixed(2)}</p>
                             </div>
                           </div>
                           

@@ -1,14 +1,15 @@
 // pages/login.js
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { signIn } from 'next-auth/react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Head from 'next/head';
 import styles from './LoginSignup.module.css';
 import { Mail, Lock, LogIn, ArrowRight, User, UserPlus, Gamepad2 } from 'lucide-react';
 
-export default function LoginSignup({ defaultMode = "login" }) {
+// Create a client component that safely uses useSearchParams
+function LoginSignupContent({ defaultMode = "login" }) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [email, setEmail] = useState('');
@@ -363,5 +364,14 @@ export default function LoginSignup({ defaultMode = "login" }) {
         </p>
       </div>
     </div>
+  );
+}
+
+// Export a wrapper component that includes Suspense
+export default function LoginSignup({ defaultMode = "login" }) {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <LoginSignupContent defaultMode={defaultMode} />
+    </Suspense>
   );
 }

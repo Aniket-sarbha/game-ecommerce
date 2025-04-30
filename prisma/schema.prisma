@@ -11,31 +11,31 @@ model Store {
   id              Int         @id @default(autoincrement())
   name            String      @unique
   isActive        Boolean     @default(false)
-  storeItems      StoreItem[]
   createdAt       DateTime    @default(now())
   updatedAt       DateTime    @updatedAt
   image           String?
   backgroundImage String?
   description     String?
-  userId          Boolean     @default(false)
-  serverId        Boolean     @default(false)
   server          Boolean     @default(false)
+  serverId        Boolean     @default(false)
+  userId          Boolean     @default(false)
   orders          Order[]
+  storeItems      StoreItem[]
 }
 
 model StoreItem {
-  id        Int      @id @default(autoincrement())
-  productId String   @unique
-  name      String
-  price     Decimal  @db.Decimal(10, 2)
-  mrp       Decimal  @db.Decimal(10, 2)
-  image     String?
-  isActive  Boolean  @default(false)
-  store     Store    @relation(fields: [storeId], references: [id], onDelete: Cascade)
-  storeId   Int
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id         Int         @id @default(autoincrement())
+  productId  String      @unique
+  name       String
+  price      Decimal     @db.Decimal(10, 2)
+  mrp        Decimal     @db.Decimal(10, 2)
+  image      String?
+  isActive   Boolean     @default(false)
+  storeId    Int
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
   orderItems OrderItem[]
+  store      Store       @relation(fields: [storeId], references: [id], onDelete: Cascade)
 
   @@index([storeId])
 }
@@ -47,11 +47,11 @@ model User {
   password      String?
   emailVerified DateTime?
   image         String?
-  accounts      Account[]
-  sessions      Session[]
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
+  accounts      Account[]
   orders        Order[]
+  sessions      Session[]
 }
 
 model Account {
@@ -60,15 +60,14 @@ model Account {
   type              String
   provider          String
   providerAccountId String
-  refresh_token     String? @db.Text
-  access_token      String? @db.Text
+  refresh_token     String?
+  access_token      String?
   expires_at        Int?
   token_type        String?
   scope             String?
-  id_token          String? @db.Text
+  id_token          String?
   session_state     String?
-
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([provider, providerAccountId])
 }
@@ -92,17 +91,17 @@ model VerificationToken {
 model Order {
   id            String      @id @default(cuid())
   userId        String
-  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
   storeId       Int
-  store         Store       @relation(fields: [storeId], references: [id], onDelete: Cascade)
-  orderItems    OrderItem[]
   totalAmount   Decimal     @db.Decimal(10, 2)
   status        String      @default("completed")
   paymentMethod String      @default("credit_card")
   createdAt     DateTime    @default(now())
   updatedAt     DateTime    @updatedAt
   orderNumber   String      @unique @default(cuid())
-  
+  store         Store       @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  orderItems    OrderItem[]
+
   @@index([userId])
   @@index([storeId])
 }
@@ -110,12 +109,12 @@ model Order {
 model OrderItem {
   id          Int       @id @default(autoincrement())
   orderId     String
-  order       Order     @relation(fields: [orderId], references: [id], onDelete: Cascade)
   storeItemId Int
-  storeItem   StoreItem @relation(fields: [storeItemId], references: [id], onDelete: Cascade)
   quantity    Int       @default(1)
   price       Decimal   @db.Decimal(10, 2)
-  
+  order       Order     @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  storeItem   StoreItem @relation(fields: [storeItemId], references: [id], onDelete: Cascade)
+
   @@index([orderId])
   @@index([storeItemId])
 }

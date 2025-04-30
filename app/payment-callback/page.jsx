@@ -1,7 +1,6 @@
-// page.jsx
 "use client"
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { CheckCircle, XCircle, Loader, Download } from 'lucide-react';
 import Link from 'next/link';
@@ -9,7 +8,8 @@ import { pdf } from '@react-pdf/renderer';
 import axios from 'axios';
 import PaymentReceipt from '../stores/[slug]/components/PaymentReceipt';
 
-export default function PaymentCallback() {
+// Component that uses useSearchParams safely inside Suspense boundary
+function PaymentCallbackContent() {
   const [status, setStatus] = useState('loading');
   const [message, setMessage] = useState('');
   const [isGeneratingPdf, setIsGeneratingPdf] = useState(false);
@@ -221,5 +221,19 @@ export default function PaymentCallback() {
         </div>
       </div>
     </div>
+  );
+}
+
+// Main component wrapped in Suspense
+export default function PaymentCallback() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-gray-900 flex items-center justify-center">
+      <div className="text-white text-center">
+        <Loader size={40} className="animate-spin mx-auto mb-4" />
+        <p>Loading payment details...</p>
+      </div>
+    </div>}>
+      <PaymentCallbackContent />
+    </Suspense>
   );
 }

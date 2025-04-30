@@ -45,7 +45,7 @@ export async function POST(request) {
     if (amount < 1) {
       console.error("API: Amount too low");
       return NextResponse.json(
-        { success: false, error: "Amount must be at least 10 INR" },
+        { success: false, error: "Amount must be at least 1 INR" },
         { status: 400 }
       );
     }

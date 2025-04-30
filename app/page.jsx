@@ -3,11 +3,9 @@
 import Navbar from "@/app/components/Navbar";
 import Carousel from "@/app/components/Carousel";
 import Popularitems from "@/app/components/Popularitems";
-import TypewriterEffectSmooth from "@/app/components/Typewriter";
-import CardsGrid from "@/app/components/CardsGrid";
-import Vortex from "@/app/components/Vortex";
 import Footer from "@/app/components/Footer";
 import ImageGallery from "@/app/components/ImageGallery";
+import { HeroGeometric } from "@/components/ui/shape-landing-hero";
 
 
 export default function Home() {
@@ -39,14 +37,13 @@ export default function Home() {
   return (
     <>
       <Navbar></Navbar>
-      <div className="bg-white dark:bg-black pt-20 transition-colors duration-300">
-        <Vortex>
-          <div className="flex flex-col items-center justify-center h-[30rem]">
-            <TypewriterEffectSmooth words={words} />
-          </div>
-        </Vortex>
+      <div>
+      <HeroGeometric
+        title1="Discounted Game Currency  "
+        title2=" for Every Gamer."
+      />
       </div>
-      <div className="bg-gray-100 dark:bg-black py-8 transition-colors duration-300">
+      <div className=" bg-[#030303] py-8 ">
         <Carousel></Carousel>
         <Popularitems></Popularitems>
         <ImageGallery />

@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
@@ -81,6 +80,9 @@ const Popularitems = () => {
   const [storeList, setStoreList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
   const scrollContainerRef = useRef(null);
   const animationRef = useRef(null);
 
@@ -110,10 +112,10 @@ const Popularitems = () => {
   // Auto-scrolling animation
   useEffect(() => {
     const startScrolling = () => {
-      if (!scrollContainerRef.current || !isAutoScrolling) return;
+      if (!scrollContainerRef.current || !isAutoScrolling || isDragging) return;
       
       const scroll = () => {
-        if (!scrollContainerRef.current || !isAutoScrolling) return;
+        if (!scrollContainerRef.current || !isAutoScrolling || isDragging) return;
         
         // Scroll 1 pixel per frame for smooth motion
         scrollContainerRef.current.scrollLeft += 1;
@@ -142,20 +144,73 @@ const Popularitems = () => {
         cancelAnimationFrame(animationRef.current);
       }
     };
-  }, [isAutoScrolling, storeList]);
+  }, [isAutoScrolling, storeList, isDragging]);
 
-  // Toggle auto-scrolling on hover
+  // Toggle auto-scrolling on hover or interaction
   const handleMouseEnter = () => setIsAutoScrolling(false);
-  const handleMouseLeave = () => setIsAutoScrolling(true);
-
-  const scroll = (direction) => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = direction === "left" ? -300 : 300;
-      scrollContainerRef.current.scrollBy({
-        left: scrollAmount,
-        behavior: "smooth"
-      });
+  const handleMouseLeave = () => {
+    if (!isDragging) {
+      setIsAutoScrolling(true);
     }
+  };
+
+  // Handle mouse/touch drag to scroll
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setIsAutoScrolling(false);
+    setStartX(e.pageX - scrollContainerRef.current.offsetLeft);
+    setScrollLeft(scrollContainerRef.current.scrollLeft);
+  };
+
+  const handleMouseUp = (e) => {
+    setIsDragging(false);
+    // Resume auto-scrolling after a brief delay if mouse isn't hovering
+    const container = scrollContainerRef.current;
+    if (container) {
+      setTimeout(() => {
+        if (!e) return; // Guard against undefined event object
+        
+        const rect = container.getBoundingClientRect();
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+        
+        // Check if mouse is still over the container
+        if (mouseX < rect.left || mouseX > rect.right || 
+            mouseY < rect.top || mouseY > rect.bottom) {
+          setIsAutoScrolling(true);
+        }
+      }, 500);
+    }
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    
+    const x = e.pageX - scrollContainerRef.current.offsetLeft;
+    const walk = (x - startX) * 2; // Multiply by 2 for faster scrolling
+    scrollContainerRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  const handleTouchStart = (e) => {
+    setIsDragging(true);
+    setIsAutoScrolling(false);
+    setStartX(e.touches[0].pageX - scrollContainerRef.current.offsetLeft);
+    setScrollLeft(scrollContainerRef.current.scrollLeft);
+  };
+
+  const handleTouchMove = (e) => {
+    if (!isDragging) return;
+    
+    const x = e.touches[0].pageX - scrollContainerRef.current.offsetLeft;
+    const walk = (x - startX) * 2;
+    scrollContainerRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  const handleTouchEnd = () => {
+    setIsDragging(false);
+    // Only resume auto-scrolling if we're sure the user isn't interacting anymore
+    setTimeout(() => setIsAutoScrolling(true), 1500);
   };
 
   // Prepare items for continuous scrolling effect
@@ -179,33 +234,16 @@ const Popularitems = () => {
         <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-white/20 to-transparent rounded-t-3xl pointer-events-none"></div>
         
         <div className="relative">
-          <div className="flex items-center mb-6 justify-between">
+          <div className="flex items-center mb-6">
             <h2 className="text-2xl font-bold text-gray-800 dark:text-white flex items-center">
               <span className="mr-2">🔥</span>
               Most Popular Items
               <div className="ml-3 h-1 w-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"></div>
             </h2>
-            
-            <div className="flex gap-2">
-              <button 
-                onClick={() => scroll("left")}
-                className="p-2 rounded-full bg-white/20 hover:bg-white/30 dark:bg-gray-800/50 dark:hover:bg-gray-700/60 text-gray-700 dark:text-gray-300 backdrop-blur-sm transition-all shadow-sm"
-                aria-label="Scroll left"
-              >
-                <ChevronLeft size={20} />
-              </button>
-              <button 
-                onClick={() => scroll("right")}
-                className="p-2 rounded-full bg-white/20 hover:bg-white/30 dark:bg-gray-800/50 dark:hover:bg-gray-700/60 text-gray-700 dark:text-gray-300 backdrop-blur-sm transition-all shadow-sm"
-                aria-label="Scroll right"
-              >
-                <ChevronRight size={20} />
-              </button>
-            </div>
           </div>
 
           <div 
-            className="overflow-hidden"
+            className="overflow-hidden cursor-grab active:cursor-grabbing"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
@@ -213,6 +251,13 @@ const Popularitems = () => {
               ref={scrollContainerRef}
               className="flex pb-4 overflow-x-auto scrollbar-hide scroll-smooth"
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+              onMouseDown={handleMouseDown}
+              onMouseUp={handleMouseUp}
+              onMouseLeave={handleMouseUp}
+              onMouseMove={handleMouseMove}
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
             >
               {isLoading ? (
                 // Loading skeleton

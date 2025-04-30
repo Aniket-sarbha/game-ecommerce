@@ -8,7 +8,26 @@ const CardsGrid = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 8; // Adjust the number of cards per page
+  const [itemsPerPage, setItemsPerPage] = useState(9); // Default to 9 for mobile
+
+  useEffect(() => {
+    // Set items per page based on screen size
+    const handleResize = () => {
+      // For larger screens (sm and above), use 8 items per page
+      // For mobile screens use 9 items for a perfect 3x3 grid
+      const isMobile = window.innerWidth < 640; // 640px is the Tailwind sm breakpoint
+      setItemsPerPage(isMobile ? 9 : 8);
+    };
+
+    // Initial check
+    handleResize();
+    
+    // Add resize listener
+    window.addEventListener('resize', handleResize);
+    
+    // Clean up
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const fetchStores = async () => {
@@ -84,7 +103,7 @@ const CardsGrid = () => {
   return (
     <div className="flex flex-col items-center w-full max-w-4xl mx-auto px-3 sm:px-4 py-6 sm:py-8">
       {/* Cards Grid */}
-      <div className="grid grid-cols-3 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 w-full">
+      <div className="grid grid-cols-3 xs:grid-cols-3 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 w-full">
         {paginatedStores.map((store) => (
           <Card key={store.id} store={store} />
         ))}

@@ -13,7 +13,7 @@ const Banner = ({storeData}) => {
     
   return (
     <div 
-      className="mt-[10rem] relative max-w-6xl h-[50vh] mx-auto overflow-hidden rounded-xl shadow-lg shadow-purple-900/20"
+      className="mt-8 relative max-w-6xl h-[50vh] mx-auto overflow-hidden rounded-xl shadow-lg shadow-purple-900/20"
       role="banner"
       aria-label={`Profile hero for ${storeData.name}`}
     >

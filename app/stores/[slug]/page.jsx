@@ -116,10 +116,10 @@ const Page = () => {
               onProductSelect={handleProductSelect}
             />
           </div>
-          <div className="w-full md:w-5/12">
-            <Payment 
+          <div className="w-full md:w-5/12">            <Payment 
               storeData={storeData} 
               amount={selectedProductAmount}
+              selectedProductId={selectedProductId}
             />
           </div>
         </div>

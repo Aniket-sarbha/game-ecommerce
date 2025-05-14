@@ -19,10 +19,10 @@ function PaymentCallbackContent() {
   useEffect(() => {
     // Get status from URL parameters
     const urlParams = new URLSearchParams(window.location.search);
-    const txnStatus = urlParams.get('status');
-    
-    console.log("URL parameters using URLSearchParams:", Object.fromEntries(urlParams.entries()));
+    const txnStatus = urlParams.get('status');    console.log("URL parameters using URLSearchParams:", Object.fromEntries(urlParams.entries()));
     console.log("Status using URLSearchParams:", txnStatus);
+    console.log("Store ID:", urlParams.get('storeId'));
+    console.log("Product ID:", urlParams.get('productId'));
     
     if (txnStatus === 'SUCCESS') {
       setStatus('success');
@@ -48,9 +48,7 @@ function PaymentCallbackContent() {
       setStatus('unknown');
       setMessage('Payment status unknown. Please contact support if you have questions.');
     }
-  }, [searchParams]);
-
-  // Function to save order to database
+  }, [searchParams]);  // Function to save order to database
   const saveOrderToDatabase = async (urlParams) => {
     try {
       // Get necessary data from URL parameters
@@ -64,14 +62,17 @@ function PaymentCallbackContent() {
       // This is a simple example - you may need to map the merchant name to a store ID in your database
       const storeId = parseInt(urlParams.get('storeId') || '1');
       
-      // Get store item ID if available
-      const itemId = parseInt(urlParams.get('itemId') || '1');
+      // Get product ID if available
+      const productId = parseInt(urlParams.get('productId') || '1');
+      
+      console.log("Using store ID:", storeId);
+      console.log("Using product ID:", productId);
       
       // Create order data
       const orderData = {
         transactionId,
         storeId,
-        itemId,
+        productId,
         amount,
         merchantName,
         customerName,
@@ -164,8 +165,7 @@ function PaymentCallbackContent() {
           {status === 'unknown' && (
             <div className="text-gray-400 mx-auto mb-4 text-5xl">?</div>
           )}
-          
-          <h2 className="text-2xl font-bold text-white mb-2">
+            <h2 className="text-2xl font-bold text-white mb-2">
             {status === 'loading' ? 'Processing...' : 
              status === 'success' ? 'Payment Successful!' :
              status === 'failed' ? 'Payment Failed' :
@@ -173,6 +173,20 @@ function PaymentCallbackContent() {
           </h2>
           
           <p className="text-gray-300 mb-6">{message}</p>
+          
+          {status === 'success' && (
+            <div className="bg-gray-700 p-3 rounded-lg mb-6 text-left">
+              <h3 className="text-white font-semibold mb-2">Order Details:</h3>
+              <p className="text-gray-300 text-sm">
+                Store ID: <span className="text-indigo-300">{new URLSearchParams(window.location.search).get('storeId') || 'N/A'}</span>
+              </p>              <p className="text-gray-300 text-sm">
+                Product ID: <span className="text-indigo-300">{new URLSearchParams(window.location.search).get('productId')}</span>
+              </p>
+              <p className="text-gray-300 text-sm">
+                Transaction ID: <span className="text-indigo-300">{new URLSearchParams(window.location.search).get('transactionId') || new URLSearchParams(window.location.search).get('clientTrxId') || 'N/A'}</span>
+              </p>
+            </div>
+          )}
           
           <div className="space-y-3">
             {status === 'success' && (
@@ -198,15 +212,14 @@ function PaymentCallbackContent() {
             <Link 
               href="/"
               className="block w-full px-4 py-3 text-sm font-medium text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all"
-            >
-              Return to Home
+            >              Return to Home
             </Link>
             
             <Link 
               href="/account"
               className="block w-full px-4 py-3 text-sm font-medium text-indigo-300 bg-transparent border border-indigo-600 rounded-lg hover:bg-indigo-900/30 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all"
             >
-              View Order History
+              Go to Account
             </Link>
             
             {status === 'failed' && (

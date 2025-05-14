@@ -32,7 +32,7 @@ export async function POST(request) {
         orderItems: {
           create: [
             {
-              storeItemId: orderData.itemId || 1, // Default to 1 if not provided
+              storeItemId: orderData.productId,
               quantity: 1,
               price: orderData.amount
             }

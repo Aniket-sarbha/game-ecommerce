@@ -18,13 +18,8 @@ const StoreCard = ({ name, image }) => {
 
   const handleCardClick = (e) => {
     e.preventDefault();
-    if (isAuthenticated) {
-      // If user is logged in, navigate to store page
-      router.push(`/stores/${encodeURIComponent(name)}`);
-    } else {
-      // If user is not logged in, redirect to login page
-      router.push(`/login?callbackUrl=${encodeURIComponent(`/stores/${encodeURIComponent(name)}`)}`);
-    }
+    // Allow all users to navigate to store page without login
+    router.push(`/stores/${encodeURIComponent(name)}`);
   };
 
   return (
@@ -63,7 +58,7 @@ const StoreCard = ({ name, image }) => {
             <div className="flex items-center justify-between mt-2">
               <span className="text-xs text-gray-400">Game Store</span>
               <span className="px-2 py-1 rounded-full bg-purple-500/20 text-purple-300 text-xs font-medium">
-                {isAuthenticated ? "Explore" : "Login to view"}
+                Explore
               </span>
             </div>
           </div>

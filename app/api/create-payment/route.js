@@ -5,9 +5,7 @@ export async function POST(request) {
 
   try {
     console.log("API: Payment request received");
-    const body = await request.json();
-
-    // Extract request data
+    const body = await request.json();    // Extract request data
     const {
       amount,
       upiId,
@@ -18,9 +16,8 @@ export async function POST(request) {
       promoCode,
       storeId,
       storeName,
-    } = body;
-
-    console.log("API: Request data:", {
+      productId  
+    } = body;    console.log("API: Request data:", {
       amount,
       upiId,
       transactionId,
@@ -29,7 +26,8 @@ export async function POST(request) {
       server,
       promoCode,
       storeId,
-      storeName
+      storeName,
+      productId
     });
 
     // Validate required fields
@@ -42,7 +40,7 @@ export async function POST(request) {
     }
 
     // Validate amount
-    if (amount < 1) {
+    if (amount < 0) {
       console.error("API: Amount too low");
       return NextResponse.json(
         { success: false, error: "Amount must be at least 1 INR" },
@@ -81,18 +79,19 @@ export async function POST(request) {
         },
         { status: 500 }
       );
-    }
-
-    const paymentData = {
+    }    const paymentData = {
       apiKey: process.env.UNIFYPAY_API_KEY,
       amount: parseFloat(amount),
-      merchantName: process.env.MERCHANT_NAME || "Moba Legends",
+      merchantName: process.env.MERCHANT_NAME ,
       upiId: upiId,
       client_txn_id: transactionId,
       customerName: userId || "Guest User",
       customerEmail: "", // Optional
       customerMobile: "", // Optional
-      redirectUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/payment-callback`,
+      storeName: storeName,
+      storeId: storeId,
+      productId: productId,
+      redirectUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/payment-callback?storeId=${storeId}&productId=${productId}&storeName=${storeName}`,
       pInfo: `Order for Store ${storeId}`,
       udf1: userId || "",
       udf2: serverId || server || "",
@@ -102,9 +101,7 @@ export async function POST(request) {
     console.log("API: Sending request to payment gateway with data:", {
       ...paymentData,
       apiKey: "[REDACTED]", // Don't log the actual API key
-    });
-
-    // Create payment using the payment gateway API
+    });    // Create payment using the payment gateway API
     try {
       const response = await axios.post(
         "https://gateway.mobalegends.in/api/payments/create",
@@ -128,9 +125,7 @@ export async function POST(request) {
           { success: false, error: "Invalid response from payment gateway" },
           { status: 500 }
         );
-      }
-
-      // Return payment URL to client - make sure to use the correct path
+      }      // Return payment URL to client - make sure to use the correct path
       return NextResponse.json({
         success: true,
         data: {
@@ -139,14 +134,6 @@ export async function POST(request) {
         },
       });
 
-      // // Return payment URL to client
-      // return NextResponse.json({
-      //   success: true,
-      //   data: {
-      //     transactionId: transactionId,
-      //     paymentUrl: response.data.paymentUrl,
-      //   },
-      // });
     } catch (gatewayError) {
       console.error("API: Payment gateway error:", gatewayError.message);
       console.error(

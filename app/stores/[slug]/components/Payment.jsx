@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form"
 import { User, Globe, Tag, CreditCard, ChevronDown, Check, Loader, Shield, Lock, IndianRupee } from "lucide-react"
 import axios from "axios"
 
-export default function PaymentComponent({ storeData, amount }) {
+export default function PaymentComponent({ storeData, amount, selectedProductId }) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [serverDropdownOpen, setServerDropdownOpen] = useState(false)
   const [selectedServer, setSelectedServer] = useState(null)
@@ -76,8 +76,7 @@ export default function PaymentComponent({ storeData, amount }) {
     setIsSubmitting(true);
     setPaymentError(null);
   
-    try {
-      console.log("Payment submission data:", {
+    try {      console.log("Payment submission data:", {
         amount: data.amount,
         upiId: data.upiId,
         userId: data.userId || '',
@@ -85,17 +84,17 @@ export default function PaymentComponent({ storeData, amount }) {
         server: data.server || '',
         promoCode: data.promoCode || '',
         storeId: storeData.id,
-        storeName:   storeData.name
-        .split("-")
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ")
+        storeName: storeData.name
+          .split("-")
+          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(" "),
+        productId: selectedProductId
       });
   
       // Generate a unique transaction ID
       const transactionId = `TXN_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`;
       
-      // Call our backend API to create the payment
-      console.log("Sending request to /api/create-payment...");
+      // Call our backend API to create the payment      console.log("Sending request to /api/create-payment...");
       const response = await axios.post('/api/create-payment', {
         amount: data.amount,
         upiId: data.upiId,
@@ -105,10 +104,11 @@ export default function PaymentComponent({ storeData, amount }) {
         server: data.server || '',
         promoCode: data.promoCode || '',
         storeId: storeData.id,
-        storeName:  storeData.name
-        .split("-")
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ")
+        storeName: storeData.name
+          .split("-")
+          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(" "),
+        productId: selectedProductId
       });
       
       console.log("Backend response:", response.data);

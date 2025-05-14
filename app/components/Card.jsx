@@ -16,13 +16,8 @@ const Card = ({ store }) => {
 
   const handleCardClick = (e) => {
     e.preventDefault();
-    if (isAuthenticated) {
-      // If user is logged in, navigate to store page
-      router.push(`/stores/${encodeURIComponent(name)}`);
-    } else {
-      // If user is not logged in, redirect to login page
-      router.push(`/login?callbackUrl=${encodeURIComponent(`/stores/${encodeURIComponent(name)}`)}`);
-    }
+    // Allow all users to navigate to store page without login
+    router.push(`/stores/${encodeURIComponent(name)}`);
   };
 
   return (
@@ -45,7 +40,7 @@ const Card = ({ store }) => {
             {formattedName}
           </h3>
           <div className="mt-2 flex items-center text-xs font-medium text-purple-400">
-            <span>{isAuthenticated ? "Explore store" : "Login to view"}</span>
+            <span>Explore store</span>
             <span className="ml-1.5 transition-transform duration-300 group-hover:translate-x-1">→</span>
           </div>
         </div>

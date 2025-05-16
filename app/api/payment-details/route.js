@@ -36,9 +36,7 @@ export async function GET(request) {
       
       // Get store name from the database or other source based on storeId
       // For now, we'll include a placeholder that the frontend can replace
-      const storeName = "8 Ball Pool"; // This would typically come from your database
-
-      // Return formatted payment details
+      const storeName = "8 Ball Pool"; // This would typically come from your database      // Return formatted payment details
       return NextResponse.json({
         success: true,
         data: {
@@ -48,6 +46,7 @@ export async function GET(request) {
           upiId: response.data.upiId,
           storeId: storeId,
           storeName: storeName, // Add store name here
+          productId: response.data.productId, // Include the product ID
           serverId: response.data.udf2,
           promoCode: response.data.udf3,
           status: response.data.status,

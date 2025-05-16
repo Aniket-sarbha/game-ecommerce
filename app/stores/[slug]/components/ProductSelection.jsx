@@ -29,15 +29,14 @@ const ProductSelection = ({ storeData, selectedProductId, onProductSelect }) => 
         </div>
       ) : (
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-          {storeData.storeItems.map((item) => (
-            <div 
+          {storeData.storeItems.map((item) => (            <div 
               key={item.id}
               className={`border rounded-lg p-4 cursor-pointer transition-all duration-200 hover:transform hover:scale-[1.03] ${
-                selectedProductId === item.id 
+                selectedProductId === item.productId 
                   ? 'border-indigo-500 bg-gray-800 shadow-glow' 
                   : 'border-gray-700 bg-gray-800/70 hover:border-indigo-400'
               }`}
-              onClick={() => onProductSelect(item.id)}
+              onClick={() => onProductSelect(item.productId)}
             >
               <div className="flex flex-col items-center">
                 {item.image && (
@@ -66,9 +65,8 @@ const ProductSelection = ({ storeData, selectedProductId, onProductSelect }) => 
                       </div>
                     )}
                   </div>
-                  <div className="mt-2 flex justify-center">
-                    <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
-                      selectedProductId === item.id ? 'border-indigo-500 bg-indigo-500 shadow-glow' : 'border-gray-500'
+                  <div className="mt-2 flex justify-center">                    <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
+                      selectedProductId === item.productId ? 'border-indigo-500 bg-indigo-500 shadow-glow' : 'border-gray-500'
                     }`}>
                       {selectedProductId === item.id && (
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-4 h-4">

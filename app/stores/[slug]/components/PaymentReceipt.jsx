@@ -125,11 +125,16 @@ const PaymentReceipt = ({ data }) => {
           <View style={styles.row}>
             <Text style={styles.label}>Customer Name</Text>
             <Text style={styles.value}>{data.userId || 'Guest User'}</Text>
-          </View>
-          <View style={styles.row}>
+          </View>          <View style={styles.row}>
             <Text style={styles.label}>Payment For</Text>
             <Text style={styles.value}>{data.storeName || `Order for Store ${data.storeId}`}</Text>
           </View>
+          {data.productId && (
+            <View style={styles.row}>
+              <Text style={styles.label}>Product ID</Text>
+              <Text style={styles.value}>{data.productId}</Text>
+            </View>
+          )}
           {data.serverId && (
             <View style={styles.row}>
               <Text style={styles.label}>Server ID</Text>

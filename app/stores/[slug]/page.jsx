@@ -32,9 +32,9 @@ const Page = () => {
         const data = await response.json();
         setStoreData(data);
         
-        // Initialize with the first product if available
+    // Initialize with the first product if available
         if (data.storeItems && data.storeItems.length > 0) {
-          setSelectedProductId(data.storeItems[0].id);
+          setSelectedProductId(data.storeItems[0].productId);
           setSelectedProductAmount(data.storeItems[0].price);
         }
       } catch (err) {
@@ -49,11 +49,10 @@ const Page = () => {
       fetchStoreData();
     }
   }, [slug]);
-
   // Handle product selection
   const handleProductSelect = (productId) => {
     if (storeData && storeData.storeItems) {
-      const selectedProduct = storeData.storeItems.find(item => item.id === productId);
+      const selectedProduct = storeData.storeItems.find(item => item.productId === productId);
       if (selectedProduct) {
         setSelectedProductId(productId);
         setSelectedProductAmount(selectedProduct.price);
@@ -115,8 +114,7 @@ const Page = () => {
               selectedProductId={selectedProductId}
               onProductSelect={handleProductSelect}
             />
-          </div>
-          <div className="w-full md:w-5/12">            <Payment 
+          </div>          <div className="w-full md:w-5/12">            <Payment 
               storeData={storeData} 
               amount={selectedProductAmount}
               selectedProductId={selectedProductId}

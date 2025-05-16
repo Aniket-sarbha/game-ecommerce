@@ -2,8 +2,7 @@ import { NextResponse } from "next/server";
 import { getToken } from "next-auth/jwt";
 import prisma from "@/lib/prisma";
 
-export async function POST(request) {
-  try {
+export async function POST(request) {  try {
     // Get the request body with order data
     const orderData = await request.json();
     
@@ -20,6 +19,20 @@ export async function POST(request) {
     
     const userId = session.sub;
     
+    // Find the store item by productId instead of using the ID directly
+    const storeItem = await prisma.storeItem.findFirst({
+      where: {
+        productId: orderData.productId
+      }
+    });
+    
+    if (!storeItem) {
+      return NextResponse.json({ 
+        error: "Product not found", 
+        details: `No product with productId: ${orderData.productId}`
+      }, { status: 404 });
+    }
+    
     // Create a new order record
     const order = await prisma.order.create({
       data: {
@@ -32,7 +45,7 @@ export async function POST(request) {
         orderItems: {
           create: [
             {
-              storeItemId: orderData.productId,
+              storeItemId: storeItem.id, // Use the database ID for the relation
               quantity: 1,
               price: orderData.amount
             }

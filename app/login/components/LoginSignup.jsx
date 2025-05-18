@@ -59,7 +59,6 @@ function LoginSignupContent({ defaultMode = "login" }) {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
-
   const handleLogin = async (e) => {
     e.preventDefault();
     
@@ -84,8 +83,8 @@ function LoginSignupContent({ defaultMode = "login" }) {
           type: 'success', 
           message: 'Login successful!' 
         });
-        // Use the callbackUrl from query parameters, with a fallback to dashboard
-        setTimeout(() => router.push(callbackUrl), 1000);
+        // Redirect to role selection page after login
+        setTimeout(() => router.push('/role-selection'), 1000);
       }
     } catch (error) {
       setNotification({ 
@@ -122,14 +121,13 @@ function LoginSignupContent({ defaultMode = "login" }) {
         type: 'success', 
         message: 'Account created successfully! Logging you in...' 
       });
-      
-      // Auto login after successful signup
+        // Auto login after successful signup
       setTimeout(async () => {
         await signIn('credentials', {
           redirect: true,
           email,
           password,
-          callbackUrl
+          callbackUrl: '/role-selection' // Redirect to role selection
         });
       }, 1500);
       
@@ -141,11 +139,10 @@ function LoginSignupContent({ defaultMode = "login" }) {
       setIsLoading(false);
     }
   };
-
   const handleGoogleSignIn = () => {
     setIsLoading(true);
     signIn('google', { 
-      callbackUrl: callbackUrl
+      callbackUrl: '/role-selection' // Redirect to role selection page after Google login
     }).catch(() => {
       setNotification({ 
         type: 'error', 

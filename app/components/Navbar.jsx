@@ -296,14 +296,20 @@ const Navbar = () => {
                             top: "4rem", 
                             boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.25)"
                           }}
-                        >
-                          <div className="px-4 py-2 border-b border-gray-700">
+                        >                          <div className="px-4 py-2 border-b border-gray-700">
                             <p className="text-sm font-medium text-gray-100 truncate">
                               {session?.user?.name || "User"}
                             </p>
-                            <p className="text-xs text-gray-400 truncate">
-                              {session?.user?.email || ""}
-                            </p>
+                            <div className="flex flex-col">
+                              <p className="text-xs text-gray-400 truncate">
+                                {session?.user?.email || ""}
+                              </p>
+                              {session?.user?.role && session.user.role !== 'pending' && (
+                                <p className="text-xs text-indigo-400 mt-1">
+                                  Role: {session.user.role === 'buyer' ? 'Buyer' : 'Seller'}
+                                </p>
+                              )}
+                            </div>
                           </div>
                           <Link
                             href="/account"
@@ -472,14 +478,20 @@ const Navbar = () => {
                             {session?.user?.name ? session.user.name[0].toUpperCase() : "U"}
                           </div>
                         )}
-                      </div>
-                      <div className="flex-1 min-w-0">
+                      </div>                      <div className="flex-1 min-w-0">
                         <p className="text-sm font-medium text-white truncate">
                           {session?.user?.name || "User"}
                         </p>
-                        <p className="text-xs text-gray-300 truncate">
-                          {session?.user?.email || ""}
-                        </p>
+                        <div className="flex flex-col">
+                          <p className="text-xs text-gray-300 truncate">
+                            {session?.user?.email || ""}
+                          </p>
+                          {session?.user?.role && session.user.role !== 'pending' && (
+                            <p className="text-xs text-indigo-400 mt-0.5">
+                              Role: {session.user.role === 'buyer' ? 'Buyer' : 'Seller'}
+                            </p>
+                          )}
+                        </div>
                       </div>
                     </div>
                     <Link

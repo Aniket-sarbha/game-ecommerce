@@ -1,6 +1,7 @@
 // app/api/payment-details/route.js
 import { NextResponse } from "next/server";
 import axios from "axios";
+import prisma from "@/lib/prisma";
 
 export async function GET(request) {
   try {
@@ -32,11 +33,29 @@ export async function GET(request) {
       console.log("API: Payment gateway response:", response.data);
       
       // Extract store ID from pInfo
-      const storeId = response.data.pInfo ? response.data.pInfo.replace('Order for Store ', '') : null;
+      const storeId = response.data.pInfo ? parseInt(response.data.pInfo.replace(/Order for Store (\d+).*/, '$1')) : null;
       
-      // Get store name from the database or other source based on storeId
-      // For now, we'll include a placeholder that the frontend can replace
-      const storeName = "8 Ball Pool"; // This would typically come from your database      // Return formatted payment details
+      // Check if this was a seller offer
+      const isSellerOffer = response.data.pInfo ? response.data.pInfo.includes('(Seller Offer)') : false;
+      
+      // Get seller offer ID from udf3 if available
+      const sellerOfferId = isSellerOffer ? response.data.udf3 : null;
+      
+      // Get store name from the database
+      let storeName = null;
+      if (storeId) {
+        const store = await prisma.store.findUnique({
+          where: { id: storeId },
+          select: { name: true }
+        });
+        storeName = store?.name;
+      }
+
+      if (!storeName) {
+        console.warn("API: Store not found for ID:", storeId);
+      }
+
+      // Return formatted payment details      
       return NextResponse.json({
         success: true,
         data: {
@@ -45,10 +64,12 @@ export async function GET(request) {
           userId: response.data.udf1 || response.data.customerName,
           upiId: response.data.upiId,
           storeId: storeId,
-          storeName: storeName, // Add store name here
-          productId: response.data.productId, // Include the product ID
+          storeName: storeName,
+          productId: response.data.productId,
           serverId: response.data.udf2,
-          promoCode: response.data.udf3,
+          sellerOfferId: sellerOfferId,
+          isSellerOffer: isSellerOffer,
+          promoCode: isSellerOffer ? null : response.data.udf3,
           status: response.data.status,
           paymentDate: response.data.paymentDate || new Date().toISOString(),
         },

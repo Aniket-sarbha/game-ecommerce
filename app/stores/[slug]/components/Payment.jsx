@@ -5,12 +5,30 @@ import { useForm } from "react-hook-form"
 import { User, Globe, Tag, CreditCard, ChevronDown, Check, Loader, Shield, Lock, IndianRupee } from "lucide-react"
 import axios from "axios"
 
-export default function PaymentComponent({ storeData, amount, selectedProductId }) {
+export default function PaymentComponent({ storeData, amount, selectedProductId, sellerOffer }) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [serverDropdownOpen, setServerDropdownOpen] = useState(false)
   const [selectedServer, setSelectedServer] = useState(null)
   const [paymentError, setPaymentError] = useState(null)
   const dropdownRef = useRef(null)
+  
+  // Format price with currency
+  const formatPrice = (price, currency = 'INR') => {
+    const currencyFormats = {
+      'INR': { locale: 'en-IN', currency: 'INR' },
+      'USD': { locale: 'en-US', currency: 'USD' },
+      'EUR': { locale: 'de-DE', currency: 'EUR' },
+      'GBP': { locale: 'en-GB', currency: 'GBP' }
+    };
+    
+    const format = currencyFormats[currency] || currencyFormats['INR'];
+    
+    return new Intl.NumberFormat(format.locale, {
+      style: 'currency',
+      currency: format.currency,
+      maximumFractionDigits: 0
+    }).format(price);
+  }
 
   // Server options
   const servers = [
@@ -71,12 +89,12 @@ export default function PaymentComponent({ storeData, amount, selectedProductId 
     const upiRegex = /^[a-zA-Z0-9.-]{2,256}@[a-zA-Z][a-zA-Z]{2,64}$/
     return upiRegex.test(value) || "Please enter a valid UPI ID (e.g., username@bankname)"
   }
-
   const onSubmit = async (data) => {
     setIsSubmitting(true);
     setPaymentError(null);
   
-    try {      console.log("Payment submission data:", {
+    try {      
+      console.log("Payment submission data:", {
         amount: data.amount,
         upiId: data.upiId,
         userId: data.userId || '',
@@ -88,13 +106,15 @@ export default function PaymentComponent({ storeData, amount, selectedProductId 
           .split("-")
           .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
           .join(" "),
-        productId: selectedProductId
+        productId: selectedProductId,
+        sellerOfferId: sellerOffer ? sellerOffer.id : null,
+        sellerName: sellerOffer ? sellerOffer.seller.name : null
       });
   
       // Generate a unique transaction ID
       const transactionId = `TXN_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`;
-      
-      // Call our backend API to create the payment      console.log("Sending request to /api/create-payment...");
+        // Call our backend API to create the payment      
+      console.log("Sending request to /api/create-payment...");
       const response = await axios.post('/api/create-payment', {
         amount: data.amount,
         upiId: data.upiId,
@@ -108,7 +128,9 @@ export default function PaymentComponent({ storeData, amount, selectedProductId 
           .split("-")
           .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
           .join(" "),
-        productId: selectedProductId
+        productId: selectedProductId,
+        sellerOfferId: sellerOffer ? sellerOffer.id : null,
+        sellerName: sellerOffer?.seller?.name || null
       });
       
       console.log("Backend response:", response.data);
@@ -147,7 +169,6 @@ export default function PaymentComponent({ storeData, amount, selectedProductId 
       </div>
     )
   }
-
   return (
     <div className="max-w-md mx-auto bg-gray-900 rounded-xl shadow-2xl overflow-hidden border border-gray-800 glass-effect shadow-purple-900/20">
       <div className="px-6 py-5 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border-b border-gray-700">
@@ -155,7 +176,44 @@ export default function PaymentComponent({ storeData, amount, selectedProductId 
         <p className="text-sm text-gray-400 mt-1">Enter your information to complete the payment.</p>
       </div>
 
-      <div className="p-6">
+      <div className="p-6">        {/* Seller Offer Information */}
+        {sellerOffer && (
+          <div className="mb-6 p-3 bg-gray-800/80 border border-gray-700 rounded-md">
+            <div className="flex items-center">
+              {sellerOffer.seller?.image && (
+                <div className="flex-shrink-0 h-8 w-8 mr-3 rounded-full overflow-hidden">
+                  <img 
+                    src={sellerOffer.seller.image} 
+                    alt={sellerOffer.seller.name} 
+                    className="h-full w-full object-cover"
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = ""; // Fallback image
+                    }}
+                  />
+                </div>
+              )}
+              <div>
+                <div className="text-indigo-400 text-sm font-medium">Offer by {sellerOffer.seller?.name}</div>
+                <div className="flex items-center gap-2 mt-1">
+                  <span className="font-medium text-white">{formatPrice(sellerOffer.price, sellerOffer.currency)}</span>
+                  {sellerOffer.mrp > sellerOffer.price && (
+                    <>
+                      <span className="text-xs text-gray-400 line-through">{formatPrice(sellerOffer.mrp, sellerOffer.currency)}</span>
+                      <span className="text-xs px-1.5 py-0.5 bg-green-900/30 text-green-300 rounded-full">
+                        {Math.round(((sellerOffer.mrp - sellerOffer.price) / sellerOffer.mrp) * 100)}% off
+                      </span>
+                    </>
+                  )}
+                </div>
+                {sellerOffer.description && (
+                  <p className="text-gray-300 text-xs mt-1">{sellerOffer.description}</p>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+        
         {paymentError && (
           <div className="mb-6 p-4 bg-red-900/50 border border-red-600 rounded-lg">
             <p className="text-sm text-red-200">{paymentError}</p>
@@ -301,16 +359,22 @@ export default function PaymentComponent({ storeData, amount, selectedProductId 
                   </p>
                 )}
               </div>
-            )}
-
-            {/* Amount Field (Always shown) */}
+            )}            {/* Amount Field (Always shown) */}
             <div className="space-y-1">
               <label htmlFor="amount" className="block text-sm font-medium text-gray-300">
-                Amount (INR)
+                Amount ({sellerOffer ? sellerOffer.currency : 'INR'})
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <IndianRupee size={16} className="text-gray-500" />
+                  {sellerOffer && sellerOffer.currency !== 'INR' ? (
+                    <span className="text-gray-500 font-medium">
+                      {sellerOffer.currency === 'USD' ? '$' : 
+                       sellerOffer.currency === 'EUR' ? '€' : 
+                       sellerOffer.currency === 'GBP' ? '£' : '₹'}
+                    </span>
+                  ) : (
+                    <IndianRupee size={16} className="text-gray-500" />
+                  )}
                 </div>
                 <input
                   id="amount"
@@ -318,12 +382,11 @@ export default function PaymentComponent({ storeData, amount, selectedProductId 
                   placeholder="Enter amount"
                   className={`w-full pl-10 pr-3 py-2 bg-gray-800 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
                     errors.amount ? "border-red-500" : "border-gray-700"
-                  } text-white placeholder-gray-500`}
-                  {...register("amount", {
+                  } text-white placeholder-gray-500`}                  {...register("amount", {
                     required: "Amount is required",
                     min: {
                       value: 1,
-                      message: "Amount must be at least 10 INR",
+                      message: `Amount must be at least 1 ${sellerOffer ? sellerOffer.currency : 'INR'}`,
                     },
                   })}
                   aria-invalid={errors.amount ? "true" : "false"}

@@ -3,8 +3,7 @@ import prisma from '@/lib/prisma';
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-  try {
-    const stores = await prisma.store.findMany({
+  try {    const stores = await prisma.store.findMany({
       where: {
         isActive: false
       },

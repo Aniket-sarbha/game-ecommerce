@@ -2,23 +2,16 @@ import prisma from '@/lib/prisma';
 import { NextResponse } from 'next/server';
 
 export async function GET(request, { params }) {
-  const { storeId } = params;
+  const { slug } = params;
   
-  try {
-    // Validate storeId is a number
-    const id = parseInt(storeId, 10);
-    
-    if (isNaN(id)) {
-      return NextResponse.json(
-        { error: 'Invalid store ID' },
-        { status: 400 }
-      );
-    }
-      // Check if store exists and is active
+  try {    // First find the store by slug (name)
     const store = await prisma.store.findUnique({
       where: {
-        id,
-        isActive: true
+        name: slug,
+        isActive: false
+      },
+      select: {
+        id: true
       }
     });
     
@@ -29,10 +22,10 @@ export async function GET(request, { params }) {
       );
     }
     
-    // Get store items
+    // Get store items using the store ID
     const storeItems = await prisma.storeItem.findMany({
       where: {
-        storeId: id,
+        storeId: store.id,
         isActive: true
       },
       select: {
@@ -47,7 +40,7 @@ export async function GET(request, { params }) {
     
     return NextResponse.json(storeItems);
   } catch (error) {
-    console.error(`Failed to fetch items for store ${storeId}:`, error);
+    console.error(`Failed to fetch items for store ${slug}:`, error);
     return NextResponse.json(
       { error: 'Failed to fetch store items' },
       { status: 500 }

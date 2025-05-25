@@ -3,7 +3,7 @@
 import { useSession } from "next-auth/react";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { User, Mail, Calendar, Clock, ShieldCheck, LogOut, Eye, EyeOff, Check, AlertCircle } from "lucide-react";
+import { User, Mail, Calendar, Clock, ShieldCheck, Store, LogOut, Eye, EyeOff, Check, AlertCircle, Plus, Edit, Trash2 } from "lucide-react";
 import Link from "next/link";
 
 export default function AccountPage() {
@@ -22,12 +22,206 @@ export default function AccountPage() {
   const [showCurrentPassword, setShowCurrentPassword] = useState(false);
   const [showNewPassword, setShowNewPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-    // Reset password form when it's closed
+    // Seller offers state
+  const [stores, setStores] = useState([]);
+  const [sellerOffers, setSellerOffers] = useState([]);
+  const [isLoadingStores, setIsLoadingStores] = useState(false);
+  const [isLoadingOffers, setIsLoadingOffers] = useState(false);
+  const [selectedStore, setSelectedStore] = useState(null);
+  const [storeItems, setStoreItems] = useState([]);
+  const [selectedStoreItem, setSelectedStoreItem] = useState(null);
+  const [isLoadingStoreItems, setIsLoadingStoreItems] = useState(false);
+  const [offerPrice, setOfferPrice] = useState("");
+  const [offerDescription, setOfferDescription] = useState("");
+  const [isSubmittingOffer, setIsSubmittingOffer] = useState(false);
+  const [offerError, setOfferError] = useState("");
+  const [offerSuccess, setOfferSuccess] = useState("");
+  const [isEditingOffer, setIsEditingOffer] = useState(false);
+  const [currentEditingOfferId, setCurrentEditingOfferId] = useState(null);
+  
+  // Reset password form when it's closed
   useEffect(() => {
     if (!showChangePasswordForm) {
       resetPasswordForm();
     }
   }, [showChangePasswordForm]);
+  
+  // Load stores and seller offers when tab changes
+  useEffect(() => {
+    if (activeTab === "seller-offers") {
+      fetchStores();
+      fetchSellerOffers();
+    }
+  }, [activeTab, session]);
+    // Fetch all stores
+  const fetchStores = async () => {
+    try {
+      setIsLoadingStores(true);
+      const response = await fetch("/api/stores");
+      if (!response.ok) throw new Error("Failed to fetch stores");
+      const data = await response.json();
+      setStores(data);
+    } catch (error) {
+      console.error("Error fetching stores:", error);
+    } finally {
+      setIsLoadingStores(false);
+    }
+  };
+  
+  // Fetch seller's offers
+  const fetchSellerOffers = async () => {
+    try {
+      setIsLoadingOffers(true);
+      const response = await fetch("/api/seller-offers");
+      if (!response.ok) throw new Error("Failed to fetch seller offers");
+      const data = await response.json();
+      setSellerOffers(data);
+    } catch (error) {
+      console.error("Error fetching seller offers:", error);
+    } finally {
+      setIsLoadingOffers(false);
+    }
+  };
+    // Fetch store items when a store is selected
+  const fetchStoreItems = async (storeId) => {
+    if (!storeId) return;
+    
+    try {
+      setIsLoadingStoreItems(true);
+      setStoreItems([]);
+      setSelectedStoreItem(null);
+      
+      // Find the store name using the ID
+      const store = stores.find(s => s.id === storeId);
+      if (!store) throw new Error("Store not found");
+      
+      const response = await fetch(`/api/stores/${store.name}/items`);
+      if (!response.ok) throw new Error("Failed to fetch store items");
+      const data = await response.json();
+      setStoreItems(data);
+    } catch (error) {
+      console.error("Error fetching store items:", error);
+    } finally {
+      setIsLoadingStoreItems(false);
+    }
+  };
+  // Function to handle offer submission
+  const handleOfferSubmit = async (e) => {
+    e.preventDefault();
+    
+    if (!selectedStore) {
+      setOfferError("Please select a store");
+      return;
+    }
+    
+    if (!selectedStoreItem) {
+      setOfferError("Please select a store item");
+      return;
+    }
+    
+    if (!offerPrice || isNaN(offerPrice) || parseFloat(offerPrice) <= 0) {
+      setOfferError("Please enter a valid price");
+      return;
+    }
+    
+    setIsSubmittingOffer(true);
+    setOfferError("");
+    setOfferSuccess("");
+    
+    try {
+      const offerData = {
+        storeId: selectedStore.id,
+        storeItemId: selectedStoreItem.id,
+        price: parseFloat(offerPrice),
+        mrp: selectedStoreItem.mrp,
+        currency: "INR",
+        description: offerDescription,
+        id: isEditingOffer ? currentEditingOfferId : undefined
+      };
+      
+      const url = isEditingOffer ? `/api/seller-offers/${currentEditingOfferId}` : "/api/seller-offers";
+      const method = isEditingOffer ? "PUT" : "POST";
+      
+      const response = await fetch(url, {
+        method,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(offerData),
+      });
+      
+      const data = await response.json();
+      
+      if (response.ok) {
+        setOfferSuccess(isEditingOffer ? "Offer updated successfully!" : "Offer created successfully!");
+        resetOfferForm();
+        fetchSellerOffers();
+      } else {
+        setOfferError(data.message || "Failed to save offer");
+      }
+    } catch (error) {
+      console.error("Error saving offer:", error);
+      setOfferError("An error occurred. Please try again.");
+    } finally {
+      setIsSubmittingOffer(false);
+    }
+  };
+  
+  // Function to handle offer deletion
+  const handleDeleteOffer = async (offerId) => {
+    if (!confirm("Are you sure you want to delete this offer?")) {
+      return;
+    }
+    
+    try {
+      const response = await fetch(`/api/seller-offers/${offerId}`, {
+        method: "DELETE",
+      });
+      
+      if (response.ok) {
+        fetchSellerOffers();
+        setOfferSuccess("Offer deleted successfully!");
+      } else {
+        const data = await response.json();
+        setOfferError(data.message || "Failed to delete offer");
+      }
+    } catch (error) {
+      console.error("Error deleting offer:", error);
+      setOfferError("An error occurred. Please try again.");
+    }
+  };
+  // Function to handle editing an offer
+  const handleEditOffer = async (offer) => {
+    const store = stores.find(s => s.id === offer.storeId);
+    setSelectedStore(store);
+    
+    // Fetch store items for this store
+    if (store) {
+      await fetchStoreItems(store.id);
+      
+      // If we have a storeItemId, set the selected store item
+      if (offer.storeItemId) {
+        const item = storeItems.find(item => item.id === offer.storeItemId);
+        setSelectedStoreItem(item || null);
+      }
+    }
+    
+    setOfferPrice(offer.price.toString());
+    setOfferDescription(offer.description || "");
+    setIsEditingOffer(true);
+    setCurrentEditingOfferId(offer.id);
+  };
+    
+  // Reset offer form
+  const resetOfferForm = () => {
+    setSelectedStore(null);
+    setSelectedStoreItem(null);
+    setStoreItems([]);
+    setOfferPrice("");
+    setOfferDescription("");
+    setIsEditingOffer(false);
+    setCurrentEditingOfferId(null);
+  };
   
   // Function to handle change password form submission
   const handleChangePassword = async (e) => {
@@ -135,6 +329,42 @@ export default function AccountPage() {
     });
   };
 
+  // Helper function to calculate discount percentage
+  const calculateDiscount = (price, mrp) => {
+    if (!price || !mrp || price >= mrp) return 0;
+    return Math.round(((mrp - price) / mrp) * 100);
+  };
+
+  // Format price with currency
+  const formatPriceWithCurrency = (price, currency = "INR") => {
+    if (!price) return "";
+    
+    const formatter = new Intl.NumberFormat(undefined, {
+      style: "currency",
+      currency: currency,
+      maximumFractionDigits: 0
+    });
+    
+    return formatter.format(price);
+  };
+
+  // Format price without currency symbol, consistent with existing function
+  const formatPrice = (price) => {
+    return new Intl.NumberFormat('en-IN', {
+      style: 'currency',
+      currency: 'INR',
+      maximumFractionDigits: 0
+    }).format(price);
+  };
+
+  // Format store name
+  const formatStoreName = (name) => {
+    return name
+      .split("-")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 pt-24 pb-12 px-4">
       <div className="max-w-4xl mx-auto">
@@ -193,6 +423,18 @@ export default function AccountPage() {
                 <span className="flex items-center gap-1.5">
                   <ShieldCheck size={16} /> Security
                 </span>
+              </button>              
+              <button
+                onClick={() => setActiveTab("seller-offers")}
+                className={`px-4 py-4 text-sm font-medium whitespace-nowrap ${
+                  activeTab === "seller-offers"
+                    ? "border-b-2 border-blue-500 text-blue-600"
+                    : "text-gray-500 hover:text-gray-700 hover:border-gray-300"
+                }`}
+              >
+                <span className="flex items-center gap-1.5">
+                  <Store size={16} /> Seller Offers
+                </span>
               </button>
             </nav>
           </div>
@@ -212,6 +454,7 @@ export default function AccountPage() {
                     <p className="text-sm font-medium text-gray-500">Email Address</p>
                     <p className="font-medium text-gray-800">{session.user.email}</p>
                   </div>
+  
                 </div>
               </div>
             )}
@@ -408,6 +651,249 @@ export default function AccountPage() {
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            )}
+            
+            {activeTab === "seller-offers" && (
+              <div>
+                <h2 className="text-xl font-semibold text-gray-800 mb-4">Manage Store Offers</h2>
+                
+                <div className="space-y-6">
+                  <div className="bg-blue-50 border border-blue-100 rounded-lg p-4">
+                    <p className="text-gray-700">
+                      Create custom offers for different games. Buyers will see your offers when they browse these stores.
+                    </p>
+                  </div>
+                  
+                  {/* Create or Edit Offer Form */}
+                  <div className="border rounded-lg p-4">
+                    <h3 className="font-medium text-gray-800 mb-3">
+                      {isEditingOffer ? "Edit Offer" : "Create New Offer"}
+                    </h3>
+                    
+                    {offerError && (
+                      <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-md text-red-700">
+                        <div className="flex items-center gap-2">
+                          <AlertCircle size={18} className="text-red-500" />
+                          <span>{offerError}</span>
+                        </div>
+                      </div>
+                    )}
+                    
+                    {offerSuccess && (
+                      <div className="mb-4 p-3 bg-green-50 border border-green-200 rounded-md text-green-700">
+                        <div className="flex items-center gap-2">
+                          <Check size={18} className="text-green-500" />
+                          <span>{offerSuccess}</span>
+                        </div>
+                      </div>
+                    )}
+                    
+                    <form onSubmit={handleOfferSubmit}>
+                      <div className="space-y-4">                        {/* Store Selection */}
+                        <div>
+                          <label htmlFor="store" className="block text-sm font-medium text-gray-700 mb-1">
+                            Select Store
+                          </label>
+                          <select
+                            id="store"
+                            value={selectedStore?.id || ""}
+                            onChange={(e) => {
+                              const storeId = e.target.value;
+                              const store = stores.find(s => s.id === parseInt(storeId));
+                              setSelectedStore(store || null);
+                              if (storeId) {
+                                fetchStoreItems(parseInt(storeId));
+                              } else {
+                                setStoreItems([]);
+                                setSelectedStoreItem(null);
+                              }
+                            }}
+                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 text-gray-900"
+                            disabled={isEditingOffer}
+                          >
+                            <option value="">Select a store</option>
+                            {stores.map((store) => (
+                              <option key={store.id} value={store.id}>
+                                {formatStoreName(store.name)}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                        
+                        {/* Store Items Dropdown */}
+                        <div>
+                          <label htmlFor="storeItem" className="block text-sm font-medium text-gray-700 mb-1">
+                            Select Store Item
+                          </label>
+                          <select
+                            id="storeItem"
+                            value={selectedStoreItem?.id || ""}
+                            onChange={(e) => {
+                              const itemId = e.target.value;
+                              const item = storeItems.find(item => item.id === parseInt(itemId));
+                              setSelectedStoreItem(item || null);
+                              if (item) {
+                                setOfferPrice(item.price.toString());
+                              }
+                            }}
+                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 text-gray-900"
+                            disabled={isLoadingStoreItems || !selectedStore || storeItems.length === 0}
+                          >
+                            <option value="">Select an item</option>
+                            {isLoadingStoreItems ? (
+                              <option disabled>Loading items...</option>
+                            ) : storeItems.length > 0 ? (
+                              storeItems.map((item) => (
+                                <option key={item.id} value={item.id}>
+                                  {item.name}
+                                </option>
+                              ))
+                            ) : selectedStore ? (
+                              <option disabled>No items available</option>
+                            ) : null}
+                          </select>
+                          {isLoadingStoreItems && (
+                            <p className="mt-1 text-xs text-blue-500">Loading store items...</p>
+                          )}
+                        </div>                        {/* Price */}
+                        <div>
+                          <label htmlFor="price" className="block text-sm font-medium text-gray-700 mb-1">
+                            Offer Price (INR)
+                          </label>
+                          <input
+                            id="price"
+                            type="number"
+                            value={offerPrice}
+                            onChange={(e) => setOfferPrice(e.target.value)}
+                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 text-gray-900"
+                            placeholder="Enter your offer price"
+                            min="1"
+                            step="0.01"
+                          />
+                          <p className="mt-1 text-xs text-gray-500">Set the price you want to offer to buyers</p>
+                        </div>
+                        
+                        {/* Description */}
+                        <div>
+                          <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-1">
+                            Offer Description <span className="text-gray-400">(Optional)</span>
+                          </label>
+                          <textarea
+                            id="description"
+                            value={offerDescription}
+                            onChange={(e) => setOfferDescription(e.target.value)}
+                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 text-gray-900"
+                            placeholder="Describe your offer to buyers"
+                            rows="3"
+                          ></textarea>
+                        </div>
+                        
+                        <div className="flex gap-3 pt-2">
+                          <button
+                            type="submit"
+                            disabled={isSubmittingOffer}
+                            className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors disabled:bg-blue-300"
+                          >
+                            {isSubmittingOffer ? (
+                              <span className="flex items-center gap-2">
+                                <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                {isEditingOffer ? "Updating..." : "Creating..."}
+                              </span>
+                            ) : isEditingOffer ? "Update Offer" : "Create Offer"}
+                          </button>
+                          
+                          {isEditingOffer && (
+                            <button
+                              type="button"
+                              onClick={resetOfferForm}
+                              className="px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-100 transition-colors"
+                            >
+                              Cancel Editing
+                            </button>
+                          )}
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  
+                  {/* Current Offers */}
+                  <div className="border rounded-lg p-4">
+                    <h3 className="font-medium text-gray-800 mb-3">Your Current Offers</h3>
+                    
+                    {isLoadingOffers ? (
+                      <div className="flex justify-center py-4">
+                        <div className="animate-spin rounded-full h-6 w-6 border-2 border-blue-500 border-t-transparent"></div>
+                      </div>
+                    ) : sellerOffers.length === 0 ? (
+                      <div className="bg-gray-50 p-4 rounded-md text-center">
+                        <p className="text-gray-500">You haven't created any offers yet.</p>
+                      </div>
+                    ) : (
+                      <div className="divide-y">
+                        {sellerOffers.map((offer) => {
+                          const store = stores.find(s => s.id === offer.storeId);
+                          return (
+                            <div key={offer.id} className="py-3 first:pt-0 last:pb-0">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                                <div>                                  <h4 className="font-medium text-gray-800">
+                                    {store ? formatStoreName(store.name) : `Store #${offer.storeId}`}
+                                  </h4>
+                                  <div className="flex flex-wrap items-center gap-2 mt-0.5">
+                                    <p className="text-sm text-gray-600">
+                                      Price: <span className="font-medium text-blue-600">{formatPriceWithCurrency(offer.price, offer.currency)}</span>
+                                    </p>
+                                    {offer.mrp > offer.price && (
+                                      <>
+                                        <p className="text-sm text-gray-500">
+                                          <span className="line-through">{formatPriceWithCurrency(offer.mrp, offer.currency)}</span>
+                                        </p>
+                                        <span className="bg-green-100 text-green-800 text-xs px-2 py-0.5 rounded-full">
+                                          {calculateDiscount(offer.price, offer.mrp)}% off
+                                        </span>
+                                      </>
+                                    )}
+                                  </div>
+                                  {offer.description && (
+                                    <p className="text-sm text-gray-500 mt-1">
+                                      "{offer.description}"
+                                    </p>
+                                  )}
+                                </div>
+                                <div className="flex gap-2 sm:ml-auto">
+                                  <button
+                                    onClick={() => handleEditOffer(offer)}
+                                    className="p-2 text-blue-600 hover:bg-blue-50 rounded-full transition-colors"
+                                    title="Edit offer"
+                                  >
+                                    <Edit size={16} />
+                                  </button>
+                                  <button
+                                    onClick={() => handleDeleteOffer(offer.id)}
+                                    className="p-2 text-red-600 hover:bg-red-50 rounded-full transition-colors"
+                                    title="Delete offer"
+                                  >
+                                    <Trash2 size={16} />
+                                  </button>
+                                </div>
+                              </div>
+                              
+                              {/* Discount and MRP Display */}
+                              <div className="mt-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                                <div className="text-sm text-gray-500">
+                                  MRP: <span className="font-medium text-gray-800">{formatPrice(offer.mrp)}</span>
+                                </div>
+                                <div className="text-sm text-gray-500">
+                                  Discount: <span className="font-medium text-green-600">{calculateDiscount(offer.price, offer.mrp)}%</span>
+                                </div>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

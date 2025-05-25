@@ -72,8 +72,7 @@ function LoginSignupContent({ defaultMode = "login" }) {
         email,
         password
       });
-      
-      if (!result || result.error) {
+        if (!result || result.error) {
         setNotification({ 
           type: 'error', 
           message: 'Invalid email or password' 
@@ -83,8 +82,8 @@ function LoginSignupContent({ defaultMode = "login" }) {
           type: 'success', 
           message: 'Login successful!' 
         });
-        // Redirect to role selection page after login
-        setTimeout(() => router.push('/role-selection'), 1000);
+        // Redirect to homepage after login
+        setTimeout(() => router.push('/'), 1000);
       }
     } catch (error) {
       setNotification({ 
@@ -120,14 +119,13 @@ function LoginSignupContent({ defaultMode = "login" }) {
       setNotification({ 
         type: 'success', 
         message: 'Account created successfully! Logging you in...' 
-      });
-        // Auto login after successful signup
+      });        // Auto login after successful signup
       setTimeout(async () => {
         await signIn('credentials', {
           redirect: true,
           email,
           password,
-          callbackUrl: '/role-selection' // Redirect to role selection
+          callbackUrl: '/' // Redirect to homepage
         });
       }, 1500);
       
@@ -138,11 +136,10 @@ function LoginSignupContent({ defaultMode = "login" }) {
       });
       setIsLoading(false);
     }
-  };
-  const handleGoogleSignIn = () => {
+  };  const handleGoogleSignIn = () => {
     setIsLoading(true);
     signIn('google', { 
-      callbackUrl: '/role-selection' // Redirect to role selection page after Google login
+      callbackUrl: '/' // Redirect to homepage after Google login
     }).catch(() => {
       setNotification({ 
         type: 'error', 

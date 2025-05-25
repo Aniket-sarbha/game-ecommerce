@@ -32,6 +32,24 @@ export async function GET(request, { params }) {
             mrp: true,
             image: true
           }
+        },
+        sellerOffers: {
+          where: {
+            isActive: true // Only fetch active offers
+          },
+          select: {
+            id: true,
+            price: true,
+            description: true,
+            sellerId: true,
+            seller: {
+              select: {
+                id: true,
+                name: true,
+                image: true
+              }
+            }
+          }
         }
       }
     });

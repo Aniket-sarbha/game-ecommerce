@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import axios from "axios";
 
 export async function POST(request) {
-
   try {
     console.log("API: Payment request received");
     const body = await request.json();    // Extract request data
@@ -16,7 +15,9 @@ export async function POST(request) {
       promoCode,
       storeId,
       storeName,
-      productId  
+      productId,
+      sellerOfferId,
+      sellerName
     } = body;    console.log("API: Request data:", {
       amount,
       upiId,
@@ -27,7 +28,9 @@ export async function POST(request) {
       promoCode,
       storeId,
       storeName,
-      productId
+      productId,
+      sellerOfferId,
+      sellerName
     });
 
     // Validate required fields
@@ -91,11 +94,11 @@ export async function POST(request) {
       storeName: storeName,
       storeId: storeId,
       productId: productId,
-      redirectUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/payment-callback?storeId=${storeId}&productId=${productId}&storeName=${storeName}`,
-      pInfo: `Order for Store ${storeId}`,
+      redirectUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/payment-callback?storeId=${storeId}&productId=${productId}&storeName=${storeName}${sellerOfferId ? `&sellerId=${sellerOfferId}` : ''}`,
+      pInfo: sellerOfferId ? `Order for Store ${storeId} (Seller Offer)` : `Order for Store ${storeId}`,
       udf1: userId || "",
       udf2: serverId || server || "",
-      udf3: promoCode || "",
+      udf3: sellerOfferId || promoCode || "",
     };
 
     console.log("API: Sending request to payment gateway with data:", {

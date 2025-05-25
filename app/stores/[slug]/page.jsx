@@ -15,10 +15,10 @@ const Page = () => {
   const [storeData, setStoreData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  
-  // Add state for selected product and amount
+    // Add state for selected product and amount
   const [selectedProductId, setSelectedProductId] = useState(null);
   const [selectedProductAmount, setSelectedProductAmount] = useState(100);
+  const [selectedSellerOffer, setSelectedSellerOffer] = useState(null);
 
   useEffect(() => {
     const fetchStoreData = async () => {
@@ -48,10 +48,20 @@ const Page = () => {
     if (slug) {
       fetchStoreData();
     }
-  }, [slug]);
-  // Handle product selection
-  const handleProductSelect = (productId) => {
-    if (storeData && storeData.storeItems) {
+  }, [slug]);  // Handle product selection
+  const handleProductSelect = (productId, sellerOffer = null) => {
+    // Reset seller offer when selecting a store product
+    if (!sellerOffer) {
+      setSelectedSellerOffer(null);
+    }
+    
+    if (sellerOffer) {
+      // Handle seller offer selection
+      setSelectedSellerOffer(sellerOffer);
+      setSelectedProductId(productId); // Keep track of which product this offer is for
+      setSelectedProductAmount(sellerOffer.price);
+    } else if (storeData && storeData.storeItems) {
+      // Handle store item selection
       const selectedProduct = storeData.storeItems.find(item => item.productId === productId);
       if (selectedProduct) {
         setSelectedProductId(productId);
@@ -118,6 +128,7 @@ const Page = () => {
               storeData={storeData} 
               amount={selectedProductAmount}
               selectedProductId={selectedProductId}
+              sellerOffer={selectedSellerOffer}
             />
           </div>
         </div>

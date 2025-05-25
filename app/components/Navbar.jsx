@@ -300,15 +300,9 @@ const Navbar = () => {
                             <p className="text-sm font-medium text-gray-100 truncate">
                               {session?.user?.name || "User"}
                             </p>
-                            <div className="flex flex-col">
-                              <p className="text-xs text-gray-400 truncate">
+                            <div className="flex flex-col">                              <p className="text-xs text-gray-400 truncate">
                                 {session?.user?.email || ""}
                               </p>
-                              {session?.user?.role && session.user.role !== 'pending' && (
-                                <p className="text-xs text-indigo-400 mt-1">
-                                  Role: {session.user.role === 'buyer' ? 'Buyer' : 'Seller'}
-                                </p>
-                              )}
                             </div>
                           </div>
                           <Link
@@ -482,15 +476,9 @@ const Navbar = () => {
                         <p className="text-sm font-medium text-white truncate">
                           {session?.user?.name || "User"}
                         </p>
-                        <div className="flex flex-col">
-                          <p className="text-xs text-gray-300 truncate">
+                        <div className="flex flex-col">                          <p className="text-xs text-gray-300 truncate">
                             {session?.user?.email || ""}
                           </p>
-                          {session?.user?.role && session.user.role !== 'pending' && (
-                            <p className="text-xs text-indigo-400 mt-0.5">
-                              Role: {session.user.role === 'buyer' ? 'Buyer' : 'Seller'}
-                            </p>
-                          )}
                         </div>
                       </div>
                     </div>

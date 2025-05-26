@@ -35,9 +35,23 @@ export default function AccountPage() {
   const [offerDescription, setOfferDescription] = useState("");
   const [isSubmittingOffer, setIsSubmittingOffer] = useState(false);
   const [offerError, setOfferError] = useState("");
-  const [offerSuccess, setOfferSuccess] = useState("");
-  const [isEditingOffer, setIsEditingOffer] = useState(false);
+  const [offerSuccess, setOfferSuccess] = useState("");  const [isEditingOffer, setIsEditingOffer] = useState(false);
   const [currentEditingOfferId, setCurrentEditingOfferId] = useState(null);
+    // Admin/SuperAdmin state
+  const [users, setUsers] = useState([]);
+  const [isLoadingUsers, setIsLoadingUsers] = useState(false);
+  const [userManagementError, setUserManagementError] = useState("");
+  const [userManagementSuccess, setUserManagementSuccess] = useState("");
+  
+  // Helper function to check if user has admin role
+  const isAdmin = () => {
+    return session?.user?.role === 'ADMIN' || session?.user?.role === 'SUPERADMIN';
+  };
+  
+  // Helper function to check if user has superadmin role
+  const isSuperAdmin = () => {
+    return session?.user?.role === 'SUPERADMIN';
+  };
   
   // Reset password form when it's closed
   useEffect(() => {
@@ -45,14 +59,76 @@ export default function AccountPage() {
       resetPasswordForm();
     }
   }, [showChangePasswordForm]);
-  
-  // Load stores and seller offers when tab changes
+    // Load stores and seller offers when tab changes
   useEffect(() => {
     if (activeTab === "seller-offers") {
       fetchStores();
       fetchSellerOffers();
     }
   }, [activeTab, session]);
+  // Load users when user management tab is active
+  useEffect(() => {
+    if (activeTab === "user-management" && isSuperAdmin()) {
+      fetchUsers();
+    }
+  }, [activeTab, session]);  // Fetch all users for user management
+  const fetchUsers = async () => {
+    try {
+      setIsLoadingUsers(true);
+      setUserManagementError("");
+      const response = await fetch("/api/admin/users");
+      
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || "Failed to fetch users");
+      }
+      
+      const data = await response.json();
+      
+      // Handle the correct response format - API returns { success: true, users: [...] }
+      if (data.success && Array.isArray(data.users)) {
+        setUsers(data.users);
+      } else {
+        console.error("Users data is not in expected format:", data);
+        setUsers([]);
+        setUserManagementError("Invalid data format received from server");
+      }
+    } catch (error) {
+      console.error("Error fetching users:", error);
+      setUserManagementError(error.message || "Failed to load users. Please try again.");
+      setUsers([]); // Ensure users is always an array
+    } finally {
+      setIsLoadingUsers(false);
+    }
+  };
+
+  // Update user role
+  const updateUserRole = async (userId, newRole) => {
+    try {
+      setUserManagementError("");
+      setUserManagementSuccess("");
+      
+      const response = await fetch(`/api/admin/users/${userId}/role`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ role: newRole }),
+      });
+      
+      const data = await response.json();
+      
+      if (response.ok) {
+        setUserManagementSuccess(`User role updated to ${newRole} successfully!`);
+        fetchUsers(); // Refresh the users list
+      } else {
+        setUserManagementError(data.message || "Failed to update user role");
+      }
+    } catch (error) {
+      console.error("Error updating user role:", error);
+      setUserManagementError("An error occurred. Please try again.");
+    }
+  };
     // Fetch all stores
   const fetchStores = async () => {
     try {
@@ -82,9 +158,9 @@ export default function AccountPage() {
       setIsLoadingOffers(false);
     }
   };
-    // Fetch store items when a store is selected
+  // Fetch store items when a store is selected
   const fetchStoreItems = async (storeId) => {
-    if (!storeId) return;
+    if (!storeId) return [];
     
     try {
       setIsLoadingStoreItems(true);
@@ -99,8 +175,10 @@ export default function AccountPage() {
       if (!response.ok) throw new Error("Failed to fetch store items");
       const data = await response.json();
       setStoreItems(data);
+      return data; // Return the fetched data
     } catch (error) {
       console.error("Error fetching store items:", error);
+      return []; // Return empty array on error
     } finally {
       setIsLoadingStoreItems(false);
     }
@@ -189,19 +267,18 @@ export default function AccountPage() {
       console.error("Error deleting offer:", error);
       setOfferError("An error occurred. Please try again.");
     }
-  };
-  // Function to handle editing an offer
+  };  // Function to handle editing an offer
   const handleEditOffer = async (offer) => {
     const store = stores.find(s => s.id === offer.storeId);
     setSelectedStore(store);
     
     // Fetch store items for this store
     if (store) {
-      await fetchStoreItems(store.id);
+      const fetchedItems = await fetchStoreItems(store.id);
       
       // If we have a storeItemId, set the selected store item
-      if (offer.storeItemId) {
-        const item = storeItems.find(item => item.id === offer.storeItemId);
+      if (offer.storeItemId && fetchedItems.length > 0) {
+        const item = fetchedItems.find(item => item.id === offer.storeItemId);
         setSelectedStoreItem(item || null);
       }
     }
@@ -411,8 +488,7 @@ export default function AccountPage() {
                   <User size={16} /> Profile
                 </span>
               </button>
-              
-              <button
+                <button
                 onClick={() => setActiveTab("security")}
                 className={`px-4 py-4 text-sm font-medium whitespace-nowrap ${
                   activeTab === "security"
@@ -424,18 +500,38 @@ export default function AccountPage() {
                   <ShieldCheck size={16} /> Security
                 </span>
               </button>              
-              <button
-                onClick={() => setActiveTab("seller-offers")}
-                className={`px-4 py-4 text-sm font-medium whitespace-nowrap ${
-                  activeTab === "seller-offers"
-                    ? "border-b-2 border-blue-500 text-blue-600"
-                    : "text-gray-500 hover:text-gray-700 hover:border-gray-300"
-                }`}
-              >
-                <span className="flex items-center gap-1.5">
-                  <Store size={16} /> Seller Offers
-                </span>
-              </button>
+              
+              {/* Show seller offers tab only to admins and superadmins */}
+              {isAdmin() && (
+                <button
+                  onClick={() => setActiveTab("seller-offers")}
+                  className={`px-4 py-4 text-sm font-medium whitespace-nowrap ${
+                    activeTab === "seller-offers"
+                      ? "border-b-2 border-blue-500 text-blue-600"
+                      : "text-gray-500 hover:text-gray-700 hover:border-gray-300"
+                  }`}
+                >
+                  <span className="flex items-center gap-1.5">
+                    <Store size={16} /> Seller Offers
+                  </span>
+                </button>
+              )}
+              
+              {/* Show user management tab only to superadmins */}
+              {isSuperAdmin() && (
+                <button
+                  onClick={() => setActiveTab("user-management")}
+                  className={`px-4 py-4 text-sm font-medium whitespace-nowrap ${
+                    activeTab === "user-management"
+                      ? "border-b-2 border-blue-500 text-blue-600"
+                      : "text-gray-500 hover:text-gray-700 hover:border-gray-300"
+                  }`}
+                >
+                  <span className="flex items-center gap-1.5">
+                    <User size={16} /> User Management
+                  </span>
+                </button>
+              )}
             </nav>
           </div>
             {/* Content area */}
@@ -655,8 +751,7 @@ export default function AccountPage() {
                 </div>
               </div>
             )}
-            
-            {activeTab === "seller-offers" && (
+              {activeTab === "seller-offers" && isAdmin() && (
               <div>
                 <h2 className="text-xl font-semibold text-gray-800 mb-4">Manage Store Offers</h2>
                 
@@ -892,6 +987,130 @@ export default function AccountPage() {
                             </div>
                           );
                         })}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            )}
+            
+            {activeTab === "user-management" && isSuperAdmin() && (
+              <div>
+                <h2 className="text-xl font-semibold text-gray-800 mb-4">User Management</h2>
+                
+                <div className="space-y-6">
+                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+                    <p className="text-amber-800">
+                      <strong>SuperAdmin Access:</strong> You can assign admin roles to users. Admin users can create and manage seller offers.
+                    </p>
+                  </div>
+                  
+                  {userManagementError && (
+                    <div className="p-3 bg-red-50 border border-red-200 rounded-md text-red-700">
+                      <div className="flex items-center gap-2">
+                        <AlertCircle size={18} className="text-red-500" />
+                        <span>{userManagementError}</span>
+                      </div>
+                    </div>
+                  )}
+                  
+                  {userManagementSuccess && (
+                    <div className="p-3 bg-green-50 border border-green-200 rounded-md text-green-700">
+                      <div className="flex items-center gap-2">
+                        <Check size={18} className="text-green-500" />
+                        <span>{userManagementSuccess}</span>
+                      </div>
+                    </div>
+                  )}
+                  
+                  {/* Users List */}
+                  <div className="border rounded-lg overflow-hidden">
+                    <div className="bg-gray-50 px-4 py-3 border-b">
+                      <h3 className="font-medium text-gray-800">All Users</h3>
+                    </div>
+                      {isLoadingUsers ? (
+                      <div className="flex justify-center py-8">
+                        <div className="animate-spin rounded-full h-6 w-6 border-2 border-blue-500 border-t-transparent"></div>
+                      </div>
+                    ) : !Array.isArray(users) || users.length === 0 ? (
+                      <div className="p-4 text-center text-gray-500">
+                        {!Array.isArray(users) ? "Error loading users" : "No users found."}
+                      </div>
+                    ) : (
+                      <div className="divide-y">
+                        {users.map((user) => (
+                          <div key={user.id} className="p-4">
+                            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                              <div className="flex-1">
+                                <div className="flex items-center gap-3">
+                                  <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-200">
+                                    {user.image ? (
+                                      <img
+                                        src={user.image}
+                                        alt={user.name || "User"}
+                                        className="w-full h-full object-cover"
+                                      />
+                                    ) : (
+                                      <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center text-white text-sm font-bold">
+                                        {user.name ? user.name[0].toUpperCase() : "U"}
+                                      </div>
+                                    )}
+                                  </div>
+                                  
+                                  <div>
+                                    <h4 className="font-medium text-gray-900">
+                                      {user.name || "Unknown User"}
+                                    </h4>
+                                    <p className="text-sm text-gray-500">{user.email}</p>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <div className="flex items-center gap-3">
+                                <div className="text-right">
+                                  <p className="text-sm font-medium text-gray-700">Current Role</p>
+                                  <span className={`inline-flex px-2 py-1 text-xs rounded-full ${
+                                    user.role === 'SUPERADMIN' 
+                                      ? 'bg-purple-100 text-purple-800'
+                                      : user.role === 'ADMIN'
+                                      ? 'bg-blue-100 text-blue-800'
+                                      : 'bg-gray-100 text-gray-800'
+                                  }`}>
+                                    {user.role}
+                                  </span>
+                                </div>
+                                
+                                {/* Role change dropdown - don't allow changing superadmin roles */}
+                                {user.role !== 'SUPERADMIN' && user.id !== session?.user?.id && (
+                                  <select
+                                    value={user.role}
+                                    onChange={(e) => updateUserRole(user.id, e.target.value)}
+                                    className="px-3 py-1 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
+                                  >
+                                    <option value="USER">User</option>
+                                    <option value="ADMIN">Admin</option>
+                                  </select>
+                                )}
+                                
+                                {user.role === 'SUPERADMIN' && (
+                                  <span className="text-xs text-gray-500 px-3 py-1">
+                                    Protected
+                                  </span>
+                                )}
+                                
+                                {user.id === session?.user?.id && (
+                                  <span className="text-xs text-gray-500 px-3 py-1">
+                                    You
+                                  </span>
+                                )}
+                              </div>
+                            </div>
+                            
+                            <div className="mt-2 text-xs text-gray-500">
+                              Member since {formatDate(user.createdAt)}
+                            </div>
+                          </div>
+                        ))}
                       </div>
                     )}
                   </div>

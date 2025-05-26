@@ -3,6 +3,7 @@ import prisma from '@/lib/prisma';
 import { NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '@/app/api/auth/[...nextauth]/route';
+import { isAdmin } from '@/lib/roles';
 
 // GET a single seller offer by ID
 export async function GET(request, { params }) {
@@ -14,6 +15,15 @@ export async function GET(request, { params }) {
       return NextResponse.json(
         { message: 'Unauthorized' },
         { status: 401 }
+      );
+    }
+
+    // Check if user has admin role or higher
+    const userIsAdmin = await isAdmin(session.user.id);
+    if (!userIsAdmin) {
+      return NextResponse.json(
+        { message: 'Access denied. Admin role required to view seller offers.' },
+        { status: 403 }
       );
     }
     
@@ -43,7 +53,8 @@ export async function GET(request, { params }) {
         { status: 404 }
       );
     }
-      // Only allow the seller who created the offer to view it
+
+    // Only allow the seller who created the offer to view it
     if (sellerOffer.sellerId !== session.user.id) {
       return NextResponse.json(
         { message: 'You do not have permission to view this offer' },
@@ -71,6 +82,15 @@ export async function PUT(request, { params }) {
       return NextResponse.json(
         { message: 'Unauthorized' },
         { status: 401 }
+      );
+    }
+
+    // Check if user has admin role or higher
+    const userIsAdmin = await isAdmin(session.user.id);
+    if (!userIsAdmin) {
+      return NextResponse.json(
+        { message: 'Access denied. Admin role required to update seller offers.' },
+        { status: 403 }
       );
     }
     
@@ -164,6 +184,15 @@ export async function DELETE(request, { params }) {
         { status: 401 }
       );
     }
+
+    // Check if user has admin role or higher
+    const userIsAdmin = await isAdmin(session.user.id);
+    if (!userIsAdmin) {
+      return NextResponse.json(
+        { message: 'Access denied. Admin role required to delete seller offers.' },
+        { status: 403 }
+      );
+    }
     
     // Find the offer
     const existingOffer = await prisma.sellerOffer.findUnique({
@@ -176,7 +205,8 @@ export async function DELETE(request, { params }) {
         { status: 404 }
       );
     }
-      // Check if the user is the seller who created the offer
+
+    // Check if the user is the seller who created the offer
     if (existingOffer.sellerId !== session.user.id) {
       return NextResponse.json(
         { message: 'You do not have permission to delete this offer' },

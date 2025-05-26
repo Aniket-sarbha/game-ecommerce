@@ -64,11 +64,19 @@ export const authOptions = {
       if (token?.id) {
         session.user.id = token.id;
       }
+      if (token?.role) {
+        session.user.role = token.role;
+      }
       return session;
     },
     async jwt({ token, user }) {
       if (user) {
         token.id = user.id;
+        // Fetch user role from database
+        if (user.email) {
+          const dbUser = await getUserByEmail(user.email);
+          token.role = dbUser?.role || 'USER';
+        }
       }
       
       return token;

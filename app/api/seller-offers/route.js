@@ -3,6 +3,7 @@ import prisma from '@/lib/prisma';
 import { NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '@/app/api/auth/[...nextauth]/route';
+import { isAdmin } from '@/lib/roles';
 
 // GET - Get all seller offers for the current user
 export async function GET() {
@@ -15,7 +16,15 @@ export async function GET() {
         { status: 401 }
       );
     }
-      // Everyone can access this endpoint now that we've removed role-based authentication
+
+    // Check if user has admin role or higher
+    const userIsAdmin = await isAdmin(session.user.id);
+    if (!userIsAdmin) {
+      return NextResponse.json(
+        { message: 'Access denied. Admin role required to manage seller offers.' },
+        { status: 403 }
+      );
+    }
     
     const sellerOffers = await prisma.sellerOffer.findMany({
       where: {
@@ -53,7 +62,16 @@ export async function POST(request) {
         { message: 'Unauthorized' },
         { status: 401 }
       );
-    }    // Everyone can create offers now that we've removed role-based authentication
+    }
+
+    // Check if user has admin role or higher
+    const userIsAdmin = await isAdmin(session.user.id);
+    if (!userIsAdmin) {
+      return NextResponse.json(
+        { message: 'Access denied. Admin role required to create seller offers.' },
+        { status: 403 }
+      );
+    }
       const body = await request.json();
     const { storeId, storeItemId, price, description } = body;
     

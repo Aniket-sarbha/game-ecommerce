@@ -1,0 +1,166 @@
+{
+  "itemname": {
+    "S": "store-elelive"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "elelive-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "157.14"
+          },
+          "name": {
+            "S": "60 Elecoins"
+          },
+          "price": {
+            "S": "136.65"
+          },
+          "productid": {
+            "S": "ELELVSEA60YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "elelive-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "745.04"
+          },
+          "name": {
+            "S": "320 Elecoins"
+          },
+          "price": {
+            "S": "647.86"
+          },
+          "productid": {
+            "S": "ELELVSEA320YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "elelive-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1493.28"
+          },
+          "name": {
+            "S": "650 Elecoins"
+          },
+          "price": {
+            "S": "1298.5"
+          },
+          "productid": {
+            "S": "ELELVSEA650YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "elelive-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "3016.47"
+          },
+          "name": {
+            "S": "1320 Elecoins"
+          },
+          "price": {
+            "S": "2623.02"
+          },
+          "productid": {
+            "S": "ELELVSEA1320YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "elelive-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "7372.26"
+          },
+          "name": {
+            "S": "3350 Elecoins"
+          },
+          "price": {
+            "S": "6410.66"
+          },
+          "productid": {
+            "S": "ELELVSEA3350YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "elelive-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "14694.26"
+          },
+          "name": {
+            "S": "6800 Elecoins"
+          },
+          "price": {
+            "S": "12777.62"
+          },
+          "productid": {
+            "S": "ELELVSEA6800YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "elelive-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "34709.52"
+          },
+          "name": {
+            "S": "18000 Elecoins"
+          },
+          "price": {
+            "S": "30182.19"
+          },
+          "productid": {
+            "S": "ELELVSEA18000YCX"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "itemname": {
+    "S": "store-starmaker"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "starmaker-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "746.26"
+          },
+          "name": {
+            "S": "420 +68 Bonus"
+          },
+          "price": {
+            "S": "648.92"
+          },
+          "productid": {
+            "S": "STKK420_68-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "starmaker-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1066.08"
+          },
+          "name": {
+            "S": "600 +102 Bonus"
+          },
+          "price": {
+            "S": "927.02"
+          },
+          "productid": {
+            "S": "STKK600_102-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "starmaker-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2132.15"
+          },
+          "name": {
+            "S": "1200 +216 Bonus"
+          },
+          "price": {
+            "S": "1854.04"
+          },
+          "productid": {
+            "S": "STKK1200_216-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "starmaker-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5330.36"
+          },
+          "name": {
+            "S": "3000 +567 Bonus"
+          },
+          "price": {
+            "S": "4635.1"
+          },
+          "productid": {
+            "S": "STKK3000_567-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "starmaker-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "10660.72"
+          },
+          "name": {
+            "S": "6000 +1189 Bonus"
+          },
+          "price": {
+            "S": "9270.19"
+          },
+          "productid": {
+            "S": "STKK6000_1189-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "starmaker-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "106.61"
+          },
+          "name": {
+            "S": "60 +9 Bonus"
+          },
+          "price": {
+            "S": "92.71"
+          },
+          "productid": {
+            "S": "STKK60_9-S50"
+          }
+        }
+      }
+    ]
+  }
+}

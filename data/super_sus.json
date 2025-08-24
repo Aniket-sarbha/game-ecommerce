@@ -1,0 +1,386 @@
+{
+  "itemname": {
+    "S": "store-super-sus"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "super-sus-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "77.83"
+          },
+          "name": {
+            "S": "100 Golden Star"
+          },
+          "price": {
+            "S": "67.68"
+          },
+          "productid": {
+            "S": "SPSUS100YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "super-sus-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "232.41"
+          },
+          "name": {
+            "S": "310 Golden Star"
+          },
+          "price": {
+            "S": "202.09"
+          },
+          "productid": {
+            "S": "SPSUS310YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "super-sus-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "388.06"
+          },
+          "name": {
+            "S": "520 Golden Star"
+          },
+          "price": {
+            "S": "337.44"
+          },
+          "productid": {
+            "S": "SPSUS520YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "super-sus-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "776.11"
+          },
+          "name": {
+            "S": "1060 Golden Star"
+          },
+          "price": {
+            "S": "674.88"
+          },
+          "productid": {
+            "S": "SPSUS1060YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "super-sus-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1552.21"
+          },
+          "name": {
+            "S": "2180 Golden Star"
+          },
+          "price": {
+            "S": "1349.75"
+          },
+          "productid": {
+            "S": "SPSUS2180YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "super-sus-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3972.19"
+          },
+          "name": {
+            "S": "5600 Golden Star"
+          },
+          "price": {
+            "S": "3454.08"
+          },
+          "productid": {
+            "S": "SPSUS5600YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "super-sus-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "88.49"
+          },
+          "name": {
+            "S": "100 Golden Star"
+          },
+          "price": {
+            "S": "76.95"
+          },
+          "productid": {
+            "S": "SPSUS100YCINSTAN"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "super-sus-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "265.46"
+          },
+          "name": {
+            "S": "310 Golden Star"
+          },
+          "price": {
+            "S": "230.83"
+          },
+          "productid": {
+            "S": "SPSUS310YCINSTAN"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "super-sus-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "442.43"
+          },
+          "name": {
+            "S": "520 Golden Star"
+          },
+          "price": {
+            "S": "384.72"
+          },
+          "productid": {
+            "S": "SPSUS520YCINSTAN"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "super-sus-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "884.86"
+          },
+          "name": {
+            "S": "1060 Golden Star"
+          },
+          "price": {
+            "S": "769.44"
+          },
+          "productid": {
+            "S": "SPSUS1060YCINSTAN"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "super-sus-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1734.79"
+          },
+          "name": {
+            "S": "2180 Golden Star"
+          },
+          "price": {
+            "S": "1508.51"
+          },
+          "productid": {
+            "S": "SPSUS2180YCINSTAN"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "super-sus-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "4287.15"
+          },
+          "name": {
+            "S": "5600 Golden Star"
+          },
+          "price": {
+            "S": "3727.95"
+          },
+          "productid": {
+            "S": "SPSUS5600YCINSTAN"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "super-sus-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "108.49"
+          },
+          "name": {
+            "S": "Weekly Card"
+          },
+          "price": {
+            "S": "94.34"
+          },
+          "productid": {
+            "S": "SPSUSWCYCINSTAN"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "super-sus-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1095.36"
+          },
+          "name": {
+            "S": "Monthly Card"
+          },
+          "price": {
+            "S": "952.49"
+          },
+          "productid": {
+            "S": "SPSUSMCYCINSTAN"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "super-sus-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1241.35"
+          },
+          "name": {
+            "S": "Super VIP Card"
+          },
+          "price": {
+            "S": "1079.44"
+          },
+          "productid": {
+            "S": "SPSUSSVCYCINSTAN"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "super-sus-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "546.84"
+          },
+          "name": {
+            "S": "SUPER PASS"
+          },
+          "price": {
+            "S": "475.51"
+          },
+          "productid": {
+            "S": "SPSUSSPYCINSTAN"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "super-sus-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1025.15"
+          },
+          "name": {
+            "S": "SUPER PASS BUNDLE"
+          },
+          "price": {
+            "S": "891.44"
+          },
+          "productid": {
+            "S": "SPSUSSPBYCINSTAN"
+          }
+        }
+      }
+    ]
+  }
+}

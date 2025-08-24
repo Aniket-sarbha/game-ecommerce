@@ -1,0 +1,144 @@
+{
+  "itemname": {
+    "S": "store-atlantica-rebirth"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "atlantica-rebirth-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "111.36"
+          },
+          "name": {
+            "S": "3750 Koin"
+          },
+          "price": {
+            "S": "96.83"
+          },
+          "productid": {
+            "S": "AR3750-S52"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "atlantica-rebirth-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "222.71"
+          },
+          "name": {
+            "S": "7500 Koin"
+          },
+          "price": {
+            "S": "193.66"
+          },
+          "productid": {
+            "S": "AR7500-S52"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "atlantica-rebirth-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "371.18"
+          },
+          "name": {
+            "S": "12500 Koin"
+          },
+          "price": {
+            "S": "322.77"
+          },
+          "productid": {
+            "S": "AR12500-S52"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "atlantica-rebirth-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "742.36"
+          },
+          "name": {
+            "S": "25000 Koin"
+          },
+          "price": {
+            "S": "645.53"
+          },
+          "productid": {
+            "S": "AR25000-S52"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "atlantica-rebirth-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1484.71"
+          },
+          "name": {
+            "S": "50000 Koin"
+          },
+          "price": {
+            "S": "1291.06"
+          },
+          "productid": {
+            "S": "AR50000-S52"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "atlantica-rebirth-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2227.08"
+          },
+          "name": {
+            "S": "75000 Koin"
+          },
+          "price": {
+            "S": "1936.59"
+          },
+          "productid": {
+            "S": "AR75000-S52"
+          }
+        }
+      }
+    ]
+  }
+}

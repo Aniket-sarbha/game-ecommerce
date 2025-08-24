@@ -1,0 +1,144 @@
+{
+  "itemname": {
+    "S": "store-command-and-conquer:-legions"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "command-and-conquer:-legions-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "91.52"
+          },
+          "name": {
+            "S": "400 Gold"
+          },
+          "price": {
+            "S": "79.58"
+          },
+          "productid": {
+            "S": "CNC400YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "command-and-conquer:-legions-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "465.1"
+          },
+          "name": {
+            "S": "1365 Gold"
+          },
+          "price": {
+            "S": "404.44"
+          },
+          "productid": {
+            "S": "CNC1365YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "command-and-conquer:-legions-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "931.28"
+          },
+          "name": {
+            "S": "2860 Gold"
+          },
+          "price": {
+            "S": "809.81"
+          },
+          "productid": {
+            "S": "CNC2860YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "command-and-conquer:-legions-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1863.65"
+          },
+          "name": {
+            "S": "5980 Gold"
+          },
+          "price": {
+            "S": "1620.57"
+          },
+          "productid": {
+            "S": "CNC5980YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "command-and-conquer:-legions-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4645.65"
+          },
+          "name": {
+            "S": "15600 Gold"
+          },
+          "price": {
+            "S": "4039.7"
+          },
+          "productid": {
+            "S": "CNC15600YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "command-and-conquer:-legions-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "9310.68"
+          },
+          "name": {
+            "S": "32500 Gold"
+          },
+          "price": {
+            "S": "8096.24"
+          },
+          "productid": {
+            "S": "CNC32500YCX"
+          }
+        }
+      }
+    ]
+  }
+}

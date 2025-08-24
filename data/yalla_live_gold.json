@@ -1,0 +1,78 @@
+{
+  "itemname": {
+    "S": "store-yalla-live-gold"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "yalla-live-gold-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "3235.59"
+          },
+          "name": {
+            "S": "2890 Gold"
+          },
+          "price": {
+            "S": "2813.56"
+          },
+          "productid": {
+            "S": "YLG2890GYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "yalla-live-gold-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "6458.67"
+          },
+          "name": {
+            "S": "5930 Gold"
+          },
+          "price": {
+            "S": "5616.24"
+          },
+          "productid": {
+            "S": "YLG5930GYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "yalla-live-gold-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "12918.91"
+          },
+          "name": {
+            "S": "12550 Gold"
+          },
+          "price": {
+            "S": "11233.84"
+          },
+          "productid": {
+            "S": "YLG12550GYCGG"
+          }
+        }
+      }
+    ]
+  }
+}

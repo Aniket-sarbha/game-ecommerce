@@ -1,0 +1,254 @@
+{
+  "itemname": {
+    "S": "store-lords-mobile"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "lords-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "245.11"
+          },
+          "name": {
+            "S": "195 Diamonds"
+          },
+          "price": {
+            "S": "213.14"
+          },
+          "productid": {
+            "S": "LM195-S79"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lords-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "489.4"
+          },
+          "name": {
+            "S": "395 Diamonds"
+          },
+          "price": {
+            "S": "425.56"
+          },
+          "productid": {
+            "S": "LM395-S79"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lords-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "977.99"
+          },
+          "name": {
+            "S": "785 Diamonds"
+          },
+          "price": {
+            "S": "850.43"
+          },
+          "productid": {
+            "S": "LM785-S79"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lords-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1466.59"
+          },
+          "name": {
+            "S": "1179 Diamonds"
+          },
+          "price": {
+            "S": "1275.3"
+          },
+          "productid": {
+            "S": "LM1179-S79"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lords-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2444.58"
+          },
+          "name": {
+            "S": "1964 Diamonds"
+          },
+          "price": {
+            "S": "2125.72"
+          },
+          "productid": {
+            "S": "LM1964-S79"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lords-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4888.35"
+          },
+          "name": {
+            "S": "3928 Diamonds"
+          },
+          "price": {
+            "S": "4250.74"
+          },
+          "productid": {
+            "S": "LM3928-S79"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lords-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "9775.9"
+          },
+          "name": {
+            "S": "7857 Diamonds"
+          },
+          "price": {
+            "S": "8500.78"
+          },
+          "productid": {
+            "S": "LM7857-S79"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lords-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "14662.64"
+          },
+          "name": {
+            "S": "11785 Diamonds"
+          },
+          "price": {
+            "S": "12750.13"
+          },
+          "productid": {
+            "S": "LM11785-S79"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lords-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "24436.95"
+          },
+          "name": {
+            "S": "19642 Diamonds"
+          },
+          "price": {
+            "S": "21249.52"
+          },
+          "productid": {
+            "S": "LM19642-S79"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lords-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "245.11"
+          },
+          "name": {
+            "S": "Pass Mingguan"
+          },
+          "price": {
+            "S": "213.14"
+          },
+          "productid": {
+            "S": "LMWDPYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lords-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2444.58"
+          },
+          "name": {
+            "S": "Pass Bulanan"
+          },
+          "price": {
+            "S": "2125.72"
+          },
+          "productid": {
+            "S": "LMMDPYCGG"
+          }
+        }
+      }
+    ]
+  }
+}

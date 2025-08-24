@@ -1,0 +1,188 @@
+{
+  "itemname": {
+    "S": "store-chimmerland"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "chimmerland-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "91.48"
+          },
+          "name": {
+            "S": "60 Amber"
+          },
+          "price": {
+            "S": "79.55"
+          },
+          "productid": {
+            "S": "CML60A-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "chimmerland-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "469.94"
+          },
+          "name": {
+            "S": "300 Amber"
+          },
+          "price": {
+            "S": "408.64"
+          },
+          "productid": {
+            "S": "CML300A-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "chimmerland-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "943.78"
+          },
+          "name": {
+            "S": "680 Amber"
+          },
+          "price": {
+            "S": "820.68"
+          },
+          "productid": {
+            "S": "CML680A-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "chimmerland-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1417.62"
+          },
+          "name": {
+            "S": "980 Amber"
+          },
+          "price": {
+            "S": "1232.72"
+          },
+          "productid": {
+            "S": "CML980A-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "chimmerland-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2837.59"
+          },
+          "name": {
+            "S": "1980 Amber"
+          },
+          "price": {
+            "S": "2467.47"
+          },
+          "productid": {
+            "S": "CML1980A-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "chimmerland-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "5051.21"
+          },
+          "name": {
+            "S": "3280 Amber"
+          },
+          "price": {
+            "S": "4392.36"
+          },
+          "productid": {
+            "S": "CML3280A-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "chimmerland-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "7891.94"
+          },
+          "name": {
+            "S": "5180 Amber"
+          },
+          "price": {
+            "S": "6862.55"
+          },
+          "productid": {
+            "S": "CML5508A-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "chimmerland-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "9470.64"
+          },
+          "name": {
+            "S": "6480 Amber"
+          },
+          "price": {
+            "S": "8235.34"
+          },
+          "productid": {
+            "S": "CML6888A-S50"
+          }
+        }
+      }
+    ]
+  }
+}

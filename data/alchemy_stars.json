@@ -1,0 +1,188 @@
+{
+  "itemname": {
+    "S": "store-alchemy-stars"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "alchemy-stars-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "10.66"
+          },
+          "name": {
+            "S": "10 Lumocrystal"
+          },
+          "price": {
+            "S": "9.27"
+          },
+          "productid": {
+            "S": "LMC10YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "alchemy-stars-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "45.85"
+          },
+          "name": {
+            "S": "40 Lumocrystal"
+          },
+          "price": {
+            "S": "39.87"
+          },
+          "productid": {
+            "S": "LMC40YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "alchemy-stars-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "90.62"
+          },
+          "name": {
+            "S": "90 Lumocrystal"
+          },
+          "price": {
+            "S": "78.8"
+          },
+          "productid": {
+            "S": "LMC90YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "alchemy-stars-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "433.89"
+          },
+          "name": {
+            "S": "500 Lumocrystal"
+          },
+          "price": {
+            "S": "377.29"
+          },
+          "productid": {
+            "S": "LMC500YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "alchemy-stars-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1346.45"
+          },
+          "name": {
+            "S": "1565 Lumocrystal"
+          },
+          "price": {
+            "S": "1170.82"
+          },
+          "productid": {
+            "S": "LMC1565YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "alchemy-stars-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2679.04"
+          },
+          "name": {
+            "S": "3130 Lumocrystal"
+          },
+          "price": {
+            "S": "2329.6"
+          },
+          "productid": {
+            "S": "LMC3130YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "alchemy-stars-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4526.55"
+          },
+          "name": {
+            "S": "5200 Lumocrystal"
+          },
+          "price": {
+            "S": "3936.13"
+          },
+          "productid": {
+            "S": "LMC5200YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "alchemy-stars-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "8960.34"
+          },
+          "name": {
+            "S": "10500 Lumocrystal"
+          },
+          "price": {
+            "S": "7791.6"
+          },
+          "productid": {
+            "S": "LMC10500YCX"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "itemname": {
+    "S": "store-megaxus"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "megaxus-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "82.1"
+          },
+          "name": {
+            "S": "10.000 MI-Cash"
+          },
+          "price": {
+            "S": "71.39"
+          },
+          "productid": {
+            "S": "MGS10"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "megaxus-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "816.33"
+          },
+          "name": {
+            "S": "100.000 MI-Cash"
+          },
+          "price": {
+            "S": "709.85"
+          },
+          "productid": {
+            "S": "MGS100"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "megaxus-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "163.42"
+          },
+          "name": {
+            "S": "20.000 MI-Cash"
+          },
+          "price": {
+            "S": "142.11"
+          },
+          "productid": {
+            "S": "MGS20"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "megaxus-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1632.65"
+          },
+          "name": {
+            "S": "200.000 MI-Cash"
+          },
+          "price": {
+            "S": "1419.7"
+          },
+          "productid": {
+            "S": "MGS200"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "megaxus-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "408.16"
+          },
+          "name": {
+            "S": "50.000 MI-Cash"
+          },
+          "price": {
+            "S": "354.92"
+          },
+          "productid": {
+            "S": "MGS50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "megaxus-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4080.85"
+          },
+          "name": {
+            "S": "500.000 MI-Cash"
+          },
+          "price": {
+            "S": "3548.57"
+          },
+          "productid": {
+            "S": "MGS500"
+          }
+        }
+      }
+    ]
+  }
+}

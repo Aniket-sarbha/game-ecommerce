@@ -1,0 +1,210 @@
+{
+  "itemname": {
+    "S": "store-afk-journey"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "afk-journey-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "106.34"
+          },
+          "name": {
+            "S": "21 Dragon Crystals (20 + 1 Bonus)"
+          },
+          "price": {
+            "S": "92.47"
+          },
+          "productid": {
+            "S": "AFKJYC21"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "afk-journey-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "576.73"
+          },
+          "name": {
+            "S": "126 Dragon Crystals (120 + 6 Bonus)"
+          },
+          "price": {
+            "S": "501.5"
+          },
+          "productid": {
+            "S": "AFKJYC126"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "afk-journey-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1078.27"
+          },
+          "name": {
+            "S": "294 Dragon Crystals (280 + 14 Bonus)"
+          },
+          "price": {
+            "S": "937.63"
+          },
+          "productid": {
+            "S": "AFKJYC294"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "afk-journey-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2158.1"
+          },
+          "name": {
+            "S": "588 Dragon Crystals (560 + 28 Bonus)"
+          },
+          "price": {
+            "S": "1876.61"
+          },
+          "productid": {
+            "S": "AFKJYC588"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "afk-journey-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5832.89"
+          },
+          "name": {
+            "S": "1554 Dragon Crystals (1480 + 74 Bonus)"
+          },
+          "price": {
+            "S": "5072.08"
+          },
+          "productid": {
+            "S": "AFKJYC1554"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "afk-journey-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "10780.36"
+          },
+          "name": {
+            "S": "3150 Dragon Crystals (3000 + 150 Bonus)"
+          },
+          "price": {
+            "S": "9374.22"
+          },
+          "productid": {
+            "S": "AFKJYC3150"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "afk-journey-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "576.73"
+          },
+          "name": {
+            "S": "Esperia Monthly - Classic Gazette ( + 6 Bonus)"
+          },
+          "price": {
+            "S": "501.5"
+          },
+          "productid": {
+            "S": "AFKJYCCG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "afk-journey-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1726.48"
+          },
+          "name": {
+            "S": "Esperia Monthly - Premium Gazette ( + 22 Bonus)"
+          },
+          "price": {
+            "S": "1501.29"
+          },
+          "productid": {
+            "S": "AFKJYCPG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "afk-journey-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3496.82"
+          },
+          "name": {
+            "S": "Growth Bundle ( + 42 Bonus)"
+          },
+          "price": {
+            "S": "3040.71"
+          },
+          "productid": {
+            "S": "AFKJYCGB"
+          }
+        }
+      }
+    ]
+  }
+}

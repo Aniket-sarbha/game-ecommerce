@@ -1,0 +1,408 @@
+{
+  "itemname": {
+    "S": "store-undawn-global"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "undawn-global-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1867.76"
+          },
+          "name": {
+            "S": "Garena Undawn Global 1.160 RC"
+          },
+          "price": {
+            "S": "1624.14"
+          },
+          "productid": {
+            "S": "UGL1160"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "undawn-global-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "294.63"
+          },
+          "name": {
+            "S": "Garena Undawn Global 170 RC"
+          },
+          "price": {
+            "S": "256.2"
+          },
+          "productid": {
+            "S": "UGL170"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "undawn-global-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2673.21"
+          },
+          "name": {
+            "S": "Garena Undawn Global 1.750 RC"
+          },
+          "price": {
+            "S": "2324.53"
+          },
+          "productid": {
+            "S": "UGL1750"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "undawn-global-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3715.57"
+          },
+          "name": {
+            "S": "Garena Undawn Global 2.375 RC"
+          },
+          "price": {
+            "S": "3230.93"
+          },
+          "productid": {
+            "S": "UGL2375"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "undawn-global-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4149.88"
+          },
+          "name": {
+            "S": "Garena Undawn Global 2.700 RC"
+          },
+          "price": {
+            "S": "3608.59"
+          },
+          "productid": {
+            "S": "UGL2700"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "undawn-global-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "458.21"
+          },
+          "name": {
+            "S": "Garena Undawn Global 285 RC"
+          },
+          "price": {
+            "S": "398.44"
+          },
+          "productid": {
+            "S": "UGL285"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "undawn-global-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "94.06"
+          },
+          "name": {
+            "S": "Garena Undawn Global 55 RC"
+          },
+          "price": {
+            "S": "81.79"
+          },
+          "productid": {
+            "S": "UGL55"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "undawn-global-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "913.05"
+          },
+          "name": {
+            "S": "Garena Undawn Global 575 RC"
+          },
+          "price": {
+            "S": "793.96"
+          },
+          "productid": {
+            "S": "UGL575"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "undawn-global-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "9085.28"
+          },
+          "name": {
+            "S": "Garena Undawn Global 6.200 RC"
+          },
+          "price": {
+            "S": "7900.24"
+          },
+          "productid": {
+            "S": "UGL6200"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "undawn-global-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "913.05"
+          },
+          "name": {
+            "S": "Garena Undawn Global Growth Funds"
+          },
+          "price": {
+            "S": "793.96"
+          },
+          "productid": {
+            "S": "UGGF"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "undawn-global-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "464.52"
+          },
+          "name": {
+            "S": "Garena Undawn Global Monthly Card"
+          },
+          "price": {
+            "S": "403.93"
+          },
+          "productid": {
+            "S": "UGMC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "undawn-global-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "191.97"
+          },
+          "name": {
+            "S": "Garena Undawn Global Raven Advanced Pack"
+          },
+          "price": {
+            "S": "166.93"
+          },
+          "productid": {
+            "S": "UGRAP"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "undawn-global-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "294.63"
+          },
+          "name": {
+            "S": "Garena Undawn Global Ravens Deluxe Pack"
+          },
+          "price": {
+            "S": "256.2"
+          },
+          "productid": {
+            "S": "UGRDP"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "undawn-global-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "627.98"
+          },
+          "name": {
+            "S": "Garena Undawn Global Rookie Enchance Pack"
+          },
+          "price": {
+            "S": "546.07"
+          },
+          "productid": {
+            "S": "UGREP"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "undawn-global-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "94.06"
+          },
+          "name": {
+            "S": "Garena Undawn Global Raven Value Pack"
+          },
+          "price": {
+            "S": "81.79"
+          },
+          "productid": {
+            "S": "UGRVP"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "undawn-global-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3376.01"
+          },
+          "name": {
+            "S": "Garena Undawn Global Super Value Modification Pack"
+          },
+          "price": {
+            "S": "2935.66"
+          },
+          "productid": {
+            "S": "UGSVMP"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "undawn-global-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2096.76"
+          },
+          "name": {
+            "S": "Garena Undawn Global Value Accessory Pack"
+          },
+          "price": {
+            "S": "1823.27"
+          },
+          "productid": {
+            "S": "UGVAP"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "undawn-global-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "296.33"
+          },
+          "name": {
+            "S": "Garena Undawn Global Weekly Card"
+          },
+          "price": {
+            "S": "257.67"
+          },
+          "productid": {
+            "S": "UGWC"
+          }
+        }
+      }
+    ]
+  }
+}

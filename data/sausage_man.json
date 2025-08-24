@@ -1,0 +1,496 @@
+{
+  "itemname": {
+    "S": "store-sausage-man"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "90.38"
+          },
+          "name": {
+            "S": "60 Candy"
+          },
+          "price": {
+            "S": "78.59"
+          },
+          "productid": {
+            "S": "SM60-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "276.33"
+          },
+          "name": {
+            "S": "180 Candy"
+          },
+          "price": {
+            "S": "240.29"
+          },
+          "productid": {
+            "S": "SM180-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "461.24"
+          },
+          "name": {
+            "S": "316 Candy"
+          },
+          "price": {
+            "S": "401.08"
+          },
+          "productid": {
+            "S": "SM316-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "924.56"
+          },
+          "name": {
+            "S": "718 Candy"
+          },
+          "price": {
+            "S": "803.96"
+          },
+          "productid": {
+            "S": "SM718-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1851.19"
+          },
+          "name": {
+            "S": "1368 Candy"
+          },
+          "price": {
+            "S": "1609.73"
+          },
+          "productid": {
+            "S": "SM1368-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2779.62"
+          },
+          "name": {
+            "S": "2118 Candy"
+          },
+          "price": {
+            "S": "2417.06"
+          },
+          "productid": {
+            "S": "SM2118-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4645.59"
+          },
+          "name": {
+            "S": "3548 Candy"
+          },
+          "price": {
+            "S": "4039.64"
+          },
+          "productid": {
+            "S": "SM3548-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "9246.56"
+          },
+          "name": {
+            "S": "7048 Candy"
+          },
+          "price": {
+            "S": "8040.49"
+          },
+          "productid": {
+            "S": "SM7048-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "9260.3"
+          },
+          "name": {
+            "S": "7048 Candy"
+          },
+          "price": {
+            "S": "8052.43"
+          },
+          "productid": {
+            "S": "SM7048YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "4621.16"
+          },
+          "name": {
+            "S": "3548 Candy"
+          },
+          "price": {
+            "S": "4018.4"
+          },
+          "productid": {
+            "S": "SM3548YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2765.66"
+          },
+          "name": {
+            "S": "2118 Candy"
+          },
+          "price": {
+            "S": "2404.92"
+          },
+          "productid": {
+            "S": "SM2118YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1853.94"
+          },
+          "name": {
+            "S": "1368 Candy"
+          },
+          "price": {
+            "S": "1612.12"
+          },
+          "productid": {
+            "S": "SM1368YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "925.8"
+          },
+          "name": {
+            "S": "718 Candy"
+          },
+          "price": {
+            "S": "805.04"
+          },
+          "productid": {
+            "S": "SM718YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "462.12"
+          },
+          "name": {
+            "S": "316 Candy"
+          },
+          "price": {
+            "S": "401.84"
+          },
+          "productid": {
+            "S": "SM316YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "276.02"
+          },
+          "name": {
+            "S": "180 Candy"
+          },
+          "price": {
+            "S": "240.02"
+          },
+          "productid": {
+            "S": "SM180YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "91.48"
+          },
+          "name": {
+            "S": "60 Candy"
+          },
+          "price": {
+            "S": "79.55"
+          },
+          "productid": {
+            "S": "SM60YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "91.6"
+          },
+          "name": {
+            "S": "61 Candy"
+          },
+          "price": {
+            "S": "79.65"
+          },
+          "productid": {
+            "S": "SM61-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "277.96"
+          },
+          "name": {
+            "S": "186 Candy"
+          },
+          "price": {
+            "S": "241.71"
+          },
+          "productid": {
+            "S": "SM186-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "465.11"
+          },
+          "name": {
+            "S": "318 Candy"
+          },
+          "price": {
+            "S": "404.45"
+          },
+          "productid": {
+            "S": "SM318-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "931.01"
+          },
+          "name": {
+            "S": "686 Candy"
+          },
+          "price": {
+            "S": "809.58"
+          },
+          "productid": {
+            "S": "SM686-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1863.61"
+          },
+          "name": {
+            "S": "1378 Candy"
+          },
+          "price": {
+            "S": "1620.53"
+          },
+          "productid": {
+            "S": "SM1378-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "sausage-man-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "9310.92"
+          },
+          "name": {
+            "S": "7108 Candy"
+          },
+          "price": {
+            "S": "8096.46"
+          },
+          "productid": {
+            "S": "SM7108-S50"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "itemname": {
+    "S": "store-age-of-magic"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "age-of-magic-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "531.98"
+          },
+          "name": {
+            "S": "Unique Pack"
+          },
+          "price": {
+            "S": "462.59"
+          },
+          "productid": {
+            "S": "AOMUPYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "age-of-magic-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1010.64"
+          },
+          "name": {
+            "S": "100 Liberty Coins [Bonus: +5]"
+          },
+          "price": {
+            "S": "878.82"
+          },
+          "productid": {
+            "S": "AOM100YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "age-of-magic-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1959.44"
+          },
+          "name": {
+            "S": "200 Liberty Coins [Bonus: +10]"
+          },
+          "price": {
+            "S": "1703.86"
+          },
+          "productid": {
+            "S": "AOM200YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "age-of-magic-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3383.72"
+          },
+          "name": {
+            "S": "350 Liberty Coins [Bonus: +15]"
+          },
+          "price": {
+            "S": "2942.36"
+          },
+          "productid": {
+            "S": "AOM350YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "age-of-magic-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5357.02"
+          },
+          "name": {
+            "S": "500 Liberty Coins [Bonus: +25]"
+          },
+          "price": {
+            "S": "4658.28"
+          },
+          "productid": {
+            "S": "AOM500YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "age-of-magic-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "9963.52"
+          },
+          "name": {
+            "S": "1000 Liberty Coins [Bonus: +50]"
+          },
+          "price": {
+            "S": "8663.93"
+          },
+          "productid": {
+            "S": "AOM1000YCGG"
+          }
+        }
+      }
+    ]
+  }
+}

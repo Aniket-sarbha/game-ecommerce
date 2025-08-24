@@ -1,0 +1,100 @@
+{
+  "itemname": {
+    "S": "store-garena-shell"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "garena-shell-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "359.1"
+          },
+          "name": {
+            "S": "Voucher Garena 165 Shell"
+          },
+          "price": {
+            "S": "312.26"
+          },
+          "productid": {
+            "S": "GNA165"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "garena-shell-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "71.82"
+          },
+          "name": {
+            "S": "Voucher Garena 33 Shell"
+          },
+          "price": {
+            "S": "62.45"
+          },
+          "productid": {
+            "S": "GNA33"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "garena-shell-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "720.37"
+          },
+          "name": {
+            "S": "Voucher Garena 330 Shell"
+          },
+          "price": {
+            "S": "626.41"
+          },
+          "productid": {
+            "S": "GNA330"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "garena-shell-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "143.64"
+          },
+          "name": {
+            "S": "Voucher Garena 66 Shell"
+          },
+          "price": {
+            "S": "124.91"
+          },
+          "productid": {
+            "S": "GNA66"
+          }
+        }
+      }
+    ]
+  }
+}

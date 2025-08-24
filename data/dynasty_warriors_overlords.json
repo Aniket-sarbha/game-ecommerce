@@ -1,0 +1,210 @@
+{
+  "itemname": {
+    "S": "store-dynasty-warriors-overlords"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "dynasty-warriors-overlords-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "81.37"
+          },
+          "name": {
+            "S": "20 + 5 Gold Seal"
+          },
+          "price": {
+            "S": "70.76"
+          },
+          "productid": {
+            "S": "DW2_5-S81"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dynasty-warriors-overlords-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "195.29"
+          },
+          "name": {
+            "S": "50 + 13 Gold Seal"
+          },
+          "price": {
+            "S": "169.81"
+          },
+          "productid": {
+            "S": "DW50_13-S81"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dynasty-warriors-overlords-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "390.57"
+          },
+          "name": {
+            "S": "100 + 25 Gold Seal"
+          },
+          "price": {
+            "S": "339.63"
+          },
+          "productid": {
+            "S": "DW100_25-S81"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dynasty-warriors-overlords-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "813.69"
+          },
+          "name": {
+            "S": "200 + 50 Gold Seal"
+          },
+          "price": {
+            "S": "707.56"
+          },
+          "productid": {
+            "S": "DW200_50-S81"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dynasty-warriors-overlords-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2115.59"
+          },
+          "name": {
+            "S": "500 + 125 Gold Seal"
+          },
+          "price": {
+            "S": "1839.65"
+          },
+          "productid": {
+            "S": "DW500_125-S81"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dynasty-warriors-overlords-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4231.18"
+          },
+          "name": {
+            "S": "1000 + 250 Gold Seal"
+          },
+          "price": {
+            "S": "3679.29"
+          },
+          "productid": {
+            "S": "DW1000_250-S81"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dynasty-warriors-overlords-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "8136.88"
+          },
+          "name": {
+            "S": "2000 + 500 Gold Seal"
+          },
+          "price": {
+            "S": "7075.55"
+          },
+          "productid": {
+            "S": "DW2000_500-S81"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dynasty-warriors-overlords-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "20504.92"
+          },
+          "name": {
+            "S": "5000 + 1250 Gold Seal"
+          },
+          "price": {
+            "S": "17830.37"
+          },
+          "productid": {
+            "S": "DW5000_1250-S81"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dynasty-warriors-overlords-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "41009.85"
+          },
+          "name": {
+            "S": "10000 + 2500 Gold Seal"
+          },
+          "price": {
+            "S": "35660.74"
+          },
+          "productid": {
+            "S": "DW10000_2500-S81"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "itemname": {
+    "S": "store-hotelmurah"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "hotelmurah-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "15.79"
+          },
+          "name": {
+            "S": "Voucher Hotel Hotelmurah 10.000"
+          },
+          "price": {
+            "S": "13.73"
+          },
+          "productid": {
+            "S": "HHM10"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "hotelmurah-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "710.7"
+          },
+          "name": {
+            "S": "Voucher Hotel Hotelmurah 100.000"
+          },
+          "price": {
+            "S": "618.0"
+          },
+          "productid": {
+            "S": "HHM100"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "hotelmurah-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "7738.7"
+          },
+          "name": {
+            "S": "Voucher Hotel Hotelmurah 1.000.000"
+          },
+          "price": {
+            "S": "6729.31"
+          },
+          "productid": {
+            "S": "HHM1000"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "hotelmurah-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "39.48"
+          },
+          "name": {
+            "S": "Voucher Hotel Hotelmurah 20.000"
+          },
+          "price": {
+            "S": "34.33"
+          },
+          "productid": {
+            "S": "HHM20"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "hotelmurah-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1492.46"
+          },
+          "name": {
+            "S": "Voucher Hotel Hotelmurah 200.000"
+          },
+          "price": {
+            "S": "1297.79"
+          },
+          "productid": {
+            "S": "HHM200"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "hotelmurah-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "315.87"
+          },
+          "name": {
+            "S": "voucher Hotel Hotelmurah 50.000"
+          },
+          "price": {
+            "S": "274.67"
+          },
+          "productid": {
+            "S": "HHM50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "hotelmurah-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3829.87"
+          },
+          "name": {
+            "S": "Voucher Hotel Hotelmurah 500.000"
+          },
+          "price": {
+            "S": "3330.32"
+          },
+          "productid": {
+            "S": "HHM500"
+          }
+        }
+      }
+    ]
+  }
+}

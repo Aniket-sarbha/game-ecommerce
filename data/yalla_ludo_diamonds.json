@@ -1,0 +1,254 @@
+{
+  "itemname": {
+    "S": "store-yalla-ludo-diamonds"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "yalla-ludo-diamonds-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "258.82"
+          },
+          "name": {
+            "S": "830 Diamonds (INT)"
+          },
+          "price": {
+            "S": "225.06"
+          },
+          "productid": {
+            "S": "YDL830DYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "yalla-ludo-diamonds-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "645.87"
+          },
+          "name": {
+            "S": "2320 Diamonds (INT)"
+          },
+          "price": {
+            "S": "561.62"
+          },
+          "productid": {
+            "S": "YDL2320DYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "yalla-ludo-diamonds-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1290.95"
+          },
+          "name": {
+            "S": "5150 Diamonds (INT)"
+          },
+          "price": {
+            "S": "1122.57"
+          },
+          "productid": {
+            "S": "YDL5150DYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "yalla-ludo-diamonds-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "3225.43"
+          },
+          "name": {
+            "S": "13580 Diamonds (INT)"
+          },
+          "price": {
+            "S": "2804.72"
+          },
+          "productid": {
+            "S": "YDL13580DYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "yalla-ludo-diamonds-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "6451.64"
+          },
+          "name": {
+            "S": "27640 Diamonds (INT)"
+          },
+          "price": {
+            "S": "5610.12"
+          },
+          "productid": {
+            "S": "YDL27640DYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "yalla-ludo-diamonds-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "12902.49"
+          },
+          "name": {
+            "S": "55800 Diamonds (INT)"
+          },
+          "price": {
+            "S": "11219.56"
+          },
+          "productid": {
+            "S": "YDL55800DYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "yalla-ludo-diamonds-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "258.82"
+          },
+          "name": {
+            "S": "68500 Gold (INT)"
+          },
+          "price": {
+            "S": "225.06"
+          },
+          "productid": {
+            "S": "YDL68500GYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "yalla-ludo-diamonds-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "645.87"
+          },
+          "name": {
+            "S": "223700 Gold (INT)"
+          },
+          "price": {
+            "S": "561.62"
+          },
+          "productid": {
+            "S": "YDL223700GYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "yalla-ludo-diamonds-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1290.95"
+          },
+          "name": {
+            "S": "1463320 Gold (INT)"
+          },
+          "price": {
+            "S": "1122.57"
+          },
+          "productid": {
+            "S": "YDL1463320GYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "yalla-ludo-diamonds-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "3225.43"
+          },
+          "name": {
+            "S": "3666470 Gold (INT)"
+          },
+          "price": {
+            "S": "2804.72"
+          },
+          "productid": {
+            "S": "YDL3666470GYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "yalla-ludo-diamonds-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "6451.64"
+          },
+          "name": {
+            "S": "9973990 Gold (INT)"
+          },
+          "price": {
+            "S": "5610.12"
+          },
+          "productid": {
+            "S": "YDL9973990GYCGG"
+          }
+        }
+      }
+    ]
+  }
+}

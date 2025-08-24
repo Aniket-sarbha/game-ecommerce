@@ -1,0 +1,254 @@
+{
+  "itemname": {
+    "S": "store-aswat"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "aswat-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "138.98"
+          },
+          "name": {
+            "S": "1000 Koin"
+          },
+          "price": {
+            "S": "120.85"
+          },
+          "productid": {
+            "S": "ASW1000"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "aswat-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1389.81"
+          },
+          "name": {
+            "S": "10000 Koin"
+          },
+          "price": {
+            "S": "1208.53"
+          },
+          "productid": {
+            "S": "ASW10000"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "aswat-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "277.96"
+          },
+          "name": {
+            "S": "2000 Koin"
+          },
+          "price": {
+            "S": "241.71"
+          },
+          "productid": {
+            "S": "ASW2000"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "aswat-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "416.94"
+          },
+          "name": {
+            "S": "3000 Koin"
+          },
+          "price": {
+            "S": "362.56"
+          },
+          "productid": {
+            "S": "ASW3000"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "aswat-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "555.92"
+          },
+          "name": {
+            "S": "4000 Koin"
+          },
+          "price": {
+            "S": "483.41"
+          },
+          "productid": {
+            "S": "ASW4000"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "aswat-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "694.9"
+          },
+          "name": {
+            "S": "5000 Koin"
+          },
+          "price": {
+            "S": "604.26"
+          },
+          "productid": {
+            "S": "ASW5000"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "aswat-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "833.88"
+          },
+          "name": {
+            "S": "6000 Koin"
+          },
+          "price": {
+            "S": "725.12"
+          },
+          "productid": {
+            "S": "ASW6000"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "aswat-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "972.87"
+          },
+          "name": {
+            "S": "7000 Koin"
+          },
+          "price": {
+            "S": "845.97"
+          },
+          "productid": {
+            "S": "ASW7000"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "aswat-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1111.85"
+          },
+          "name": {
+            "S": "8000 Koin"
+          },
+          "price": {
+            "S": "966.82"
+          },
+          "productid": {
+            "S": "ASW8000"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "aswat-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1250.83"
+          },
+          "name": {
+            "S": "9000 Koin"
+          },
+          "price": {
+            "S": "1087.68"
+          },
+          "productid": {
+            "S": "ASW9000"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "aswat-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "14.21"
+          },
+          "name": {
+            "S": "100 Koin"
+          },
+          "price": {
+            "S": "12.36"
+          },
+          "productid": {
+            "S": "ASW100"
+          }
+        }
+      }
+    ]
+  }
+}

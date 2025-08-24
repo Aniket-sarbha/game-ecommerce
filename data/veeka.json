@@ -1,0 +1,342 @@
+{
+  "itemname": {
+    "S": "store-veeka"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "veeka-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "225.98"
+          },
+          "name": {
+            "S": "260 Gold Bean"
+          },
+          "price": {
+            "S": "196.5"
+          },
+          "productid": {
+            "S": "VEEKA260YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "veeka-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "525.45"
+          },
+          "name": {
+            "S": "640 Gold Bean"
+          },
+          "price": {
+            "S": "456.91"
+          },
+          "productid": {
+            "S": "VEEKA640YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "veeka-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1201.81"
+          },
+          "name": {
+            "S": "1480 Gold Bean"
+          },
+          "price": {
+            "S": "1045.06"
+          },
+          "productid": {
+            "S": "VEEKA1480YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "veeka-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2252.72"
+          },
+          "name": {
+            "S": "2780 Gold Bean"
+          },
+          "price": {
+            "S": "1958.88"
+          },
+          "productid": {
+            "S": "VEEKA2780YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "veeka-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "6756.59"
+          },
+          "name": {
+            "S": "8340 Gold Bean"
+          },
+          "price": {
+            "S": "5875.29"
+          },
+          "productid": {
+            "S": "VEEKA8340YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "veeka-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "12762.53"
+          },
+          "name": {
+            "S": "15780 Gold Bean"
+          },
+          "price": {
+            "S": "11097.85"
+          },
+          "productid": {
+            "S": "VEEKA15780YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "veeka-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "27777.77"
+          },
+          "name": {
+            "S": "34340 Gold Bean"
+          },
+          "price": {
+            "S": "24154.58"
+          },
+          "productid": {
+            "S": "VEEKA34340YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "veeka-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "172.02"
+          },
+          "name": {
+            "S": "200 Gold Bean (Singapore)"
+          },
+          "price": {
+            "S": "149.59"
+          },
+          "productid": {
+            "S": "VEEKA200YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "veeka-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "430.06"
+          },
+          "name": {
+            "S": "500 Gold Bean (Singapore)"
+          },
+          "price": {
+            "S": "373.96"
+          },
+          "productid": {
+            "S": "VEEKA500YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "veeka-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "859.33"
+          },
+          "name": {
+            "S": "1020 Gold Bean (Singapore)"
+          },
+          "price": {
+            "S": "747.25"
+          },
+          "productid": {
+            "S": "VEEKA1020YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "veeka-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1717.1"
+          },
+          "name": {
+            "S": "2040 Gold Bean (Singapore)"
+          },
+          "price": {
+            "S": "1493.13"
+          },
+          "productid": {
+            "S": "VEEKA2040YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "veeka-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "4292.75"
+          },
+          "name": {
+            "S": "5120 Gold Bean (Singapore)"
+          },
+          "price": {
+            "S": "3732.83"
+          },
+          "productid": {
+            "S": "VEEKA5120YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "veeka-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "8584.72"
+          },
+          "name": {
+            "S": "10240 Gold Bean (Singapore)"
+          },
+          "price": {
+            "S": "7464.97"
+          },
+          "productid": {
+            "S": "VEEKA10240YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "veeka-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "17169.44"
+          },
+          "name": {
+            "S": "20480 Gold Bean (Singapore)"
+          },
+          "price": {
+            "S": "14929.95"
+          },
+          "productid": {
+            "S": "VEEKA20480YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "veeka-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "42922.03"
+          },
+          "name": {
+            "S": "51240 Gold Bean (Singapore)"
+          },
+          "price": {
+            "S": "37323.51"
+          },
+          "productid": {
+            "S": "VEEKA51240YC"
+          }
+        }
+      }
+    ]
+  }
+}

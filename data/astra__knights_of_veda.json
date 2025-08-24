@@ -1,0 +1,144 @@
+{
+  "itemname": {
+    "S": "store-astra:-knights-of-veda"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "astra:-knights-of-veda-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "93.54"
+          },
+          "name": {
+            "S": "60 Rubies"
+          },
+          "price": {
+            "S": "81.34"
+          },
+          "productid": {
+            "S": "AKV60YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "astra:-knights-of-veda-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "570.76"
+          },
+          "name": {
+            "S": "300 Rubies"
+          },
+          "price": {
+            "S": "496.32"
+          },
+          "productid": {
+            "S": "AKV300YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "astra:-knights-of-veda-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1525.22"
+          },
+          "name": {
+            "S": "980 Rubies"
+          },
+          "price": {
+            "S": "1326.28"
+          },
+          "productid": {
+            "S": "AKV980YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "astra:-knights-of-veda-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3416.94"
+          },
+          "name": {
+            "S": "1980 Rubies"
+          },
+          "price": {
+            "S": "2971.26"
+          },
+          "productid": {
+            "S": "AKV1980YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "astra:-knights-of-veda-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5707.63"
+          },
+          "name": {
+            "S": "3280 Rubies"
+          },
+          "price": {
+            "S": "4963.15"
+          },
+          "productid": {
+            "S": "AKV3280YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "astra:-knights-of-veda-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "9525.44"
+          },
+          "name": {
+            "S": "6480 Rubies"
+          },
+          "price": {
+            "S": "8282.99"
+          },
+          "productid": {
+            "S": "AKV6480YCX"
+          }
+        }
+      }
+    ]
+  }
+}

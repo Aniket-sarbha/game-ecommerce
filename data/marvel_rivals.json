@@ -1,0 +1,144 @@
+{
+  "itemname": {
+    "S": "store-marvel-rivals"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "marvel-rivals-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "98.27"
+          },
+          "name": {
+            "S": "100 Lattices"
+          },
+          "price": {
+            "S": "85.46"
+          },
+          "productid": {
+            "S": "MRTU100YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "marvel-rivals-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "489.9"
+          },
+          "name": {
+            "S": "500 Lattices"
+          },
+          "price": {
+            "S": "426.0"
+          },
+          "productid": {
+            "S": "MRTU500YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "marvel-rivals-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "981.24"
+          },
+          "name": {
+            "S": "1000 Lattices"
+          },
+          "price": {
+            "S": "853.25"
+          },
+          "productid": {
+            "S": "MRTU1000YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "marvel-rivals-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1963.93"
+          },
+          "name": {
+            "S": "2180 Lattices"
+          },
+          "price": {
+            "S": "1707.77"
+          },
+          "productid": {
+            "S": "MRTU2180YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "marvel-rivals-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4907.66"
+          },
+          "name": {
+            "S": "5680 Lattices"
+          },
+          "price": {
+            "S": "4267.53"
+          },
+          "productid": {
+            "S": "MRTU5680YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "marvel-rivals-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "9818.2"
+          },
+          "name": {
+            "S": "11680 Lattices"
+          },
+          "price": {
+            "S": "8537.57"
+          },
+          "productid": {
+            "S": "MRTU11680YCGG"
+          }
+        }
+      }
+    ]
+  }
+}

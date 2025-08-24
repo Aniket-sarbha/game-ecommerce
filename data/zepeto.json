@@ -1,0 +1,298 @@
+{
+  "itemname": {
+    "S": "store-zepeto"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "zepeto-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "52.24"
+          },
+          "name": {
+            "S": "7 ZEMs"
+          },
+          "price": {
+            "S": "45.43"
+          },
+          "productid": {
+            "S": "ZPT7YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zepeto-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "105.54"
+          },
+          "name": {
+            "S": "14 ZEMs"
+          },
+          "price": {
+            "S": "91.78"
+          },
+          "productid": {
+            "S": "ZPT14YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zepeto-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "205.76"
+          },
+          "name": {
+            "S": "28 ZEMs"
+          },
+          "price": {
+            "S": "178.92"
+          },
+          "productid": {
+            "S": "ZPT28YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zepeto-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "412.58"
+          },
+          "name": {
+            "S": "58 ZEMs"
+          },
+          "price": {
+            "S": "358.76"
+          },
+          "productid": {
+            "S": "ZPT58YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zepeto-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "878.45"
+          },
+          "name": {
+            "S": "128 ZEMs"
+          },
+          "price": {
+            "S": "763.87"
+          },
+          "productid": {
+            "S": "ZPT128YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zepeto-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2222.76"
+          },
+          "name": {
+            "S": "323 ZEMs"
+          },
+          "price": {
+            "S": "1932.84"
+          },
+          "productid": {
+            "S": "ZPT323YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zepeto-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "6683.21"
+          },
+          "name": {
+            "S": "1000 ZEMs"
+          },
+          "price": {
+            "S": "5811.49"
+          },
+          "productid": {
+            "S": "ZPT1000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zepeto-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "105.54"
+          },
+          "name": {
+            "S": "4680 Coins"
+          },
+          "price": {
+            "S": "91.78"
+          },
+          "productid": {
+            "S": "ZPT4680YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zepeto-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "205.76"
+          },
+          "name": {
+            "S": "9700 Coins"
+          },
+          "price": {
+            "S": "178.92"
+          },
+          "productid": {
+            "S": "ZPT9700YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zepeto-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "515.98"
+          },
+          "name": {
+            "S": "25200 Coins"
+          },
+          "price": {
+            "S": "448.68"
+          },
+          "productid": {
+            "S": "ZPT25200YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zepeto-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "826.21"
+          },
+          "name": {
+            "S": "40700 Coins"
+          },
+          "price": {
+            "S": "718.45"
+          },
+          "productid": {
+            "S": "ZPT40700YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zepeto-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2170.52"
+          },
+          "name": {
+            "S": "110000 Coins"
+          },
+          "price": {
+            "S": "1887.41"
+          },
+          "productid": {
+            "S": "ZPT110000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zepeto-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5771.72"
+          },
+          "name": {
+            "S": "300000 Coins"
+          },
+          "price": {
+            "S": "5018.89"
+          },
+          "productid": {
+            "S": "ZPT300000YCX"
+          }
+        }
+      }
+    ]
+  }
+}

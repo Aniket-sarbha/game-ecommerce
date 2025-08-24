@@ -1,0 +1,342 @@
+{
+  "itemname": {
+    "S": "store-ifun"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "ifun-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1251.86"
+          },
+          "name": {
+            "S": "100000 Coins"
+          },
+          "price": {
+            "S": "1088.57"
+          },
+          "productid": {
+            "S": "ifunyc100k"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ifun-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "125.89"
+          },
+          "name": {
+            "S": "10000 Coins"
+          },
+          "price": {
+            "S": "109.47"
+          },
+          "productid": {
+            "S": "ifunyc10k"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ifun-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1877.39"
+          },
+          "name": {
+            "S": "150000 Coins"
+          },
+          "price": {
+            "S": "1632.52"
+          },
+          "productid": {
+            "S": "ifunyc150k"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ifun-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2502.93"
+          },
+          "name": {
+            "S": "200000 Coins"
+          },
+          "price": {
+            "S": "2176.46"
+          },
+          "productid": {
+            "S": "ifunyc200k"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ifun-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "251.0"
+          },
+          "name": {
+            "S": "20000 Coins"
+          },
+          "price": {
+            "S": "218.26"
+          },
+          "productid": {
+            "S": "ifunyc20k"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ifun-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "376.1"
+          },
+          "name": {
+            "S": "30000 Coins"
+          },
+          "price": {
+            "S": "327.05"
+          },
+          "productid": {
+            "S": "ifunyc30k"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ifun-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "501.21"
+          },
+          "name": {
+            "S": "40000 Coins"
+          },
+          "price": {
+            "S": "435.84"
+          },
+          "productid": {
+            "S": "ifunyc40k"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ifun-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "6256.16"
+          },
+          "name": {
+            "S": "500000 Coins"
+          },
+          "price": {
+            "S": "5440.14"
+          },
+          "productid": {
+            "S": "ifunyc500k"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ifun-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "626.32"
+          },
+          "name": {
+            "S": "50000 Coins"
+          },
+          "price": {
+            "S": "544.63"
+          },
+          "productid": {
+            "S": "ifunyc50k"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ifun-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "63.34"
+          },
+          "name": {
+            "S": "5000 Coins"
+          },
+          "price": {
+            "S": "55.07"
+          },
+          "productid": {
+            "S": "ifunyc5k"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ifun-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "751.43"
+          },
+          "name": {
+            "S": "60000 Coins"
+          },
+          "price": {
+            "S": "653.41"
+          },
+          "productid": {
+            "S": "ifunyc60k"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ifun-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "876.53"
+          },
+          "name": {
+            "S": "70000 Coins"
+          },
+          "price": {
+            "S": "762.2"
+          },
+          "productid": {
+            "S": "ifunyc70k"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ifun-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1001.64"
+          },
+          "name": {
+            "S": "80000 Coins"
+          },
+          "price": {
+            "S": "870.99"
+          },
+          "productid": {
+            "S": "ifunyc80k"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ifun-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1126.75"
+          },
+          "name": {
+            "S": "90000 Coins"
+          },
+          "price": {
+            "S": "979.78"
+          },
+          "productid": {
+            "S": "ifunyc90k"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ifun-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "13.08"
+          },
+          "name": {
+            "S": "1000 Coins"
+          },
+          "price": {
+            "S": "11.38"
+          },
+          "productid": {
+            "S": "ifunyc1k"
+          }
+        }
+      }
+    ]
+  }
+}

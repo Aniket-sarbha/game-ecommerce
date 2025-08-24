@@ -1,0 +1,166 @@
+{
+  "itemname": {
+    "S": "store-marvel-super-war"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "marvel-super-war-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "87.2"
+          },
+          "name": {
+            "S": "55 Star Credits"
+          },
+          "price": {
+            "S": "75.83"
+          },
+          "productid": {
+            "S": "MSW55SC-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "marvel-super-war-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "444.96"
+          },
+          "name": {
+            "S": "275 Star Credits"
+          },
+          "price": {
+            "S": "386.92"
+          },
+          "productid": {
+            "S": "MSW275SC-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "marvel-super-war-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "892.16"
+          },
+          "name": {
+            "S": "565 Star Credits"
+          },
+          "price": {
+            "S": "775.79"
+          },
+          "productid": {
+            "S": "MSW565SC-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "marvel-super-war-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1786.54"
+          },
+          "name": {
+            "S": "1155 Star Credits"
+          },
+          "price": {
+            "S": "1553.52"
+          },
+          "productid": {
+            "S": "MSW1155SC-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "marvel-super-war-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2904.54"
+          },
+          "name": {
+            "S": "1765 Star Credits"
+          },
+          "price": {
+            "S": "2525.68"
+          },
+          "productid": {
+            "S": "MSW1765SC-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "marvel-super-war-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "4469.72"
+          },
+          "name": {
+            "S": "2950 Star Credits"
+          },
+          "price": {
+            "S": "3886.71"
+          },
+          "productid": {
+            "S": "MSW2950SC-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "marvel-super-war-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "8941.67"
+          },
+          "name": {
+            "S": "6000 Star Credits"
+          },
+          "price": {
+            "S": "7775.37"
+          },
+          "productid": {
+            "S": "MSW6000SC-S14"
+          }
+        }
+      }
+    ]
+  }
+}

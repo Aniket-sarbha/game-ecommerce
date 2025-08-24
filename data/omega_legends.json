@@ -1,0 +1,144 @@
+{
+  "itemname": {
+    "S": "store-omega-legends"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "omega-legends-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "6650.42"
+          },
+          "name": {
+            "S": "9000 Gold"
+          },
+          "price": {
+            "S": "5782.97"
+          },
+          "productid": {
+            "S": "OL9000-S1"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "omega-legends-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2216.81"
+          },
+          "name": {
+            "S": "2927 Gold"
+          },
+          "price": {
+            "S": "1927.66"
+          },
+          "productid": {
+            "S": "OL2927-S1"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "omega-legends-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1108.41"
+          },
+          "name": {
+            "S": "1429 Gold"
+          },
+          "price": {
+            "S": "963.83"
+          },
+          "productid": {
+            "S": "OL1429-S1"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "omega-legends-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "665.04"
+          },
+          "name": {
+            "S": "828 Gold"
+          },
+          "price": {
+            "S": "578.3"
+          },
+          "productid": {
+            "S": "OL828-S1"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "omega-legends-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "221.69"
+          },
+          "name": {
+            "S": "258 Gold"
+          },
+          "price": {
+            "S": "192.77"
+          },
+          "productid": {
+            "S": "OL258-S1"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "omega-legends-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "110.84"
+          },
+          "name": {
+            "S": "129 Gold"
+          },
+          "price": {
+            "S": "96.38"
+          },
+          "productid": {
+            "S": "OL129-S1"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "itemname": {
+    "S": "store-lifeafter"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "lifeafter-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "109.03"
+          },
+          "name": {
+            "S": "65 Credits"
+          },
+          "price": {
+            "S": "94.81"
+          },
+          "productid": {
+            "S": "LA65-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lifeafter-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "531.77"
+          },
+          "name": {
+            "S": "330 Credits"
+          },
+          "price": {
+            "S": "462.41"
+          },
+          "productid": {
+            "S": "LA330-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lifeafter-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "887.77"
+          },
+          "name": {
+            "S": "558 Credits"
+          },
+          "price": {
+            "S": "771.97"
+          },
+          "productid": {
+            "S": "LA558-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lifeafter-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1555.26"
+          },
+          "name": {
+            "S": "1108 Credits"
+          },
+          "price": {
+            "S": "1352.4"
+          },
+          "productid": {
+            "S": "LA1108-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lifeafter-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "3223.97"
+          },
+          "name": {
+            "S": "2268 Credits"
+          },
+          "price": {
+            "S": "2803.45"
+          },
+          "productid": {
+            "S": "LA2268-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lifeafter-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "5003.94"
+          },
+          "name": {
+            "S": "3468 Credits"
+          },
+          "price": {
+            "S": "4351.26"
+          },
+          "productid": {
+            "S": "LA3468-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lifeafter-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "7785.15"
+          },
+          "name": {
+            "S": "5768 Credits"
+          },
+          "price": {
+            "S": "6769.69"
+          },
+          "productid": {
+            "S": "LA5768-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lifeafter-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "10677.6"
+          },
+          "name": {
+            "S": "7768 Credits"
+          },
+          "price": {
+            "S": "9284.87"
+          },
+          "productid": {
+            "S": "LA7768-S14"
+          }
+        }
+      }
+    ]
+  }
+}

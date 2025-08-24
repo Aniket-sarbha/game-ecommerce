@@ -1,0 +1,188 @@
+{
+  "itemname": {
+    "S": "store-hami-party"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "hami-party-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "12.48"
+          },
+          "name": {
+            "S": "1000 Coins"
+          },
+          "price": {
+            "S": "10.85"
+          },
+          "productid": {
+            "S": "1khami"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "hami-party-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "24.96"
+          },
+          "name": {
+            "S": "2000 Coins"
+          },
+          "price": {
+            "S": "21.7"
+          },
+          "productid": {
+            "S": "2khami"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "hami-party-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "62.38"
+          },
+          "name": {
+            "S": "5000 Coins"
+          },
+          "price": {
+            "S": "54.25"
+          },
+          "productid": {
+            "S": "5khami"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "hami-party-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "124.77"
+          },
+          "name": {
+            "S": "10000 Coins"
+          },
+          "price": {
+            "S": "108.49"
+          },
+          "productid": {
+            "S": "10khami"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "hami-party-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "249.53"
+          },
+          "name": {
+            "S": "20000 Coins"
+          },
+          "price": {
+            "S": "216.99"
+          },
+          "productid": {
+            "S": "20khami"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "hami-party-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "623.83"
+          },
+          "name": {
+            "S": "50000 Coins"
+          },
+          "price": {
+            "S": "542.46"
+          },
+          "productid": {
+            "S": "50khami"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "hami-party-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1247.67"
+          },
+          "name": {
+            "S": "100000 Coins"
+          },
+          "price": {
+            "S": "1084.93"
+          },
+          "productid": {
+            "S": "100khami"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "hami-party-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "6238.34"
+          },
+          "name": {
+            "S": "500000 Coins"
+          },
+          "price": {
+            "S": "5424.65"
+          },
+          "productid": {
+            "S": "500khami"
+          }
+        }
+      }
+    ]
+  }
+}

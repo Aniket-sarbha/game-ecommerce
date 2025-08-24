@@ -1,0 +1,188 @@
+{
+  "itemname": {
+    "S": "store-tom-and-jerry-:-chase"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "tom-and-jerry-:-chase-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "111.03"
+          },
+          "name": {
+            "S": "60 Diamonds"
+          },
+          "price": {
+            "S": "96.55"
+          },
+          "productid": {
+            "S": "TJ60YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tom-and-jerry-:-chase-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "311.27"
+          },
+          "name": {
+            "S": "180 Diamonds"
+          },
+          "price": {
+            "S": "270.67"
+          },
+          "productid": {
+            "S": "TJ180YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tom-and-jerry-:-chase-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "511.52"
+          },
+          "name": {
+            "S": "300 Diamonds"
+          },
+          "price": {
+            "S": "444.8"
+          },
+          "productid": {
+            "S": "TJ300YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tom-and-jerry-:-chase-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1045.51"
+          },
+          "name": {
+            "S": "600 Diamonds"
+          },
+          "price": {
+            "S": "909.14"
+          },
+          "productid": {
+            "S": "TJ600YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tom-and-jerry-:-chase-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2113.49"
+          },
+          "name": {
+            "S": "1200 Diamonds"
+          },
+          "price": {
+            "S": "1837.82"
+          },
+          "productid": {
+            "S": "TJ1200YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tom-and-jerry-:-chase-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "3225.98"
+          },
+          "name": {
+            "S": "1800 Diamonds"
+          },
+          "price": {
+            "S": "2805.2"
+          },
+          "productid": {
+            "S": "TJ1800YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tom-and-jerry-:-chase-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "5339.69"
+          },
+          "name": {
+            "S": "3000 Diamonds"
+          },
+          "price": {
+            "S": "4643.21"
+          },
+          "productid": {
+            "S": "TJ3000YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tom-and-jerry-:-chase-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "10457.1"
+          },
+          "name": {
+            "S": "6000 Diamonds"
+          },
+          "price": {
+            "S": "9093.13"
+          },
+          "productid": {
+            "S": "TJ6000YC"
+          }
+        }
+      }
+    ]
+  }
+}

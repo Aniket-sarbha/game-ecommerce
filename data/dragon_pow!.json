@@ -1,0 +1,386 @@
+{
+  "itemname": {
+    "S": "store-dragon-pow!"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "dragon-pow!-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1476.52"
+          },
+          "name": {
+            "S": "Token Gold 98 + Dragon Gem 98"
+          },
+          "price": {
+            "S": "1283.93"
+          },
+          "productid": {
+            "S": "DRPW98YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-pow!-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1845.38"
+          },
+          "name": {
+            "S": "Token Gold 128 + Dragon Gem 128"
+          },
+          "price": {
+            "S": "1604.68"
+          },
+          "productid": {
+            "S": "DRPW128YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-pow!-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3306.96"
+          },
+          "name": {
+            "S": "Token Gold 198 + Dragon Gem 198"
+          },
+          "price": {
+            "S": "2875.62"
+          },
+          "productid": {
+            "S": "DRPW198YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-pow!-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5524.39"
+          },
+          "name": {
+            "S": "Token Gold 328 + Dragon Gem 328"
+          },
+          "price": {
+            "S": "4803.82"
+          },
+          "productid": {
+            "S": "DRPW328YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-pow!-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "9219.39"
+          },
+          "name": {
+            "S": "Token Gold 648 + Dragon Gem 648"
+          },
+          "price": {
+            "S": "8016.86"
+          },
+          "productid": {
+            "S": "DRPW648YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-pow!-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "18456.91"
+          },
+          "name": {
+            "S": "Token Gold 1280 + Dragon Gem 1280"
+          },
+          "price": {
+            "S": "16049.49"
+          },
+          "productid": {
+            "S": "DRPW1280YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-pow!-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "33071.69"
+          },
+          "name": {
+            "S": "Token Gold 1980 + Dragon Gem 1980"
+          },
+          "price": {
+            "S": "28757.99"
+          },
+          "productid": {
+            "S": "DRPW1980YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-pow!-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "55242.8"
+          },
+          "name": {
+            "S": "Token Gold 3280 + Dragon Gem 3280"
+          },
+          "price": {
+            "S": "48037.22"
+          },
+          "productid": {
+            "S": "DRPW3280YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-pow!-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "92193.92"
+          },
+          "name": {
+            "S": "Token Gold 6480 + Dragon Gem 6480"
+          },
+          "price": {
+            "S": "80168.63"
+          },
+          "productid": {
+            "S": "DRPW6480YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-pow!-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1824.02"
+          },
+          "name": {
+            "S": "98 Token Gold"
+          },
+          "price": {
+            "S": "1586.11"
+          },
+          "productid": {
+            "S": "2437"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-pow!-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2557.01"
+          },
+          "name": {
+            "S": "128 Token Gold"
+          },
+          "price": {
+            "S": "2223.49"
+          },
+          "productid": {
+            "S": "2438"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-pow!-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3655.9"
+          },
+          "name": {
+            "S": "198 Token Gold"
+          },
+          "price": {
+            "S": "3179.05"
+          },
+          "productid": {
+            "S": "2439"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-pow!-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5854.83"
+          },
+          "name": {
+            "S": "328 Token Gold"
+          },
+          "price": {
+            "S": "5091.16"
+          },
+          "productid": {
+            "S": "2440"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-pow!-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "11730.99"
+          },
+          "name": {
+            "S": "648 Token Gold"
+          },
+          "price": {
+            "S": "10200.86"
+          },
+          "productid": {
+            "S": "2441"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-pow!-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "25571.1"
+          },
+          "name": {
+            "S": "1280 Token Gold"
+          },
+          "price": {
+            "S": "22235.74"
+          },
+          "productid": {
+            "S": "2442"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-pow!-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "36562.38"
+          },
+          "name": {
+            "S": "1980 Token Gold"
+          },
+          "price": {
+            "S": "31793.38"
+          },
+          "productid": {
+            "S": "2443"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-pow!-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "58543.81"
+          },
+          "name": {
+            "S": "3280 Token Gold"
+          },
+          "price": {
+            "S": "50907.66"
+          },
+          "productid": {
+            "S": "2444"
+          }
+        }
+      }
+    ]
+  }
+}

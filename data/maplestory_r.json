@@ -1,0 +1,166 @@
+{
+  "itemname": {
+    "S": "store-maplestory-r"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "maplestory-r-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1216.9"
+          },
+          "name": {
+            "S": "11 Diamonds"
+          },
+          "price": {
+            "S": "1058.18"
+          },
+          "productid": {
+            "S": "MPSTR11-S98M"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "maplestory-r-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2433.81"
+          },
+          "name": {
+            "S": "22 Diamonds"
+          },
+          "price": {
+            "S": "2116.35"
+          },
+          "productid": {
+            "S": "MPSTR22-S98M"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "maplestory-r-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4868.57"
+          },
+          "name": {
+            "S": "45 Diamonds"
+          },
+          "price": {
+            "S": "4233.54"
+          },
+          "productid": {
+            "S": "MPSTR45-S98M"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "maplestory-r-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "7302.36"
+          },
+          "name": {
+            "S": "67 Diamonds"
+          },
+          "price": {
+            "S": "6349.88"
+          },
+          "productid": {
+            "S": "MPSTR67-S98M"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "maplestory-r-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "12169.96"
+          },
+          "name": {
+            "S": "112 Diamonds"
+          },
+          "price": {
+            "S": "10582.58"
+          },
+          "productid": {
+            "S": "MPSTR112-S98M"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "maplestory-r-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "19472.32"
+          },
+          "name": {
+            "S": "180 Diamonds"
+          },
+          "price": {
+            "S": "16932.45"
+          },
+          "productid": {
+            "S": "MPSTR180-S98M"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "maplestory-r-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "24340.88"
+          },
+          "name": {
+            "S": "224 Diamonds"
+          },
+          "price": {
+            "S": "21165.99"
+          },
+          "productid": {
+            "S": "MPSTR224-S98M"
+          }
+        }
+      }
+    ]
+  }
+}

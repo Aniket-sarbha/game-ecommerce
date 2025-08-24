@@ -1,0 +1,408 @@
+{
+  "itemname": {
+    "S": "store-octopath-traveler-cotc"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "octopath-traveler-cotc-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "106.59"
+          },
+          "name": {
+            "S": "Ruby Set A-16 Rubies"
+          },
+          "price": {
+            "S": "92.69"
+          },
+          "productid": {
+            "S": "OCTTRRSA16R-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "octopath-traveler-cotc-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "105.1"
+          },
+          "name": {
+            "S": "New Adventure Limited Ruby Set A-16 Rubies"
+          },
+          "price": {
+            "S": "91.39"
+          },
+          "productid": {
+            "S": "OCTTRNALRS16R-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "octopath-traveler-cotc-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "317.41"
+          },
+          "name": {
+            "S": "Level Up Pack"
+          },
+          "price": {
+            "S": "276.01"
+          },
+          "productid": {
+            "S": "OCTTRLUP-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "octopath-traveler-cotc-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "397.28"
+          },
+          "name": {
+            "S": "Ruby Set B-60 Rubies"
+          },
+          "price": {
+            "S": "345.46"
+          },
+          "productid": {
+            "S": "OCTTRRSB60R-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "octopath-traveler-cotc-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "391.74"
+          },
+          "name": {
+            "S": "New Adventure Limited Ruby Set B-60 Rubies"
+          },
+          "price": {
+            "S": "340.64"
+          },
+          "productid": {
+            "S": "OCTTRLRSB60R-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "octopath-traveler-cotc-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1028.68"
+          },
+          "name": {
+            "S": "New Adventure Limited Ruby Set C-160 Rubies"
+          },
+          "price": {
+            "S": "894.51"
+          },
+          "productid": {
+            "S": "OCTTRLRSC160R-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "octopath-traveler-cotc-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1043.25"
+          },
+          "name": {
+            "S": "Ruby Set C-160 Rubies"
+          },
+          "price": {
+            "S": "907.18"
+          },
+          "productid": {
+            "S": "OCTTRRSC160R-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "octopath-traveler-cotc-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1272.85"
+          },
+          "name": {
+            "S": "Level Up Bonus"
+          },
+          "price": {
+            "S": "1106.83"
+          },
+          "productid": {
+            "S": "OCTTRLUB-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "octopath-traveler-cotc-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1856.73"
+          },
+          "name": {
+            "S": "New Adventure Limited Ruby Set D-290 Rubies"
+          },
+          "price": {
+            "S": "1614.55"
+          },
+          "productid": {
+            "S": "OCTTRLRSD290R-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "octopath-traveler-cotc-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1883.03"
+          },
+          "name": {
+            "S": "Ruby Set D-290 Rubies"
+          },
+          "price": {
+            "S": "1637.42"
+          },
+          "productid": {
+            "S": "OCTTRRSD290R-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "octopath-traveler-cotc-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1883.03"
+          },
+          "name": {
+            "S": "Monthly Ruby Set A-290 Rubies"
+          },
+          "price": {
+            "S": "1637.42"
+          },
+          "productid": {
+            "S": "OCTTRMRSA290R-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "octopath-traveler-cotc-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3116.84"
+          },
+          "name": {
+            "S": "Ruby Set E-480 Rubies"
+          },
+          "price": {
+            "S": "2710.3"
+          },
+          "productid": {
+            "S": "OCTTRRSE480R-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "octopath-traveler-cotc-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "3073.31"
+          },
+          "name": {
+            "S": "New Adventure Limited Ruby Set E-480 Rubies"
+          },
+          "price": {
+            "S": "2672.44"
+          },
+          "productid": {
+            "S": "OCTTRLRSE480R-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "octopath-traveler-cotc-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "3236.79"
+          },
+          "name": {
+            "S": "Limit Break Pack"
+          },
+          "price": {
+            "S": "2814.6"
+          },
+          "productid": {
+            "S": "OCTTRLBP-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "octopath-traveler-cotc-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "3608.35"
+          },
+          "name": {
+            "S": "Novices Pack"
+          },
+          "price": {
+            "S": "3137.7"
+          },
+          "productid": {
+            "S": "OCTTRNP-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "octopath-traveler-cotc-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "6459.77"
+          },
+          "name": {
+            "S": "Monthly Ruby Set B-1000 Rubies"
+          },
+          "price": {
+            "S": "5617.19"
+          },
+          "productid": {
+            "S": "OCTTRMRB1000R-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "octopath-traveler-cotc-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "6369.56"
+          },
+          "name": {
+            "S": "New Adventure Limited Ruby Set F-1000 Rubies"
+          },
+          "price": {
+            "S": "5538.75"
+          },
+          "productid": {
+            "S": "OCTTRALRF1000R-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "octopath-traveler-cotc-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "6459.77"
+          },
+          "name": {
+            "S": "Ruby Set F-1000 Rubies"
+          },
+          "price": {
+            "S": "5617.19"
+          },
+          "productid": {
+            "S": "OCTTRRSF1000R-S50"
+          }
+        }
+      }
+    ]
+  }
+}

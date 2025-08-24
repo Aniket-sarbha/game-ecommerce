@@ -1,0 +1,496 @@
+{
+  "itemname": {
+    "S": "store-kings-choice"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "39.43"
+          },
+          "name": {
+            "S": "10 Diamonds"
+          },
+          "price": {
+            "S": "34.29"
+          },
+          "productid": {
+            "S": "KC4_6-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "95.02"
+          },
+          "name": {
+            "S": "26 Diamonds"
+          },
+          "price": {
+            "S": "82.63"
+          },
+          "productid": {
+            "S": "KC10_16-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "482.19"
+          },
+          "name": {
+            "S": "132 Diamonds"
+          },
+          "price": {
+            "S": "419.3"
+          },
+          "productid": {
+            "S": "KC50_82-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "3082.14"
+          },
+          "name": {
+            "S": "810 Diamonds"
+          },
+          "price": {
+            "S": "2680.12"
+          },
+          "productid": {
+            "S": "KC300_510-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "5148.36"
+          },
+          "name": {
+            "S": "1360 Diamonds"
+          },
+          "price": {
+            "S": "4476.83"
+          },
+          "productid": {
+            "S": "KC500_860-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "9625.5"
+          },
+          "name": {
+            "S": "2750 Diamonds"
+          },
+          "price": {
+            "S": "8370.0"
+          },
+          "productid": {
+            "S": "KC1000_1750-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "189.03"
+          },
+          "name": {
+            "S": "Monthly Card"
+          },
+          "price": {
+            "S": "164.38"
+          },
+          "productid": {
+            "S": "KCMC-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1825.63"
+          },
+          "name": {
+            "S": "Yearly Card"
+          },
+          "price": {
+            "S": "1587.51"
+          },
+          "productid": {
+            "S": "KCYC-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "775.34"
+          },
+          "name": {
+            "S": "Lunar Blessing"
+          },
+          "price": {
+            "S": "674.21"
+          },
+          "productid": {
+            "S": "KCLB-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "189.03"
+          },
+          "name": {
+            "S": "Diamond Weekly Card"
+          },
+          "price": {
+            "S": "164.38"
+          },
+          "productid": {
+            "S": "KCDWC-S50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1049.59"
+          },
+          "name": {
+            "S": "268 Diamonds"
+          },
+          "price": {
+            "S": "912.69"
+          },
+          "productid": {
+            "S": "KING268"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "42.92"
+          },
+          "name": {
+            "S": "Weekly Card"
+          },
+          "price": {
+            "S": "37.32"
+          },
+          "productid": {
+            "S": "KCWC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "42.84"
+          },
+          "name": {
+            "S": "10 Diamonds"
+          },
+          "price": {
+            "S": "37.25"
+          },
+          "productid": {
+            "S": "KING10"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "524.8"
+          },
+          "name": {
+            "S": "132 Diamonds"
+          },
+          "price": {
+            "S": "456.35"
+          },
+          "productid": {
+            "S": "KING132"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5604.06"
+          },
+          "name": {
+            "S": "1360 Diamonds"
+          },
+          "price": {
+            "S": "4873.1"
+          },
+          "productid": {
+            "S": "KING1360"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "103.09"
+          },
+          "name": {
+            "S": "26 Diamonds"
+          },
+          "price": {
+            "S": "89.64"
+          },
+          "productid": {
+            "S": "KING26"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "10477.16"
+          },
+          "name": {
+            "S": "2750 Diamonds"
+          },
+          "price": {
+            "S": "9110.57"
+          },
+          "productid": {
+            "S": "KING2750"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3354.94"
+          },
+          "name": {
+            "S": "810 Diamonds"
+          },
+          "price": {
+            "S": "2917.34"
+          },
+          "productid": {
+            "S": "KING810"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "206.17"
+          },
+          "name": {
+            "S": "Diamond Weekly Card"
+          },
+          "price": {
+            "S": "179.28"
+          },
+          "productid": {
+            "S": "KCDWC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "843.42"
+          },
+          "name": {
+            "S": "Lunar Blessing"
+          },
+          "price": {
+            "S": "733.41"
+          },
+          "productid": {
+            "S": "KCLB"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "206.17"
+          },
+          "name": {
+            "S": "Monthly Card"
+          },
+          "price": {
+            "S": "179.28"
+          },
+          "productid": {
+            "S": "KCMC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "kings-choice-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1986.72"
+          },
+          "name": {
+            "S": "Yearly Card"
+          },
+          "price": {
+            "S": "1727.59"
+          },
+          "productid": {
+            "S": "KCYC"
+          }
+        }
+      }
+    ]
+  }
+}

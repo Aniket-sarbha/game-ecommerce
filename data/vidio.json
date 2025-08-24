@@ -1,0 +1,386 @@
+{
+  "itemname": {
+    "S": "store-vidio"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "vidio-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "286.18"
+          },
+          "name": {
+            "S": "Platinum ( Bonus Olympic games ) 30 Hari"
+          },
+          "price": {
+            "S": "248.86"
+          },
+          "productid": {
+            "S": "VIDPLATINUM30DYCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "vidio-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1980.61"
+          },
+          "name": {
+            "S": "Platinum 1 Tahun"
+          },
+          "price": {
+            "S": "1722.27"
+          },
+          "productid": {
+            "S": "VIDPLATINUM1YRYCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "vidio-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "358.9"
+          },
+          "name": {
+            "S": "Diamond Mobile 30 Hari"
+          },
+          "price": {
+            "S": "312.09"
+          },
+          "productid": {
+            "S": "VIDDIAMONDMOBILE30DYCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "vidio-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4048.01"
+          },
+          "name": {
+            "S": "Diamond Mobile 1 Tahun"
+          },
+          "price": {
+            "S": "3520.01"
+          },
+          "productid": {
+            "S": "VIDDIAMONDMOBILE1YRYCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "vidio-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1029.01"
+          },
+          "name": {
+            "S": "Diamond All Screen 30 Hari"
+          },
+          "price": {
+            "S": "894.79"
+          },
+          "productid": {
+            "S": "VIDDIAMONDALLSCREEN30DYCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "vidio-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "6998.98"
+          },
+          "name": {
+            "S": "Diamond All Screen 1 Tahun"
+          },
+          "price": {
+            "S": "6086.07"
+          },
+          "productid": {
+            "S": "VIDDIAMONDALLSCREEN1YRYCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "vidio-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "188.44"
+          },
+          "name": {
+            "S": "Premier League Mobile 1 Bulan"
+          },
+          "price": {
+            "S": "163.86"
+          },
+          "productid": {
+            "S": "VIDEPLBASIC30YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "vidio-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "565.33"
+          },
+          "name": {
+            "S": "Premier League Mobile 3 Bulan"
+          },
+          "price": {
+            "S": "491.59"
+          },
+          "productid": {
+            "S": "VIDEPLBASIC90YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "vidio-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1130.66"
+          },
+          "name": {
+            "S": "Premier League Mobile 6 Bulan"
+          },
+          "price": {
+            "S": "983.18"
+          },
+          "productid": {
+            "S": "VIDEPLBASIC180YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "vidio-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "445.37"
+          },
+          "name": {
+            "S": "Platinum + SpoTV 30 Hari"
+          },
+          "price": {
+            "S": "387.28"
+          },
+          "productid": {
+            "S": "VIDPLATINUMSPOTV30YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "vidio-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "911.27"
+          },
+          "name": {
+            "S": "Diamond All Screen + SpoTV 30 Hari"
+          },
+          "price": {
+            "S": "792.41"
+          },
+          "productid": {
+            "S": "VIDDIAMONDALLSPOTV30YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "vidio-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "38.69"
+          },
+          "name": {
+            "S": "250 Energy Vidio Arcade +20% Bonus"
+          },
+          "price": {
+            "S": "33.65"
+          },
+          "productid": {
+            "S": "VIDENARC5000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "vidio-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "76.6"
+          },
+          "name": {
+            "S": "500 Energy Vidio Arcade +20% Bonus"
+          },
+          "price": {
+            "S": "66.61"
+          },
+          "productid": {
+            "S": "VIDENARC10000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "vidio-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "114.5"
+          },
+          "name": {
+            "S": "750 Energy Vidio Arcade +20% Bonus"
+          },
+          "price": {
+            "S": "99.57"
+          },
+          "productid": {
+            "S": "VIDENARC15000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "vidio-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "190.31"
+          },
+          "name": {
+            "S": "1250 Energy Vidio Arcade +20% Bonus"
+          },
+          "price": {
+            "S": "165.49"
+          },
+          "productid": {
+            "S": "VIDENARC25000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "vidio-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "380.62"
+          },
+          "name": {
+            "S": "2500 Energy Vidio Arcade +20% Bonus"
+          },
+          "price": {
+            "S": "330.97"
+          },
+          "productid": {
+            "S": "VIDENARC50000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "vidio-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1817.19"
+          },
+          "name": {
+            "S": "Vidio Diamond Mobile 3+1 Bulan"
+          },
+          "price": {
+            "S": "1580.16"
+          },
+          "productid": {
+            "S": "VIDDIAMONDMOBILEB3G1_30DYCX"
+          }
+        }
+      }
+    ]
+  }
+}

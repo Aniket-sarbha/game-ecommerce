@@ -1,0 +1,144 @@
+{
+  "itemname": {
+    "S": "store-fortnite-v-bucks"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "fortnite-v-bucks-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2954.92"
+          },
+          "name": {
+            "S": "Fortnite 2800 V-Bucks"
+          },
+          "price": {
+            "S": "2569.5"
+          },
+          "productid": {
+            "S": "FORNTVB2800-S22"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "fortnite-v-bucks-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "9683.64"
+          },
+          "name": {
+            "S": "Fortnite 13500 V-Bucks"
+          },
+          "price": {
+            "S": "8420.56"
+          },
+          "productid": {
+            "S": "FORNTVB13500-S22"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "fortnite-v-bucks-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "3537.97"
+          },
+          "name": {
+            "S": "Fortnite 2800 V-Bucks"
+          },
+          "price": {
+            "S": "3076.5"
+          },
+          "productid": {
+            "S": "FORNTVB2800YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "fortnite-v-bucks-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "5542.06"
+          },
+          "name": {
+            "S": "Fortnite 5000 V-Bucks"
+          },
+          "price": {
+            "S": "4819.18"
+          },
+          "productid": {
+            "S": "FORNTVB5000YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "fortnite-v-bucks-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1471.69"
+          },
+          "name": {
+            "S": "Fortnite 1000 V-Bucks"
+          },
+          "price": {
+            "S": "1279.73"
+          },
+          "productid": {
+            "S": "FORNTVB1000YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "fortnite-v-bucks-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "13150.7"
+          },
+          "name": {
+            "S": "Fortnite 13500 V-Bucks"
+          },
+          "price": {
+            "S": "11435.39"
+          },
+          "productid": {
+            "S": "FORNTVB13500YCGG"
+          }
+        }
+      }
+    ]
+  }
+}

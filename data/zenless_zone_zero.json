@@ -1,0 +1,386 @@
+{
+  "itemname": {
+    "S": "store-zenless-zone-zero"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "zenless-zone-zero-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "112.3"
+          },
+          "name": {
+            "S": "60 Monochrome"
+          },
+          "price": {
+            "S": "97.65"
+          },
+          "productid": {
+            "S": "ZZZ60YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zenless-zone-zero-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "455.78"
+          },
+          "name": {
+            "S": "300 + 30 Monochrome"
+          },
+          "price": {
+            "S": "396.33"
+          },
+          "productid": {
+            "S": "ZZZ300YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zenless-zone-zero-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1371.05"
+          },
+          "name": {
+            "S": "980 + 110 Monochrome"
+          },
+          "price": {
+            "S": "1192.22"
+          },
+          "productid": {
+            "S": "ZZZ980YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zenless-zone-zero-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2973.56"
+          },
+          "name": {
+            "S": "1980 + 260 Monochrome"
+          },
+          "price": {
+            "S": "2585.7"
+          },
+          "productid": {
+            "S": "ZZZ1980YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zenless-zone-zero-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4575.78"
+          },
+          "name": {
+            "S": "3280 + 600 Monochrome"
+          },
+          "price": {
+            "S": "3978.94"
+          },
+          "productid": {
+            "S": "ZZZ3280YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zenless-zone-zero-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "9131.41"
+          },
+          "name": {
+            "S": "6480 + 1600 Monochrome"
+          },
+          "price": {
+            "S": "7940.35"
+          },
+          "productid": {
+            "S": "ZZZ6480YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zenless-zone-zero-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "18619.85"
+          },
+          "name": {
+            "S": "All Pack Monochrome"
+          },
+          "price": {
+            "S": "16191.17"
+          },
+          "productid": {
+            "S": "ZZZALLYCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zenless-zone-zero-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "455.78"
+          },
+          "name": {
+            "S": "Inter-Knot Membership"
+          },
+          "price": {
+            "S": "396.33"
+          },
+          "productid": {
+            "S": "ZZZIKMYCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zenless-zone-zero-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "18262.81"
+          },
+          "name": {
+            "S": "6480 + 1600 Monochrome x 2"
+          },
+          "price": {
+            "S": "15880.7"
+          },
+          "productid": {
+            "S": "ZZZ12960YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zenless-zone-zero-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "27394.2"
+          },
+          "name": {
+            "S": "6480 + 1600 Monochrome x 3"
+          },
+          "price": {
+            "S": "23821.05"
+          },
+          "productid": {
+            "S": "ZZZ19440YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zenless-zone-zero-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "36525.6"
+          },
+          "name": {
+            "S": "6480 + 1600 Monochrome x 4"
+          },
+          "price": {
+            "S": "31761.39"
+          },
+          "productid": {
+            "S": "ZZZ25920YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zenless-zone-zero-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "45657.0"
+          },
+          "name": {
+            "S": "6480 + 1600 Monochrome x 5"
+          },
+          "price": {
+            "S": "39701.74"
+          },
+          "productid": {
+            "S": "ZZZ32400YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zenless-zone-zero-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "91314.0"
+          },
+          "name": {
+            "S": "6480 + 1600 Monochrome x 10"
+          },
+          "price": {
+            "S": "79403.48"
+          },
+          "productid": {
+            "S": "ZZZ64800YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zenless-zone-zero-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "911.55"
+          },
+          "name": {
+            "S": "Inter-knot Membership x2"
+          },
+          "price": {
+            "S": "792.65"
+          },
+          "productid": {
+            "S": "ZZZIKMYCX2"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zenless-zone-zero-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1367.33"
+          },
+          "name": {
+            "S": "Inter-knot Membership x3"
+          },
+          "price": {
+            "S": "1188.98"
+          },
+          "productid": {
+            "S": "ZZZIKMYCX3"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zenless-zone-zero-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1823.1"
+          },
+          "name": {
+            "S": "Inter-knot Membership x4"
+          },
+          "price": {
+            "S": "1585.31"
+          },
+          "productid": {
+            "S": "ZZZIKMYCX4"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "zenless-zone-zero-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2278.88"
+          },
+          "name": {
+            "S": "Inter-knot Membership x5"
+          },
+          "price": {
+            "S": "1981.63"
+          },
+          "productid": {
+            "S": "ZZZIKMYCX5"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "itemname": {
+    "S": "store-jawaker-token"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "jawaker-token-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "118.07"
+          },
+          "name": {
+            "S": "4250 Token"
+          },
+          "price": {
+            "S": "102.67"
+          },
+          "productid": {
+            "S": "JWT4250TYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "jawaker-token-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "591.13"
+          },
+          "name": {
+            "S": "32500 Token"
+          },
+          "price": {
+            "S": "514.03"
+          },
+          "productid": {
+            "S": "JWT32500TYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "jawaker-token-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1181.48"
+          },
+          "name": {
+            "S": "70000 Token"
+          },
+          "price": {
+            "S": "1027.38"
+          },
+          "productid": {
+            "S": "JWT70000TYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "jawaker-token-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2362.97"
+          },
+          "name": {
+            "S": "150000 Token"
+          },
+          "price": {
+            "S": "2054.75"
+          },
+          "productid": {
+            "S": "JWT150000TYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "jawaker-token-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "3544.45"
+          },
+          "name": {
+            "S": "230000 Token"
+          },
+          "price": {
+            "S": "3082.13"
+          },
+          "productid": {
+            "S": "JWT230000TYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "jawaker-token-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "5908.2"
+          },
+          "name": {
+            "S": "400000 Token"
+          },
+          "price": {
+            "S": "5137.57"
+          },
+          "productid": {
+            "S": "JWT400000TYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "jawaker-token-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "7680.82"
+          },
+          "name": {
+            "S": "525000 Token"
+          },
+          "price": {
+            "S": "6678.97"
+          },
+          "productid": {
+            "S": "JWT525000TYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "jawaker-token-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "11816.4"
+          },
+          "name": {
+            "S": "825000 Token"
+          },
+          "price": {
+            "S": "10275.13"
+          },
+          "productid": {
+            "S": "JWT825000TYCGG"
+          }
+        }
+      }
+    ]
+  }
+}

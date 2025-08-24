@@ -1,0 +1,342 @@
+{
+  "itemname": {
+    "S": "store-snack-video"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "snack-video-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "132.66"
+          },
+          "name": {
+            "S": "100 Diamonds"
+          },
+          "price": {
+            "S": "115.36"
+          },
+          "productid": {
+            "S": "snackyc100"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "snack-video-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1314.79"
+          },
+          "name": {
+            "S": "1000 Diamonds"
+          },
+          "price": {
+            "S": "1143.3"
+          },
+          "productid": {
+            "S": "snackyc1000"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "snack-video-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1972.18"
+          },
+          "name": {
+            "S": "1500 Diamonds"
+          },
+          "price": {
+            "S": "1714.94"
+          },
+          "productid": {
+            "S": "snackyc1500"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "snack-video-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "264.54"
+          },
+          "name": {
+            "S": "200 Diamonds"
+          },
+          "price": {
+            "S": "230.03"
+          },
+          "productid": {
+            "S": "snackyc200"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "snack-video-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2629.58"
+          },
+          "name": {
+            "S": "2000 Diamonds"
+          },
+          "price": {
+            "S": "2286.59"
+          },
+          "productid": {
+            "S": "snackyc2000"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "snack-video-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "396.41"
+          },
+          "name": {
+            "S": "300 Diamonds"
+          },
+          "price": {
+            "S": "344.71"
+          },
+          "productid": {
+            "S": "snackyc300"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "snack-video-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "525.92"
+          },
+          "name": {
+            "S": "400 Diamonds"
+          },
+          "price": {
+            "S": "457.32"
+          },
+          "productid": {
+            "S": "snackyc400"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "snack-video-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "657.39"
+          },
+          "name": {
+            "S": "500 Diamonds"
+          },
+          "price": {
+            "S": "571.65"
+          },
+          "productid": {
+            "S": "snackyc500"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "snack-video-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "6573.95"
+          },
+          "name": {
+            "S": "5000 Diamonds"
+          },
+          "price": {
+            "S": "5716.48"
+          },
+          "productid": {
+            "S": "snackyc5000"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "snack-video-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "788.87"
+          },
+          "name": {
+            "S": "600 Diamonds"
+          },
+          "price": {
+            "S": "685.98"
+          },
+          "productid": {
+            "S": "snackyc600"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "snack-video-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "920.35"
+          },
+          "name": {
+            "S": "700 Diamonds"
+          },
+          "price": {
+            "S": "800.31"
+          },
+          "productid": {
+            "S": "snackyc700"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "snack-video-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1051.83"
+          },
+          "name": {
+            "S": "800 Diamonds"
+          },
+          "price": {
+            "S": "914.64"
+          },
+          "productid": {
+            "S": "snackyc800"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "snack-video-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1183.31"
+          },
+          "name": {
+            "S": "900 Diamonds"
+          },
+          "price": {
+            "S": "1028.97"
+          },
+          "productid": {
+            "S": "snackyc900"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "snack-video-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "13108.42"
+          },
+          "name": {
+            "S": "10000 Diamonds"
+          },
+          "price": {
+            "S": "11398.62"
+          },
+          "productid": {
+            "S": "10ksnackyc"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "snack-video-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "19662.62"
+          },
+          "name": {
+            "S": "15000 Diamonds"
+          },
+          "price": {
+            "S": "17097.93"
+          },
+          "productid": {
+            "S": "15ksnackyc"
+          }
+        }
+      }
+    ]
+  }
+}

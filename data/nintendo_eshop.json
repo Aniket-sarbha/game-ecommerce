@@ -1,0 +1,100 @@
+{
+  "itemname": {
+    "S": "store-nintendo-eshop"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "nintendo-eshop-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1089.88"
+          },
+          "name": {
+            "S": "Nintendo $10"
+          },
+          "price": {
+            "S": "947.72"
+          },
+          "productid": {
+            "S": "VNTD10-S22"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "nintendo-eshop-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2179.73"
+          },
+          "name": {
+            "S": "Nintendo $20"
+          },
+          "price": {
+            "S": "1895.42"
+          },
+          "productid": {
+            "S": "VNTD20-S22"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "nintendo-eshop-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5449.34"
+          },
+          "name": {
+            "S": "Nintendo $50"
+          },
+          "price": {
+            "S": "4738.55"
+          },
+          "productid": {
+            "S": "VNTD50-S22"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "nintendo-eshop-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "813.92"
+          },
+          "name": {
+            "S": "Nintendo $5"
+          },
+          "price": {
+            "S": "707.76"
+          },
+          "productid": {
+            "S": "VNTD5-S22"
+          }
+        }
+      }
+    ]
+  }
+}

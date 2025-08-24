@@ -1,0 +1,122 @@
+{
+  "itemname": {
+    "S": "store-growtopia"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "growtopia-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "522.35"
+          },
+          "name": {
+            "S": "Gem Fountain"
+          },
+          "price": {
+            "S": "454.22"
+          },
+          "productid": {
+            "S": "gftnyc"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "growtopia-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3139.28"
+          },
+          "name": {
+            "S": "Gem Bounty"
+          },
+          "price": {
+            "S": "2729.81"
+          },
+          "productid": {
+            "S": "gbtyc"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "growtopia-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5232.84"
+          },
+          "name": {
+            "S": "Gem Abundance"
+          },
+          "price": {
+            "S": "4550.29"
+          },
+          "productid": {
+            "S": "gabyc"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "growtopia-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1045.74"
+          },
+          "name": {
+            "S": "Royal Grow Pass"
+          },
+          "price": {
+            "S": "909.34"
+          },
+          "productid": {
+            "S": "rgpyc"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "growtopia-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5232.84"
+          },
+          "name": {
+            "S": "1 - Year Subscription Token"
+          },
+          "price": {
+            "S": "4550.29"
+          },
+          "productid": {
+            "S": "1yeargwyc"
+          }
+        }
+      }
+    ]
+  }
+}

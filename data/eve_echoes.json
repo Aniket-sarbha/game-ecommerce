@@ -1,0 +1,144 @@
+{
+  "itemname": {
+    "S": "store-eve-echoes"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "eve-echoes-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "107.25"
+          },
+          "name": {
+            "S": "25 AUR"
+          },
+          "price": {
+            "S": "93.26"
+          },
+          "productid": {
+            "S": "2496"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "eve-echoes-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "540.53"
+          },
+          "name": {
+            "S": "125 AUR"
+          },
+          "price": {
+            "S": "470.03"
+          },
+          "productid": {
+            "S": "2497"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "eve-echoes-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1082.13"
+          },
+          "name": {
+            "S": "265 AUR"
+          },
+          "price": {
+            "S": "940.99"
+          },
+          "productid": {
+            "S": "2498"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "eve-echoes-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2165.35"
+          },
+          "name": {
+            "S": "525 AUR"
+          },
+          "price": {
+            "S": "1882.91"
+          },
+          "productid": {
+            "S": "2499"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "eve-echoes-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5414.99"
+          },
+          "name": {
+            "S": "1315 AUR"
+          },
+          "price": {
+            "S": "4708.68"
+          },
+          "productid": {
+            "S": "2500"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "eve-echoes-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "10831.05"
+          },
+          "name": {
+            "S": "2750 AUR"
+          },
+          "price": {
+            "S": "9418.3"
+          },
+          "productid": {
+            "S": "2501"
+          }
+        }
+      }
+    ]
+  }
+}

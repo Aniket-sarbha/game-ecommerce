@@ -1,0 +1,474 @@
+{
+  "itemname": {
+    "S": "store-likee"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "248.34"
+          },
+          "name": {
+            "S": "100 Diamonds"
+          },
+          "price": {
+            "S": "215.95"
+          },
+          "productid": {
+            "S": "LKD100YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "496.98"
+          },
+          "name": {
+            "S": "200 Diamonds"
+          },
+          "price": {
+            "S": "432.15"
+          },
+          "productid": {
+            "S": "LKD200YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1241.99"
+          },
+          "name": {
+            "S": "500 Diamonds"
+          },
+          "price": {
+            "S": "1079.99"
+          },
+          "productid": {
+            "S": "LKD500YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2484.27"
+          },
+          "name": {
+            "S": "1000 Diamonds"
+          },
+          "price": {
+            "S": "2160.24"
+          },
+          "productid": {
+            "S": "LKD1000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "3726.25"
+          },
+          "name": {
+            "S": "1500 Diamonds"
+          },
+          "price": {
+            "S": "3240.22"
+          },
+          "productid": {
+            "S": "LKD1500YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "4968.23"
+          },
+          "name": {
+            "S": "2000 Diamonds"
+          },
+          "price": {
+            "S": "4320.2"
+          },
+          "productid": {
+            "S": "LKD2000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "6210.22"
+          },
+          "name": {
+            "S": "2500 Diamonds"
+          },
+          "price": {
+            "S": "5400.19"
+          },
+          "productid": {
+            "S": "LKD2500YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "7452.5"
+          },
+          "name": {
+            "S": "3000 Diamonds"
+          },
+          "price": {
+            "S": "6480.43"
+          },
+          "productid": {
+            "S": "LKD3000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "8694.48"
+          },
+          "name": {
+            "S": "3500 Diamonds"
+          },
+          "price": {
+            "S": "7560.42"
+          },
+          "productid": {
+            "S": "LKD3500YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "9936.76"
+          },
+          "name": {
+            "S": "4000 Diamonds"
+          },
+          "price": {
+            "S": "8640.66"
+          },
+          "productid": {
+            "S": "LKD4000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "11178.75"
+          },
+          "name": {
+            "S": "4500 Diamonds"
+          },
+          "price": {
+            "S": "9720.65"
+          },
+          "productid": {
+            "S": "LKD4500YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "12420.73"
+          },
+          "name": {
+            "S": "5000 Diamonds"
+          },
+          "price": {
+            "S": "10800.63"
+          },
+          "productid": {
+            "S": "LKD5000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "24841.76"
+          },
+          "name": {
+            "S": "10000 Diamonds"
+          },
+          "price": {
+            "S": "21601.53"
+          },
+          "productid": {
+            "S": "LKD10000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "49683.2"
+          },
+          "name": {
+            "S": "20000 Diamonds"
+          },
+          "price": {
+            "S": "43202.79"
+          },
+          "productid": {
+            "S": "LKD20000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "405.12"
+          },
+          "name": {
+            "S": "160 Diamonds"
+          },
+          "price": {
+            "S": "352.28"
+          },
+          "productid": {
+            "S": "likee160ycx"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "4053.72"
+          },
+          "name": {
+            "S": "1.600 Diamonds"
+          },
+          "price": {
+            "S": "3524.98"
+          },
+          "productid": {
+            "S": "likee1600ycx"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "607.68"
+          },
+          "name": {
+            "S": "240 Diamonds"
+          },
+          "price": {
+            "S": "528.41"
+          },
+          "productid": {
+            "S": "likee240ycx"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "6080.58"
+          },
+          "name": {
+            "S": "2.400 Diamonds"
+          },
+          "price": {
+            "S": "5287.46"
+          },
+          "productid": {
+            "S": "likee2400ycx"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1012.79"
+          },
+          "name": {
+            "S": "400 Diamonds"
+          },
+          "price": {
+            "S": "880.69"
+          },
+          "productid": {
+            "S": "likee400ycx"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "199.98"
+          },
+          "name": {
+            "S": "80 Diamonds"
+          },
+          "price": {
+            "S": "173.89"
+          },
+          "productid": {
+            "S": "likee80ycx"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "likee-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2026.87"
+          },
+          "name": {
+            "S": "800 Diamonds"
+          },
+          "price": {
+            "S": "1762.49"
+          },
+          "productid": {
+            "S": "likee800ycx"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "itemname": {
+    "S": "store-azur-lane"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "azur-lane-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "90.42"
+          },
+          "name": {
+            "S": "Handful of Gems"
+          },
+          "price": {
+            "S": "78.63"
+          },
+          "productid": {
+            "S": "AZRLHOGYCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "azur-lane-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "453.0"
+          },
+          "name": {
+            "S": "Pile of Gems"
+          },
+          "price": {
+            "S": "393.92"
+          },
+          "productid": {
+            "S": "AZRLPOGYCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "azur-lane-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "906.22"
+          },
+          "name": {
+            "S": "Sack of Gems"
+          },
+          "price": {
+            "S": "788.02"
+          },
+          "productid": {
+            "S": "AZRLSOGYCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "azur-lane-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1857.99"
+          },
+          "name": {
+            "S": "Box of Gems"
+          },
+          "price": {
+            "S": "1615.65"
+          },
+          "productid": {
+            "S": "AZRLBOGYCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "azur-lane-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "3738.86"
+          },
+          "name": {
+            "S": "Chest of Gems"
+          },
+          "price": {
+            "S": "3251.18"
+          },
+          "productid": {
+            "S": "AZRLCOGYCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "azur-lane-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "7251.33"
+          },
+          "name": {
+            "S": "Ship of Gems"
+          },
+          "price": {
+            "S": "6305.5"
+          },
+          "productid": {
+            "S": "AZRLSHOGYCX"
+          }
+        }
+      }
+    ]
+  }
+}

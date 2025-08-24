@@ -1,0 +1,298 @@
+{
+  "itemname": {
+    "S": "store-colorbang"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "colorbang-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "27.2"
+          },
+          "name": {
+            "S": "22 Diamonds"
+          },
+          "price": {
+            "S": "23.65"
+          },
+          "productid": {
+            "S": "CLBG22YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "colorbang-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "54.4"
+          },
+          "name": {
+            "S": "44 Diamonds"
+          },
+          "price": {
+            "S": "47.31"
+          },
+          "productid": {
+            "S": "CLBG44YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "colorbang-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "135.99"
+          },
+          "name": {
+            "S": "112 Diamonds"
+          },
+          "price": {
+            "S": "118.25"
+          },
+          "productid": {
+            "S": "CLBG112YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "colorbang-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "163.2"
+          },
+          "name": {
+            "S": "135 Diamonds"
+          },
+          "price": {
+            "S": "141.91"
+          },
+          "productid": {
+            "S": "CLBG135YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "colorbang-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "244.8"
+          },
+          "name": {
+            "S": "202 Diamonds"
+          },
+          "price": {
+            "S": "212.87"
+          },
+          "productid": {
+            "S": "CLBG202YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "colorbang-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "271.98"
+          },
+          "name": {
+            "S": "224 Diamonds"
+          },
+          "price": {
+            "S": "236.51"
+          },
+          "productid": {
+            "S": "CLBG224YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "colorbang-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "407.99"
+          },
+          "name": {
+            "S": "336 Diamonds"
+          },
+          "price": {
+            "S": "354.77"
+          },
+          "productid": {
+            "S": "CLBG336YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "colorbang-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "543.98"
+          },
+          "name": {
+            "S": "448 Diamonds"
+          },
+          "price": {
+            "S": "473.02"
+          },
+          "productid": {
+            "S": "CLBG448YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "colorbang-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "815.96"
+          },
+          "name": {
+            "S": "672 Diamonds"
+          },
+          "price": {
+            "S": "709.53"
+          },
+          "productid": {
+            "S": "CLBG672YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "colorbang-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1325.94"
+          },
+          "name": {
+            "S": "1120 Diamonds"
+          },
+          "price": {
+            "S": "1152.99"
+          },
+          "productid": {
+            "S": "CLBG1120YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "colorbang-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2651.88"
+          },
+          "name": {
+            "S": "2320 Diamonds"
+          },
+          "price": {
+            "S": "2305.98"
+          },
+          "productid": {
+            "S": "CLBG2320YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "colorbang-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5303.74"
+          },
+          "name": {
+            "S": "4640 Diamonds"
+          },
+          "price": {
+            "S": "4611.95"
+          },
+          "productid": {
+            "S": "CLBG4640YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "colorbang-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "9281.56"
+          },
+          "name": {
+            "S": "8120 Diamonds"
+          },
+          "price": {
+            "S": "8070.92"
+          },
+          "productid": {
+            "S": "CLBG8120YC"
+          }
+        }
+      }
+    ]
+  }
+}

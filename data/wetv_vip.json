@@ -1,0 +1,78 @@
+{
+  "itemname": {
+    "S": "store-wetv-vip"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "wetv-vip-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "362.78"
+          },
+          "name": {
+            "S": "WeTV VIP 1 Month"
+          },
+          "price": {
+            "S": "315.46"
+          },
+          "productid": {
+            "S": "WETV1MTHVIPYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "wetv-vip-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "955.06"
+          },
+          "name": {
+            "S": "WeTV VIP 3 Month"
+          },
+          "price": {
+            "S": "830.49"
+          },
+          "productid": {
+            "S": "WETV3MTHVIPYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "wetv-vip-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3324.22"
+          },
+          "name": {
+            "S": "WeTV VIP 12 Month"
+          },
+          "price": {
+            "S": "2890.63"
+          },
+          "productid": {
+            "S": "WETV12MTHVIPYCGG"
+          }
+        }
+      }
+    ]
+  }
+}

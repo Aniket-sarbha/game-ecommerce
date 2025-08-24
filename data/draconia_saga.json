@@ -1,0 +1,100 @@
+{
+  "itemname": {
+    "S": "store-draconia-saga"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "draconia-saga-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3918.21"
+          },
+          "name": {
+            "S": "30 Credit (15 + 15)"
+          },
+          "price": {
+            "S": "3407.14"
+          },
+          "productid": {
+            "S": "DRSG30CYC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "draconia-saga-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "643.09"
+          },
+          "name": {
+            "S": "5 Credit"
+          },
+          "price": {
+            "S": "559.21"
+          },
+          "productid": {
+            "S": "DRSG5CYC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "draconia-saga-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "12412.61"
+          },
+          "name": {
+            "S": "100 Credit"
+          },
+          "price": {
+            "S": "10793.57"
+          },
+          "productid": {
+            "S": "DRSG100CYC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "draconia-saga-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "61593.69"
+          },
+          "name": {
+            "S": "100 Credit x 5"
+          },
+          "price": {
+            "S": "53559.73"
+          },
+          "productid": {
+            "S": "DRSG500CYC"
+          }
+        }
+      }
+    ]
+  }
+}

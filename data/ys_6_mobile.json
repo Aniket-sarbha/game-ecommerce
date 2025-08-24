@@ -1,0 +1,188 @@
+{
+  "itemname": {
+    "S": "store-ys-6-mobile"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "ys-6-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "81.39"
+          },
+          "name": {
+            "S": "60 Emelas + 20 Emelas"
+          },
+          "price": {
+            "S": "70.77"
+          },
+          "productid": {
+            "S": "YS6_60-S13"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ys-6-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "400.14"
+          },
+          "name": {
+            "S": "300 Emelas + 100 Emelas"
+          },
+          "price": {
+            "S": "347.95"
+          },
+          "productid": {
+            "S": "YS6_300-S13"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ys-6-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "895.22"
+          },
+          "name": {
+            "S": "680 Emelas + 240 Emelas"
+          },
+          "price": {
+            "S": "778.45"
+          },
+          "productid": {
+            "S": "YS6_680-S13"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ys-6-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1675.14"
+          },
+          "name": {
+            "S": "1280 Emelas + 520 Emelas"
+          },
+          "price": {
+            "S": "1456.64"
+          },
+          "productid": {
+            "S": "YS6_1280-S13"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ys-6-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2577.14"
+          },
+          "name": {
+            "S": "1980 Emelas + 820 Emelas"
+          },
+          "price": {
+            "S": "2241.0"
+          },
+          "productid": {
+            "S": "YS6_1980-S13"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ys-6-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4062.39"
+          },
+          "name": {
+            "S": "3280 Emelas + 1520 Emelas"
+          },
+          "price": {
+            "S": "3532.51"
+          },
+          "productid": {
+            "S": "YS6_3280-S13"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ys-6-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "6096.97"
+          },
+          "name": {
+            "S": "4880 Emelas + 2620 Emelas"
+          },
+          "price": {
+            "S": "5301.71"
+          },
+          "productid": {
+            "S": "YS6_4880-S13"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ys-6-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "7249.9"
+          },
+          "name": {
+            "S": "6480 Emelas + 3520 Emelas"
+          },
+          "price": {
+            "S": "6304.26"
+          },
+          "productid": {
+            "S": "YS6_6480-S13"
+          }
+        }
+      }
+    ]
+  }
+}

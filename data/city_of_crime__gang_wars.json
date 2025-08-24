@@ -1,0 +1,210 @@
+{
+  "itemname": {
+    "S": "store-city-of-crime:-gang-wars"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "city-of-crime:-gang-wars-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "574.71"
+          },
+          "name": {
+            "S": "499 C Coins"
+          },
+          "price": {
+            "S": "499.75"
+          },
+          "productid": {
+            "S": "CCGW499CYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "city-of-crime:-gang-wars-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1172.88"
+          },
+          "name": {
+            "S": "999 C Coins"
+          },
+          "price": {
+            "S": "1019.9"
+          },
+          "productid": {
+            "S": "CCGW999CYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "city-of-crime:-gang-wars-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2370.0"
+          },
+          "name": {
+            "S": "1999 C Coins"
+          },
+          "price": {
+            "S": "2060.87"
+          },
+          "productid": {
+            "S": "CCGW1999CYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "city-of-crime:-gang-wars-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "5873.01"
+          },
+          "name": {
+            "S": "4999 C Coins"
+          },
+          "price": {
+            "S": "5106.97"
+          },
+          "productid": {
+            "S": "CCGW4999CYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "city-of-crime:-gang-wars-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "11643.6"
+          },
+          "name": {
+            "S": "9999 C Coins"
+          },
+          "price": {
+            "S": "10124.87"
+          },
+          "productid": {
+            "S": "CCGW9999CYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "city-of-crime:-gang-wars-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "23266.87"
+          },
+          "name": {
+            "S": "19999 C Coins"
+          },
+          "price": {
+            "S": "20232.06"
+          },
+          "productid": {
+            "S": "CCGW19999CYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "city-of-crime:-gang-wars-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "34827.58"
+          },
+          "name": {
+            "S": "29999 C Coins"
+          },
+          "price": {
+            "S": "30284.85"
+          },
+          "productid": {
+            "S": "CCGW29999CYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "city-of-crime:-gang-wars-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "58011.56"
+          },
+          "name": {
+            "S": "49999 C Coins"
+          },
+          "price": {
+            "S": "50444.84"
+          },
+          "productid": {
+            "S": "CCGW49999CYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "city-of-crime:-gang-wars-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "115920.69"
+          },
+          "name": {
+            "S": "99999 C Coins"
+          },
+          "price": {
+            "S": "100800.6"
+          },
+          "productid": {
+            "S": "CCGW99999CYCGG"
+          }
+        }
+      }
+    ]
+  }
+}

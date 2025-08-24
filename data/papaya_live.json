@@ -1,0 +1,166 @@
+{
+  "itemname": {
+    "S": "store-papaya-live"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "papaya-live-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "133.71"
+          },
+          "name": {
+            "S": "882 Diamond"
+          },
+          "price": {
+            "S": "116.27"
+          },
+          "productid": {
+            "S": "PPYL_882-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "papaya-live-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "473.06"
+          },
+          "name": {
+            "S": "3150 Diamond"
+          },
+          "price": {
+            "S": "411.36"
+          },
+          "productid": {
+            "S": "PPYL_3150-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "papaya-live-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "933.61"
+          },
+          "name": {
+            "S": "6300 Diamond"
+          },
+          "price": {
+            "S": "811.84"
+          },
+          "productid": {
+            "S": "PPYL_6300-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "papaya-live-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2351.24"
+          },
+          "name": {
+            "S": "15750 Diamond"
+          },
+          "price": {
+            "S": "2044.56"
+          },
+          "productid": {
+            "S": "PPYL_15750-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "papaya-live-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "4844.01"
+          },
+          "name": {
+            "S": "31500 Diamond"
+          },
+          "price": {
+            "S": "4212.18"
+          },
+          "productid": {
+            "S": "PPYL_31500-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "papaya-live-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "9761.51"
+          },
+          "name": {
+            "S": "63000 Diamond"
+          },
+          "price": {
+            "S": "8488.27"
+          },
+          "productid": {
+            "S": "PPYL_63000-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "papaya-live-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "19206.35"
+          },
+          "name": {
+            "S": "126000 Diamond"
+          },
+          "price": {
+            "S": "16701.17"
+          },
+          "productid": {
+            "S": "PPYL_126000-S51"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "itemname": {
+    "S": "store-lita"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "lita-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "909.91"
+          },
+          "name": {
+            "S": "Lita 1.000 Coins"
+          },
+          "price": {
+            "S": "791.23"
+          },
+          "productid": {
+            "S": "lita1000"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lita-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "9090.77"
+          },
+          "name": {
+            "S": "Lita 10.000 Coins"
+          },
+          "price": {
+            "S": "7905.02"
+          },
+          "productid": {
+            "S": "lita10k"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lita-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1819.62"
+          },
+          "name": {
+            "S": "Lita 2.000 Coins"
+          },
+          "price": {
+            "S": "1582.28"
+          },
+          "productid": {
+            "S": "lita2000"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lita-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "275.07"
+          },
+          "name": {
+            "S": "Lita 300 Coins"
+          },
+          "price": {
+            "S": "239.19"
+          },
+          "productid": {
+            "S": "lita300"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lita-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4548.76"
+          },
+          "name": {
+            "S": "Lita 5.000 Coins"
+          },
+          "price": {
+            "S": "3955.44"
+          },
+          "productid": {
+            "S": "lita5000"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "lita-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "549.95"
+          },
+          "name": {
+            "S": "Lita 600 Coins"
+          },
+          "price": {
+            "S": "478.22"
+          },
+          "productid": {
+            "S": "lita600"
+          }
+        }
+      }
+    ]
+  }
+}

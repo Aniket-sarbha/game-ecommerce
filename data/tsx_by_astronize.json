@@ -1,0 +1,144 @@
+{
+  "itemname": {
+    "S": "store-tsx-by-astronize"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "tsx-by-astronize-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "214.25"
+          },
+          "name": {
+            "S": "70 Golds"
+          },
+          "price": {
+            "S": "186.31"
+          },
+          "productid": {
+            "S": "TSXASTR70YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tsx-by-astronize-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "537.24"
+          },
+          "name": {
+            "S": "175 Golds"
+          },
+          "price": {
+            "S": "467.17"
+          },
+          "productid": {
+            "S": "TSXASTR175YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tsx-by-astronize-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1075.56"
+          },
+          "name": {
+            "S": "350 Golds"
+          },
+          "price": {
+            "S": "935.27"
+          },
+          "productid": {
+            "S": "TSXASTR350YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tsx-by-astronize-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2690.5"
+          },
+          "name": {
+            "S": "920 Golds"
+          },
+          "price": {
+            "S": "2339.57"
+          },
+          "productid": {
+            "S": "TSXASTR920YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tsx-by-astronize-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5382.07"
+          },
+          "name": {
+            "S": "1940 Golds"
+          },
+          "price": {
+            "S": "4680.06"
+          },
+          "productid": {
+            "S": "TSXASTR1940YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tsx-by-astronize-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "10765.21"
+          },
+          "name": {
+            "S": "3950 Golds"
+          },
+          "price": {
+            "S": "9361.05"
+          },
+          "productid": {
+            "S": "TSXASTR3950YCX"
+          }
+        }
+      }
+    ]
+  }
+}

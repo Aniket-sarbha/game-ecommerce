@@ -1,0 +1,144 @@
+{
+  "itemname": {
+    "S": "store-pln"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "pln-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "781.69"
+          },
+          "name": {
+            "S": "PLN 100.000"
+          },
+          "price": {
+            "S": "679.73"
+          },
+          "productid": {
+            "S": "pln100"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "pln-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "7752.35"
+          },
+          "name": {
+            "S": "PLN 1.000.000"
+          },
+          "price": {
+            "S": "6741.18"
+          },
+          "productid": {
+            "S": "pln1000"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "pln-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "162.2"
+          },
+          "name": {
+            "S": "PLN 20.000"
+          },
+          "price": {
+            "S": "141.04"
+          },
+          "productid": {
+            "S": "pln20"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "pln-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1556.64"
+          },
+          "name": {
+            "S": "PLN 200.000"
+          },
+          "price": {
+            "S": "1353.6"
+          },
+          "productid": {
+            "S": "pln200"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "pln-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "395.37"
+          },
+          "name": {
+            "S": "PLN 50.000"
+          },
+          "price": {
+            "S": "343.8"
+          },
+          "productid": {
+            "S": "pln50"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "pln-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3879.52"
+          },
+          "name": {
+            "S": "PLN 500.000"
+          },
+          "price": {
+            "S": "3373.49"
+          },
+          "productid": {
+            "S": "pln500"
+          }
+        }
+      }
+    ]
+  }
+}

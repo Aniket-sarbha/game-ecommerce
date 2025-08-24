@@ -1,0 +1,122 @@
+{
+  "itemname": {
+    "S": "store-bstation"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "bstation-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "64.75"
+          },
+          "name": {
+            "S": "7 Days Premium"
+          },
+          "price": {
+            "S": "56.31"
+          },
+          "productid": {
+            "S": "BST7YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "bstation-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "90.66"
+          },
+          "name": {
+            "S": "14 Days Premium"
+          },
+          "price": {
+            "S": "78.83"
+          },
+          "productid": {
+            "S": "BST14YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "bstation-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "161.88"
+          },
+          "name": {
+            "S": "31 Days Premium"
+          },
+          "price": {
+            "S": "140.77"
+          },
+          "productid": {
+            "S": "BST31YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "bstation-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1418.08"
+          },
+          "name": {
+            "S": "366 Days Premium"
+          },
+          "price": {
+            "S": "1233.11"
+          },
+          "productid": {
+            "S": "BST366YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "bstation-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "485.64"
+          },
+          "name": {
+            "S": "93 Days Premium"
+          },
+          "price": {
+            "S": "422.3"
+          },
+          "productid": {
+            "S": "BST93YC"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,518 @@
+{
+  "itemname": {
+    "S": "store-solo-leveling-:-arise---drop-link"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "7874.01"
+          },
+          "name": {
+            "S": "Package 1199000 IDR"
+          },
+          "price": {
+            "S": "6846.97"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK1199000YCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4262.16"
+          },
+          "name": {
+            "S": "Package 649000 IDR"
+          },
+          "price": {
+            "S": "3706.22"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK649000YCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3801.61"
+          },
+          "name": {
+            "S": "Package 579000 IDR"
+          },
+          "price": {
+            "S": "3305.75"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK579000YCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2489.28"
+          },
+          "name": {
+            "S": "Package 379000 IDR"
+          },
+          "price": {
+            "S": "2164.59"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK379000YCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2357.09"
+          },
+          "name": {
+            "S": "Package 359000 IDR"
+          },
+          "price": {
+            "S": "2049.64"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK359000YCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2160.93"
+          },
+          "name": {
+            "S": "Package 329000 IDR"
+          },
+          "price": {
+            "S": "1879.07"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK329000YCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1043.69"
+          },
+          "name": {
+            "S": "Package 159000 IDR"
+          },
+          "price": {
+            "S": "907.55"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK159000YCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "847.53"
+          },
+          "name": {
+            "S": "Package 129000 IDR"
+          },
+          "price": {
+            "S": "736.98"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK129000YCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "715.33"
+          },
+          "name": {
+            "S": "Package 109000 IDR"
+          },
+          "price": {
+            "S": "622.03"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK109000YCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "426.43"
+          },
+          "name": {
+            "S": "Package 65000 IDR"
+          },
+          "price": {
+            "S": "370.81"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK65000YCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "321.96"
+          },
+          "name": {
+            "S": "Package 49000 IDR"
+          },
+          "price": {
+            "S": "279.96"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK49000YCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "105.54"
+          },
+          "name": {
+            "S": "Package 16000 IDR"
+          },
+          "price": {
+            "S": "91.78"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK16000YCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "6184.91"
+          },
+          "name": {
+            "S": "Package 3490 PHP"
+          },
+          "price": {
+            "S": "5378.18"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK3490PHPYCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3526.65"
+          },
+          "name": {
+            "S": "Package 1990 PHP"
+          },
+          "price": {
+            "S": "3066.65"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK1990PHPYCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3172.2"
+          },
+          "name": {
+            "S": "Package 1790 PHP"
+          },
+          "price": {
+            "S": "2758.44"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK1790PHPYCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1931.68"
+          },
+          "name": {
+            "S": "Package 1090 PHP"
+          },
+          "price": {
+            "S": "1679.72"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK1090PHPYCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1770.09"
+          },
+          "name": {
+            "S": "Package 999 PHP"
+          },
+          "price": {
+            "S": "1539.21"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK999PHPYCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1681.49"
+          },
+          "name": {
+            "S": "Package 949 PHP"
+          },
+          "price": {
+            "S": "1462.16"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK949PHPYCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "884.01"
+          },
+          "name": {
+            "S": "Package 499 PHP"
+          },
+          "price": {
+            "S": "768.7"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK499PHPYCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "706.79"
+          },
+          "name": {
+            "S": "Package 399 PHP"
+          },
+          "price": {
+            "S": "614.6"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK399PHPYCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "618.18"
+          },
+          "name": {
+            "S": "Package 349 PHP"
+          },
+          "price": {
+            "S": "537.55"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK349PHPYCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "263.75"
+          },
+          "name": {
+            "S": "Package 149 PHP"
+          },
+          "price": {
+            "S": "229.35"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK149PHPYCOK"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "solo-leveling-:-arise---drop-link-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "86.53"
+          },
+          "name": {
+            "S": "Package 49 PHP"
+          },
+          "price": {
+            "S": "75.24"
+          },
+          "productid": {
+            "S": "SOLOLVARLINK49PHPYCOK"
+          }
+        }
+      }
+    ]
+  }
+}

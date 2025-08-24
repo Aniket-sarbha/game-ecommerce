@@ -1,0 +1,166 @@
+{
+  "itemname": {
+    "S": "store-dead-by-daylight-mobile"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "dead-by-daylight-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "121.42"
+          },
+          "name": {
+            "S": "100 Auric Cells"
+          },
+          "price": {
+            "S": "105.58"
+          },
+          "productid": {
+            "S": "DBDM100YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dead-by-daylight-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "244.0"
+          },
+          "name": {
+            "S": "200 Auric Cells"
+          },
+          "price": {
+            "S": "212.17"
+          },
+          "productid": {
+            "S": "DBDM200YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dead-by-daylight-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "611.43"
+          },
+          "name": {
+            "S": "500 Auric Cells"
+          },
+          "price": {
+            "S": "531.68"
+          },
+          "productid": {
+            "S": "DBDM500YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dead-by-daylight-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1224.31"
+          },
+          "name": {
+            "S": "1100 Auric Cells"
+          },
+          "price": {
+            "S": "1064.62"
+          },
+          "productid": {
+            "S": "DBDM1100YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dead-by-daylight-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2449.78"
+          },
+          "name": {
+            "S": "2250 Auric Cells"
+          },
+          "price": {
+            "S": "2130.25"
+          },
+          "productid": {
+            "S": "DBDM2250YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dead-by-daylight-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "6126.47"
+          },
+          "name": {
+            "S": "6000 Auric Cells"
+          },
+          "price": {
+            "S": "5327.36"
+          },
+          "productid": {
+            "S": "DBDM6000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dead-by-daylight-mobile-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "11316.47"
+          },
+          "name": {
+            "S": "12500 Auric Cells"
+          },
+          "price": {
+            "S": "9840.41"
+          },
+          "productid": {
+            "S": "DBDM12500YCX"
+          }
+        }
+      }
+    ]
+  }
+}

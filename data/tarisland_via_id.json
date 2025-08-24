@@ -1,0 +1,430 @@
+{
+  "itemname": {
+    "S": "store-tarisland-via-id"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "90.62"
+          },
+          "name": {
+            "S": "60 Crystals"
+          },
+          "price": {
+            "S": "78.8"
+          },
+          "productid": {
+            "S": "TRSLD60YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "543.7"
+          },
+          "name": {
+            "S": "330 Crystals"
+          },
+          "price": {
+            "S": "472.78"
+          },
+          "productid": {
+            "S": "TRSLD330YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "922.16"
+          },
+          "name": {
+            "S": "700 Crystals"
+          },
+          "price": {
+            "S": "801.88"
+          },
+          "productid": {
+            "S": "TRSLD700YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2383.74"
+          },
+          "name": {
+            "S": "1800 Crystals"
+          },
+          "price": {
+            "S": "2072.82"
+          },
+          "productid": {
+            "S": "TRSLD1800YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "5236.55"
+          },
+          "name": {
+            "S": "3600 Crystals"
+          },
+          "price": {
+            "S": "4553.52"
+          },
+          "productid": {
+            "S": "TRSLD3600YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "10623.41"
+          },
+          "name": {
+            "S": "7250 Crystals"
+          },
+          "price": {
+            "S": "9237.75"
+          },
+          "productid": {
+            "S": "TRSLD7250YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2309.12"
+          },
+          "name": {
+            "S": "Semi Annual Ticket (180d)"
+          },
+          "price": {
+            "S": "2007.93"
+          },
+          "productid": {
+            "S": "TRSLDSAT180DYCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "406.18"
+          },
+          "name": {
+            "S": "Monthly Ticket (30d)"
+          },
+          "price": {
+            "S": "353.2"
+          },
+          "productid": {
+            "S": "TRSLDMT30DYCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "137.53"
+          },
+          "name": {
+            "S": "Weekly Ticket (7d)"
+          },
+          "price": {
+            "S": "119.59"
+          },
+          "productid": {
+            "S": "TRSLDWT7DYCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "12272.65"
+          },
+          "name": {
+            "S": "7250 Crystals"
+          },
+          "price": {
+            "S": "10671.87"
+          },
+          "productid": {
+            "S": "TRSLD7250-S8"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "90.62"
+          },
+          "name": {
+            "S": "60 Crystals"
+          },
+          "price": {
+            "S": "78.8"
+          },
+          "productid": {
+            "S": "TRSLD60-S50AUTO"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "552.23"
+          },
+          "name": {
+            "S": "330 Crystals"
+          },
+          "price": {
+            "S": "480.2"
+          },
+          "productid": {
+            "S": "TRSLD330-S50AUTO"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "922.16"
+          },
+          "name": {
+            "S": "700 Crystals"
+          },
+          "price": {
+            "S": "801.88"
+          },
+          "productid": {
+            "S": "TRSLD700-S50AUTO"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2383.74"
+          },
+          "name": {
+            "S": "1800 Crystals"
+          },
+          "price": {
+            "S": "2072.82"
+          },
+          "productid": {
+            "S": "TRSLD1800-S50AUTO"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5236.55"
+          },
+          "name": {
+            "S": "3600 Crystals"
+          },
+          "price": {
+            "S": "4553.52"
+          },
+          "productid": {
+            "S": "TRSLD3600-S50AUTO"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "10623.41"
+          },
+          "name": {
+            "S": "7250 Crystals"
+          },
+          "price": {
+            "S": "9237.75"
+          },
+          "productid": {
+            "S": "TRSLD7250-S50AUTO"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2309.12"
+          },
+          "name": {
+            "S": "Semi Annual Ticket (180d)"
+          },
+          "price": {
+            "S": "2007.93"
+          },
+          "productid": {
+            "S": "TRSLDSAT180D-S50AUTO"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "406.18"
+          },
+          "name": {
+            "S": "Monthly Ticket (30d)"
+          },
+          "price": {
+            "S": "353.2"
+          },
+          "productid": {
+            "S": "TRSLDMT30D-S50AUTO"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tarisland-via-id-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "137.53"
+          },
+          "name": {
+            "S": "Weekly Ticket (7d)"
+          },
+          "price": {
+            "S": "119.59"
+          },
+          "productid": {
+            "S": "TRSLDWT7D-S50AUTO"
+          }
+        }
+      }
+    ]
+  }
+}

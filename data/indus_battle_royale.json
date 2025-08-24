@@ -1,0 +1,144 @@
+{
+  "itemname": {
+    "S": "store-indus-battle-royale"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "indus-battle-royale-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "100.22"
+          },
+          "name": {
+            "S": "100 Indus Credits"
+          },
+          "price": {
+            "S": "87.15"
+          },
+          "productid": {
+            "S": "IDBR100YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "indus-battle-royale-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "250.53"
+          },
+          "name": {
+            "S": "280 Indus Credits"
+          },
+          "price": {
+            "S": "217.85"
+          },
+          "productid": {
+            "S": "IDBR280YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "indus-battle-royale-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "502.13"
+          },
+          "name": {
+            "S": "600 Indus Credits"
+          },
+          "price": {
+            "S": "436.63"
+          },
+          "productid": {
+            "S": "IDBR600YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "indus-battle-royale-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1254.77"
+          },
+          "name": {
+            "S": "1560 Indus Credits"
+          },
+          "price": {
+            "S": "1091.1"
+          },
+          "productid": {
+            "S": "IDBR1560YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "indus-battle-royale-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5023.34"
+          },
+          "name": {
+            "S": "6400 Indus Credits"
+          },
+          "price": {
+            "S": "4368.12"
+          },
+          "productid": {
+            "S": "IDBR6400YC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "indus-battle-royale-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "9418.75"
+          },
+          "name": {
+            "S": "12400 Indus Credits"
+          },
+          "price": {
+            "S": "8190.22"
+          },
+          "productid": {
+            "S": "IDBR12400YC"
+          }
+        }
+      }
+    ]
+  }
+}

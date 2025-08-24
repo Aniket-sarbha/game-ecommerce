@@ -1,0 +1,606 @@
+{
+  "itemname": {
+    "S": "store-metal-slug:-awakening"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "97.12"
+          },
+          "name": {
+            "S": "60 ruby"
+          },
+          "price": {
+            "S": "84.45"
+          },
+          "productid": {
+            "S": "MSAWK60YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "453.2"
+          },
+          "name": {
+            "S": "310 Ruby"
+          },
+          "price": {
+            "S": "394.09"
+          },
+          "productid": {
+            "S": "MSAWK310YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "874.03"
+          },
+          "name": {
+            "S": "630 Ruby"
+          },
+          "price": {
+            "S": "760.03"
+          },
+          "productid": {
+            "S": "MSAWK630YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1748.07"
+          },
+          "name": {
+            "S": "1300 Ruby"
+          },
+          "price": {
+            "S": "1520.06"
+          },
+          "productid": {
+            "S": "MSAWK1300YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4532.02"
+          },
+          "name": {
+            "S": "3200 Ruby"
+          },
+          "price": {
+            "S": "3940.89"
+          },
+          "productid": {
+            "S": "MSAWK3200YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "8740.32"
+          },
+          "name": {
+            "S": "6500 Ruby"
+          },
+          "price": {
+            "S": "7600.28"
+          },
+          "productid": {
+            "S": "MSAWK6500YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "43701.61"
+          },
+          "name": {
+            "S": "6500 Ruby x 5"
+          },
+          "price": {
+            "S": "38001.4"
+          },
+          "productid": {
+            "S": "MSAWK6500_5YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "87403.22"
+          },
+          "name": {
+            "S": "6500 Ruby x 10"
+          },
+          "price": {
+            "S": "76002.8"
+          },
+          "productid": {
+            "S": "MSAWK6500_10YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "174806.44"
+          },
+          "name": {
+            "S": "6500 Ruby x 20"
+          },
+          "price": {
+            "S": "152005.6"
+          },
+          "productid": {
+            "S": "MSAWK6500_20YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "437016.09"
+          },
+          "name": {
+            "S": "6500 Ruby x 50"
+          },
+          "price": {
+            "S": "380013.99"
+          },
+          "productid": {
+            "S": "MSAWK6500_50YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "874032.19"
+          },
+          "name": {
+            "S": "6500 Ruby x 100"
+          },
+          "price": {
+            "S": "760027.99"
+          },
+          "productid": {
+            "S": "MSAWK6500_100YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "17480.64"
+          },
+          "name": {
+            "S": "13100 Ruby"
+          },
+          "price": {
+            "S": "15200.56"
+          },
+          "productid": {
+            "S": "MSAWK13100YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "25897.25"
+          },
+          "name": {
+            "S": "19650 Ruby"
+          },
+          "price": {
+            "S": "22519.35"
+          },
+          "productid": {
+            "S": "MSAWK19650YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1748.07"
+          },
+          "name": {
+            "S": "Alloy Pickaxe x10"
+          },
+          "price": {
+            "S": "1520.06"
+          },
+          "productid": {
+            "S": "MSAWKAP10YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "207.18"
+          },
+          "name": {
+            "S": "Ruby Pickaxe x1"
+          },
+          "price": {
+            "S": "180.16"
+          },
+          "productid": {
+            "S": "MSAWKRP1YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2071.78"
+          },
+          "name": {
+            "S": "Ruby Pickaxe x10"
+          },
+          "price": {
+            "S": "1801.55"
+          },
+          "productid": {
+            "S": "MSAWKRP10YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4143.57"
+          },
+          "name": {
+            "S": "Ruby Pickaxe x20"
+          },
+          "price": {
+            "S": "3603.1"
+          },
+          "productid": {
+            "S": "MSAWKRP20YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "207.18"
+          },
+          "name": {
+            "S": "Sapphire Pickaxe x1"
+          },
+          "price": {
+            "S": "180.16"
+          },
+          "productid": {
+            "S": "MSAWKSP1YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2071.78"
+          },
+          "name": {
+            "S": "Sapphire Pickaxe x10"
+          },
+          "price": {
+            "S": "1801.55"
+          },
+          "productid": {
+            "S": "MSAWKSP10YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4143.57"
+          },
+          "name": {
+            "S": "Sapphire Pickaxe x20"
+          },
+          "price": {
+            "S": "3603.1"
+          },
+          "productid": {
+            "S": "MSAWKSP20YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3496.13"
+          },
+          "name": {
+            "S": "Alloy Pickaxe x20"
+          },
+          "price": {
+            "S": "3040.12"
+          },
+          "productid": {
+            "S": "MSAWKAP20YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "174.81"
+          },
+          "name": {
+            "S": "Alloy Pickaxe x1"
+          },
+          "price": {
+            "S": "152.01"
+          },
+          "productid": {
+            "S": "MSAWKAP1_1YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "900.05"
+          },
+          "name": {
+            "S": "Premium Monthly Card Backup"
+          },
+          "price": {
+            "S": "782.66"
+          },
+          "productid": {
+            "S": "MSAWKKBPYCXBC"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "453.2"
+          },
+          "name": {
+            "S": "Support Pass"
+          },
+          "price": {
+            "S": "394.09"
+          },
+          "productid": {
+            "S": "MSAWKSPYCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "874.03"
+          },
+          "name": {
+            "S": "Premium Support Pass"
+          },
+          "price": {
+            "S": "760.03"
+          },
+          "productid": {
+            "S": "MSAWKSPP1YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "453.2"
+          },
+          "name": {
+            "S": "Monthly Card"
+          },
+          "price": {
+            "S": "394.09"
+          },
+          "productid": {
+            "S": "MSAWKKBYCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "metal-slug:-awakening-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "874.03"
+          },
+          "name": {
+            "S": "Premium Monthly Card"
+          },
+          "price": {
+            "S": "760.03"
+          },
+          "productid": {
+            "S": "MSAWKKBPYCX"
+          }
+        }
+      }
+    ]
+  }
+}

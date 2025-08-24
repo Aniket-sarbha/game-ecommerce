@@ -1,0 +1,320 @@
+{
+  "itemname": {
+    "S": "store-pubg-mobile-lite"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "pubg-mobile-lite-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "45.53"
+          },
+          "name": {
+            "S": "30 BC"
+          },
+          "price": {
+            "S": "39.59"
+          },
+          "productid": {
+            "S": "UCPUBGMLITE30YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "pubg-mobile-lite-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "92.08"
+          },
+          "name": {
+            "S": "60 + 36 BC"
+          },
+          "price": {
+            "S": "80.07"
+          },
+          "productid": {
+            "S": "UCPUBGMLITE60YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "pubg-mobile-lite-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "276.24"
+          },
+          "name": {
+            "S": "170 + 102 BC"
+          },
+          "price": {
+            "S": "240.2"
+          },
+          "productid": {
+            "S": "UCPUBGMLITE170YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "pubg-mobile-lite-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "918.69"
+          },
+          "name": {
+            "S": "610 + 366 BC"
+          },
+          "price": {
+            "S": "798.86"
+          },
+          "productid": {
+            "S": "UCPUBGMLITE610YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "pubg-mobile-lite-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2297.77"
+          },
+          "name": {
+            "S": "1550 + 930 BC"
+          },
+          "price": {
+            "S": "1998.06"
+          },
+          "productid": {
+            "S": "UCPUBGMLITE1550YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "pubg-mobile-lite-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4483.25"
+          },
+          "name": {
+            "S": "3250 + 1950 BC"
+          },
+          "price": {
+            "S": "3898.48"
+          },
+          "productid": {
+            "S": "UCPUBGMLITE3250YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "pubg-mobile-lite-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "9190.01"
+          },
+          "name": {
+            "S": "6680 + 4008 BC"
+          },
+          "price": {
+            "S": "7991.31"
+          },
+          "productid": {
+            "S": "UCPUBGMLITE6680YCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "pubg-mobile-lite-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "48.68"
+          },
+          "name": {
+            "S": "30 BC"
+          },
+          "price": {
+            "S": "42.33"
+          },
+          "productid": {
+            "S": "2396"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "pubg-mobile-lite-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "97.35"
+          },
+          "name": {
+            "S": "60 + 36 Bonus BC"
+          },
+          "price": {
+            "S": "84.65"
+          },
+          "productid": {
+            "S": "2397"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "pubg-mobile-lite-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "293.14"
+          },
+          "name": {
+            "S": "170 + 102 Bonus BC"
+          },
+          "price": {
+            "S": "254.91"
+          },
+          "productid": {
+            "S": "2398"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "pubg-mobile-lite-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "975.68"
+          },
+          "name": {
+            "S": "610 + 366 Bonus BC"
+          },
+          "price": {
+            "S": "848.41"
+          },
+          "productid": {
+            "S": "2399"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "pubg-mobile-lite-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2440.29"
+          },
+          "name": {
+            "S": "1550 + 930 Bonus BC"
+          },
+          "price": {
+            "S": "2121.99"
+          },
+          "productid": {
+            "S": "2400"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "pubg-mobile-lite-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4880.59"
+          },
+          "name": {
+            "S": "3250 + 1950 Bonus BC"
+          },
+          "price": {
+            "S": "4243.99"
+          },
+          "productid": {
+            "S": "2401"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "pubg-mobile-lite-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "9761.18"
+          },
+          "name": {
+            "S": "6680 + 4008 Bonus BC"
+          },
+          "price": {
+            "S": "8487.98"
+          },
+          "productid": {
+            "S": "2402"
+          }
+        }
+      }
+    ]
+  }
+}

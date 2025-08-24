@@ -1,0 +1,496 @@
+{
+  "itemname": {
+    "S": "store-goddess-of-victory-:-nikke"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "91.6"
+          },
+          "name": {
+            "S": "60 Gems + 1"
+          },
+          "price": {
+            "S": "79.65"
+          },
+          "productid": {
+            "S": "NIK60-YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "9.48"
+          },
+          "name": {
+            "S": "6 Gems + 6"
+          },
+          "price": {
+            "S": "8.24"
+          },
+          "productid": {
+            "S": "NIK6-YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2891.75"
+          },
+          "name": {
+            "S": "2370 Gems + 420"
+          },
+          "price": {
+            "S": "2514.56"
+          },
+          "productid": {
+            "S": "NIK2370-YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "7444.95"
+          },
+          "name": {
+            "S": "6200 Gems + 1500"
+          },
+          "price": {
+            "S": "6473.87"
+          },
+          "productid": {
+            "S": "NIK6200-YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "185.57"
+          },
+          "name": {
+            "S": "120 Gems + 3"
+          },
+          "price": {
+            "S": "161.37"
+          },
+          "productid": {
+            "S": "NIK120-YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "465.11"
+          },
+          "name": {
+            "S": "Monthly Pass"
+          },
+          "price": {
+            "S": "404.45"
+          },
+          "productid": {
+            "S": "NIKMP-YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1863.61"
+          },
+          "name": {
+            "S": "1500 Gems + 260"
+          },
+          "price": {
+            "S": "1620.53"
+          },
+          "productid": {
+            "S": "NIK1500-YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "5205.46"
+          },
+          "name": {
+            "S": "4200 Gems + 1000"
+          },
+          "price": {
+            "S": "4526.49"
+          },
+          "productid": {
+            "S": "NIK4200-YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2779.62"
+          },
+          "name": {
+            "S": "2300 Gems + 400"
+          },
+          "price": {
+            "S": "2417.06"
+          },
+          "productid": {
+            "S": "NIK2300-YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "465.11"
+          },
+          "name": {
+            "S": "320 Gems + 10"
+          },
+          "price": {
+            "S": "404.45"
+          },
+          "productid": {
+            "S": "NIK320-YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "931.01"
+          },
+          "name": {
+            "S": "720 Gems + 120"
+          },
+          "price": {
+            "S": "809.58"
+          },
+          "productid": {
+            "S": "NIK720-YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "9.6"
+          },
+          "name": {
+            "S": "6 Gems + 6"
+          },
+          "price": {
+            "S": "8.35"
+          },
+          "productid": {
+            "S": "NIK6-YCMURAH"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "90.62"
+          },
+          "name": {
+            "S": "60 Gems + 1"
+          },
+          "price": {
+            "S": "78.8"
+          },
+          "productid": {
+            "S": "NIK60-YCMURAH"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "183.36"
+          },
+          "name": {
+            "S": "120 Gems + 3"
+          },
+          "price": {
+            "S": "159.45"
+          },
+          "productid": {
+            "S": "NIK120-YCMURAH"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "460.54"
+          },
+          "name": {
+            "S": "320 Gems + 10"
+          },
+          "price": {
+            "S": "400.47"
+          },
+          "productid": {
+            "S": "NIK320-YCMURAH"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "922.16"
+          },
+          "name": {
+            "S": "720 Gems + 120"
+          },
+          "price": {
+            "S": "801.88"
+          },
+          "productid": {
+            "S": "NIK720-YCMURAH"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1845.38"
+          },
+          "name": {
+            "S": "1500 Gems + 260"
+          },
+          "price": {
+            "S": "1604.68"
+          },
+          "productid": {
+            "S": "NIK1500-YCMURAH"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2752.6"
+          },
+          "name": {
+            "S": "2300 Gems + 400"
+          },
+          "price": {
+            "S": "2393.57"
+          },
+          "productid": {
+            "S": "NIK2300-YCMURAH"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2863.48"
+          },
+          "name": {
+            "S": "2370 Gems + 420"
+          },
+          "price": {
+            "S": "2489.98"
+          },
+          "productid": {
+            "S": "NIK2370-YCMURAH"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5154.47"
+          },
+          "name": {
+            "S": "4200 Gems + 1000"
+          },
+          "price": {
+            "S": "4482.15"
+          },
+          "productid": {
+            "S": "NIK4200-YCMURAH"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "460.54"
+          },
+          "name": {
+            "S": "Monthly Pass"
+          },
+          "price": {
+            "S": "400.47"
+          },
+          "productid": {
+            "S": "NIKMP-YCMURAH"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "goddess-of-victory-:-nikke-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "7371.89"
+          },
+          "name": {
+            "S": "6200 Gems + 1500"
+          },
+          "price": {
+            "S": "6410.34"
+          },
+          "productid": {
+            "S": "NIK6200-YCMURAH"
+          }
+        }
+      }
+    ]
+  }
+}

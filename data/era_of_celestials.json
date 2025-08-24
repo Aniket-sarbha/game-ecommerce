@@ -1,0 +1,166 @@
+{
+  "itemname": {
+    "S": "store-era-of-celestials"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "era-of-celestials-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "101.67"
+          },
+          "name": {
+            "S": "100 Diamonds"
+          },
+          "price": {
+            "S": "88.41"
+          },
+          "productid": {
+            "S": "EOC100-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "era-of-celestials-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "508.34"
+          },
+          "name": {
+            "S": "500 Diamonds"
+          },
+          "price": {
+            "S": "442.04"
+          },
+          "productid": {
+            "S": "EOC500-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "era-of-celestials-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1016.68"
+          },
+          "name": {
+            "S": "1000 Diamonds"
+          },
+          "price": {
+            "S": "884.07"
+          },
+          "productid": {
+            "S": "EOC1000-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "era-of-celestials-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1525.02"
+          },
+          "name": {
+            "S": "1500 Diamonds"
+          },
+          "price": {
+            "S": "1326.1"
+          },
+          "productid": {
+            "S": "EOC1500-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "era-of-celestials-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2033.36"
+          },
+          "name": {
+            "S": "2000 Diamonds"
+          },
+          "price": {
+            "S": "1768.14"
+          },
+          "productid": {
+            "S": "EOC2000-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "era-of-celestials-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5083.4"
+          },
+          "name": {
+            "S": "5000 Diamonds"
+          },
+          "price": {
+            "S": "4420.35"
+          },
+          "productid": {
+            "S": "EOC5000-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "era-of-celestials-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "10166.79"
+          },
+          "name": {
+            "S": "10000 Diamonds"
+          },
+          "price": {
+            "S": "8840.68"
+          },
+          "productid": {
+            "S": "EOC10000-S48"
+          }
+        }
+      }
+    ]
+  }
+}

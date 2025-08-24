@@ -1,0 +1,166 @@
+{
+  "itemname": {
+    "S": "store-idle-legends-:-gods-saga"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "idle-legends-:-gods-saga-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "101.67"
+          },
+          "name": {
+            "S": "90 Diamonds"
+          },
+          "price": {
+            "S": "88.41"
+          },
+          "productid": {
+            "S": "IDLGS90-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "idle-legends-:-gods-saga-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "508.34"
+          },
+          "name": {
+            "S": "450 Diamonds"
+          },
+          "price": {
+            "S": "442.04"
+          },
+          "productid": {
+            "S": "IDLGS450-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "idle-legends-:-gods-saga-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1016.68"
+          },
+          "name": {
+            "S": "900 Diamonds"
+          },
+          "price": {
+            "S": "884.07"
+          },
+          "productid": {
+            "S": "IDLGS900-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "idle-legends-:-gods-saga-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1525.02"
+          },
+          "name": {
+            "S": "1350 Diamonds"
+          },
+          "price": {
+            "S": "1326.1"
+          },
+          "productid": {
+            "S": "IDLGS1350-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "idle-legends-:-gods-saga-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2033.36"
+          },
+          "name": {
+            "S": "1840 Diamonds"
+          },
+          "price": {
+            "S": "1768.14"
+          },
+          "productid": {
+            "S": "IDLGS1840-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "idle-legends-:-gods-saga-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "5083.4"
+          },
+          "name": {
+            "S": "5000 Diamonds"
+          },
+          "price": {
+            "S": "4420.35"
+          },
+          "productid": {
+            "S": "IDLGS5000-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "idle-legends-:-gods-saga-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "10166.79"
+          },
+          "name": {
+            "S": "10000 Diamonds"
+          },
+          "price": {
+            "S": "8840.68"
+          },
+          "productid": {
+            "S": "IDLGS10000-S48"
+          }
+        }
+      }
+    ]
+  }
+}

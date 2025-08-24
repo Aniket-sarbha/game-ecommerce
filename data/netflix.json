@@ -1,0 +1,232 @@
+{
+  "itemname": {
+    "S": "store-netflix"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "netflix-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1595.12"
+          },
+          "name": {
+            "S": "Private 1 Bulan 4 Layar UHD (Region ID)"
+          },
+          "price": {
+            "S": "1387.06"
+          },
+          "productid": {
+            "S": "NFXP1_4UHD_ID-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "netflix-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1595.12"
+          },
+          "name": {
+            "S": "Private 1 Bulan 4 Layar UHD (Region PH)"
+          },
+          "price": {
+            "S": "1387.06"
+          },
+          "productid": {
+            "S": "NFXP1_4UHD_PH-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "netflix-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1595.12"
+          },
+          "name": {
+            "S": "Private 1 Bulan 2 Layar HD (Region PK)"
+          },
+          "price": {
+            "S": "1387.06"
+          },
+          "productid": {
+            "S": "NFXP1_2HD_PK-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "netflix-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1595.12"
+          },
+          "name": {
+            "S": "Private 1 Bulan 4 Layar UHD (Region PK)"
+          },
+          "price": {
+            "S": "1387.06"
+          },
+          "productid": {
+            "S": "NFXP1_4UHD_PK-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "netflix-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1595.12"
+          },
+          "name": {
+            "S": "Private 1 Bulan 2 Layar HD (Region PH)"
+          },
+          "price": {
+            "S": "1387.06"
+          },
+          "productid": {
+            "S": "NFXP1_2HD_PH-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "netflix-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "439.05"
+          },
+          "name": {
+            "S": "Sharing 1 Bulan 1 Profil HD (Region ID)"
+          },
+          "price": {
+            "S": "381.79"
+          },
+          "productid": {
+            "S": "NFXS1_1HD_ID-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "netflix-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "359.3"
+          },
+          "name": {
+            "S": "Sharing 1 Bulan 1 Profil HD (Region PK)"
+          },
+          "price": {
+            "S": "312.43"
+          },
+          "productid": {
+            "S": "NFXS1_1HD_PK-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "netflix-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "439.05"
+          },
+          "name": {
+            "S": "Sharing 1 Bulan 1 Profil UHD (Region ID)"
+          },
+          "price": {
+            "S": "381.79"
+          },
+          "productid": {
+            "S": "NFXS1_1UHD_ID-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "netflix-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "278.35"
+          },
+          "name": {
+            "S": "Sharing 1 Bulan 1 Profil UHD (Region PK)"
+          },
+          "price": {
+            "S": "242.04"
+          },
+          "productid": {
+            "S": "NFXS1_1UHD_PK-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "netflix-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "278.35"
+          },
+          "name": {
+            "S": "Sharing 1 Bulan 1 Profil UHD (Region PH)"
+          },
+          "price": {
+            "S": "242.04"
+          },
+          "productid": {
+            "S": "NFXS1_1UHD_PH-S51"
+          }
+        }
+      }
+    ]
+  }
+}

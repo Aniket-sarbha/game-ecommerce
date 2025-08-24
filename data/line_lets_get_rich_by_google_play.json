@@ -1,0 +1,144 @@
+{
+  "itemname": {
+    "S": "store-line-lets-get-rich-by-google-play"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "line-lets-get-rich-by-google-play-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "300.86"
+          },
+          "name": {
+            "S": "22 Diamond + Bonus"
+          },
+          "price": {
+            "S": "261.62"
+          },
+          "productid": {
+            "S": "LLGR22-S15"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "line-lets-get-rich-by-google-play-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "558.76"
+          },
+          "name": {
+            "S": "44 Diamond + Bonus"
+          },
+          "price": {
+            "S": "485.88"
+          },
+          "productid": {
+            "S": "LLGR44-S15"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "line-lets-get-rich-by-google-play-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1108.9"
+          },
+          "name": {
+            "S": "88 Diamond + Bonus"
+          },
+          "price": {
+            "S": "964.26"
+          },
+          "productid": {
+            "S": "LLGR88-S15"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "line-lets-get-rich-by-google-play-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2828.14"
+          },
+          "name": {
+            "S": "220 Diamond + Bonus"
+          },
+          "price": {
+            "S": "2459.25"
+          },
+          "productid": {
+            "S": "LLGR220-S15"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "line-lets-get-rich-by-google-play-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "5578.93"
+          },
+          "name": {
+            "S": "440 Diamond + Bonus"
+          },
+          "price": {
+            "S": "4851.24"
+          },
+          "productid": {
+            "S": "LLGR440-S15"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "line-lets-get-rich-by-google-play-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "11166.45"
+          },
+          "name": {
+            "S": "880 Diamond + Bonus"
+          },
+          "price": {
+            "S": "9709.95"
+          },
+          "productid": {
+            "S": "LLGR880-S15"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "itemname": {
+    "S": "store-waparti"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "waparti-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "14.14"
+          },
+          "name": {
+            "S": "500 Coins"
+          },
+          "price": {
+            "S": "12.29"
+          },
+          "productid": {
+            "S": "500waparti"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "waparti-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "28.27"
+          },
+          "name": {
+            "S": "1000 Coins"
+          },
+          "price": {
+            "S": "24.59"
+          },
+          "productid": {
+            "S": "1kwaparti"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "waparti-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "141.35"
+          },
+          "name": {
+            "S": "5000 Coins"
+          },
+          "price": {
+            "S": "122.91"
+          },
+          "productid": {
+            "S": "5kwaparti"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "waparti-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "282.7"
+          },
+          "name": {
+            "S": "10000 Coins"
+          },
+          "price": {
+            "S": "245.83"
+          },
+          "productid": {
+            "S": "10kwaparti"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "waparti-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1413.5"
+          },
+          "name": {
+            "S": "50000 Coins"
+          },
+          "price": {
+            "S": "1229.13"
+          },
+          "productid": {
+            "S": "50kwaparti"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "waparti-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2827.0"
+          },
+          "name": {
+            "S": "100000 Coins"
+          },
+          "price": {
+            "S": "2458.26"
+          },
+          "productid": {
+            "S": "100kwaparti"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "waparti-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "14134.98"
+          },
+          "name": {
+            "S": "500000 Coins"
+          },
+          "price": {
+            "S": "12291.29"
+          },
+          "productid": {
+            "S": "500kwaparti"
+          }
+        }
+      }
+    ]
+  }
+}

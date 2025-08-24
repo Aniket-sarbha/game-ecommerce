@@ -1,0 +1,78 @@
+{
+  "itemname": {
+    "S": "store-wifi-id"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "wifi-id-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "28.2"
+          },
+          "name": {
+            "S": "Akses wifi.id 1 hari"
+          },
+          "price": {
+            "S": "24.52"
+          },
+          "productid": {
+            "S": "WFD1"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "wifi-id-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "277.09"
+          },
+          "name": {
+            "S": "Akses wifi.id 30 hari"
+          },
+          "price": {
+            "S": "240.95"
+          },
+          "productid": {
+            "S": "WFD30"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "wifi-id-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "111.15"
+          },
+          "name": {
+            "S": "Akses wifi.id 7 hari"
+          },
+          "price": {
+            "S": "96.65"
+          },
+          "productid": {
+            "S": "WFD7"
+          }
+        }
+      }
+    ]
+  }
+}

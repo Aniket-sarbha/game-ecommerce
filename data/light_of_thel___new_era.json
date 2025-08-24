@@ -1,0 +1,298 @@
+{
+  "itemname": {
+    "S": "store-light-of-thel-:-new-era"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "light-of-thel-:-new-era-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "104.22"
+          },
+          "name": {
+            "S": "90 Crystals"
+          },
+          "price": {
+            "S": "90.63"
+          },
+          "productid": {
+            "S": "LOTNRA90YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "light-of-thel-:-new-era-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "516.82"
+          },
+          "name": {
+            "S": "450 Crystals"
+          },
+          "price": {
+            "S": "449.41"
+          },
+          "productid": {
+            "S": "LOTNRA450YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "light-of-thel-:-new-era-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "714.27"
+          },
+          "name": {
+            "S": "630 Crystals"
+          },
+          "price": {
+            "S": "621.11"
+          },
+          "productid": {
+            "S": "LOTNRA630YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "light-of-thel-:-new-era-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1042.63"
+          },
+          "name": {
+            "S": "900 Crystals"
+          },
+          "price": {
+            "S": "906.63"
+          },
+          "productid": {
+            "S": "LOTNRA900YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "light-of-thel-:-new-era-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1632.16"
+          },
+          "name": {
+            "S": "1350 Crystals"
+          },
+          "price": {
+            "S": "1419.27"
+          },
+          "productid": {
+            "S": "LOTNRA1350YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "light-of-thel-:-new-era-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2156.67"
+          },
+          "name": {
+            "S": "1800 Crystals"
+          },
+          "price": {
+            "S": "1875.37"
+          },
+          "productid": {
+            "S": "LOTNRA1800YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "light-of-thel-:-new-era-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2615.08"
+          },
+          "name": {
+            "S": "2250 Crystals"
+          },
+          "price": {
+            "S": "2273.98"
+          },
+          "productid": {
+            "S": "LOTNRA2250YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "light-of-thel-:-new-era-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3466.87"
+          },
+          "name": {
+            "S": "2980 Crystals"
+          },
+          "price": {
+            "S": "3014.67"
+          },
+          "productid": {
+            "S": "LOTNRA2980YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "light-of-thel-:-new-era-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "5236.55"
+          },
+          "name": {
+            "S": "4500 Crystals"
+          },
+          "price": {
+            "S": "4553.52"
+          },
+          "productid": {
+            "S": "LOTNRA4500YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "light-of-thel-:-new-era-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "7858.02"
+          },
+          "name": {
+            "S": "6300 Crystals"
+          },
+          "price": {
+            "S": "6833.06"
+          },
+          "productid": {
+            "S": "LOTNRA6300YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "light-of-thel-:-new-era-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "10479.49"
+          },
+          "name": {
+            "S": "9000 Crystals"
+          },
+          "price": {
+            "S": "9112.6"
+          },
+          "productid": {
+            "S": "LOTNRA9000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "light-of-thel-:-new-era-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "16378.06"
+          },
+          "name": {
+            "S": "15000 Crystals"
+          },
+          "price": {
+            "S": "14241.8"
+          },
+          "productid": {
+            "S": "LOTNRA15000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "light-of-thel-:-new-era-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "32763.6"
+          },
+          "name": {
+            "S": "32000 Crystals"
+          },
+          "price": {
+            "S": "28490.09"
+          },
+          "productid": {
+            "S": "LOTNRA32000YCX"
+          }
+        }
+      }
+    ]
+  }
+}

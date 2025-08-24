@@ -1,0 +1,408 @@
+{
+  "itemname": {
+    "S": "store-dragon-raja-:-sea"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "dragon-raja-:-sea-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "112.36"
+          },
+          "name": {
+            "S": "76 Coupon"
+          },
+          "price": {
+            "S": "97.7"
+          },
+          "productid": {
+            "S": "DR76-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-raja-:-sea-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "674.1"
+          },
+          "name": {
+            "S": "456 Coupon"
+          },
+          "price": {
+            "S": "586.18"
+          },
+          "productid": {
+            "S": "DR456-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-raja-:-sea-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1123.5"
+          },
+          "name": {
+            "S": "820 Coupon"
+          },
+          "price": {
+            "S": "976.95"
+          },
+          "productid": {
+            "S": "DR820-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-raja-:-sea-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2246.99"
+          },
+          "name": {
+            "S": "1699 Coupon"
+          },
+          "price": {
+            "S": "1953.9"
+          },
+          "productid": {
+            "S": "DR1699-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-raja-:-sea-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "6740.98"
+          },
+          "name": {
+            "S": "5161 Coupon"
+          },
+          "price": {
+            "S": "5861.72"
+          },
+          "productid": {
+            "S": "DR5161-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-raja-:-sea-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "8987.97"
+          },
+          "name": {
+            "S": "6860 Coupon"
+          },
+          "price": {
+            "S": "7815.63"
+          },
+          "productid": {
+            "S": "DR6860-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-raja-:-sea-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "11234.96"
+          },
+          "name": {
+            "S": "9056 Coupon"
+          },
+          "price": {
+            "S": "9769.53"
+          },
+          "productid": {
+            "S": "DR9056-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-raja-:-sea-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1460.55"
+          },
+          "name": {
+            "S": "Investment Fund"
+          },
+          "price": {
+            "S": "1270.05"
+          },
+          "productid": {
+            "S": "DRIF1-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-raja-:-sea-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2022.29"
+          },
+          "name": {
+            "S": "Investment Fund II"
+          },
+          "price": {
+            "S": "1758.51"
+          },
+          "productid": {
+            "S": "DRIF2-S14"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-raja-:-sea-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "95.91"
+          },
+          "name": {
+            "S": "66 Coupon"
+          },
+          "price": {
+            "S": "83.4"
+          },
+          "productid": {
+            "S": "DR66-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-raja-:-sea-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "383.65"
+          },
+          "name": {
+            "S": "264 Coupon"
+          },
+          "price": {
+            "S": "333.61"
+          },
+          "productid": {
+            "S": "DR264-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-raja-:-sea-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1438.7"
+          },
+          "name": {
+            "S": "1098 Coupon"
+          },
+          "price": {
+            "S": "1251.04"
+          },
+          "productid": {
+            "S": "DR1098-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-raja-:-sea-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "2877.39"
+          },
+          "name": {
+            "S": "2246 Coupon"
+          },
+          "price": {
+            "S": "2502.08"
+          },
+          "productid": {
+            "S": "DR2246-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-raja-:-sea-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "4795.66"
+          },
+          "name": {
+            "S": "3768 Coupon"
+          },
+          "price": {
+            "S": "4170.14"
+          },
+          "productid": {
+            "S": "DR3768-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-raja-:-sea-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "9591.32"
+          },
+          "name": {
+            "S": "7546 Coupons"
+          },
+          "price": {
+            "S": "8340.27"
+          },
+          "productid": {
+            "S": "DR7546-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-raja-:-sea-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "19182.62"
+          },
+          "name": {
+            "S": "15092 Coupons"
+          },
+          "price": {
+            "S": "16680.54"
+          },
+          "productid": {
+            "S": "DR15092-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-raja-:-sea-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1438.7"
+          },
+          "name": {
+            "S": "Investment Fund"
+          },
+          "price": {
+            "S": "1251.04"
+          },
+          "productid": {
+            "S": "DRIF1-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "dragon-raja-:-sea-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1918.26"
+          },
+          "name": {
+            "S": "Investment Fund II"
+          },
+          "price": {
+            "S": "1668.05"
+          },
+          "productid": {
+            "S": "DRIF2-S48"
+          }
+        }
+      }
+    ]
+  }
+}

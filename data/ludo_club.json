@@ -1,0 +1,144 @@
+{
+  "itemname": {
+    "S": "store-ludo-club"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "ludo-club-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "74.39"
+          },
+          "name": {
+            "S": "30000 Coins"
+          },
+          "price": {
+            "S": "64.69"
+          },
+          "productid": {
+            "S": "LUD30000-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ludo-club-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "148.75"
+          },
+          "name": {
+            "S": "150000 Coins"
+          },
+          "price": {
+            "S": "129.35"
+          },
+          "productid": {
+            "S": "LUD150000-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ludo-club-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "743.76"
+          },
+          "name": {
+            "S": "1000000 Coins"
+          },
+          "price": {
+            "S": "646.75"
+          },
+          "productid": {
+            "S": "LUD1000000-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ludo-club-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1041.26"
+          },
+          "name": {
+            "S": "2500000 Coins"
+          },
+          "price": {
+            "S": "905.45"
+          },
+          "productid": {
+            "S": "LUD2500000-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ludo-club-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2231.3"
+          },
+          "name": {
+            "S": "10000000 Coins"
+          },
+          "price": {
+            "S": "1940.26"
+          },
+          "productid": {
+            "S": "LUD10000000-S48"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "ludo-club-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "6693.87"
+          },
+          "name": {
+            "S": "50000000 Coins"
+          },
+          "price": {
+            "S": "5820.76"
+          },
+          "productid": {
+            "S": "LUD50000000-S48"
+          }
+        }
+      }
+    ]
+  }
+}

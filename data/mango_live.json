@@ -1,0 +1,122 @@
+{
+  "itemname": {
+    "S": "store-mango-live"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "mango-live-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "713.0"
+          },
+          "name": {
+            "S": "25000 Diamond"
+          },
+          "price": {
+            "S": "620.0"
+          },
+          "productid": {
+            "S": "MGL25000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "mango-live-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1425.99"
+          },
+          "name": {
+            "S": "50000 Diamond"
+          },
+          "price": {
+            "S": "1239.99"
+          },
+          "productid": {
+            "S": "MGL50000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "mango-live-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3564.98"
+          },
+          "name": {
+            "S": "125000 Diamond"
+          },
+          "price": {
+            "S": "3099.98"
+          },
+          "productid": {
+            "S": "MGL125000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "mango-live-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "7129.94"
+          },
+          "name": {
+            "S": "250000 Diamond"
+          },
+          "price": {
+            "S": "6199.95"
+          },
+          "productid": {
+            "S": "MGL250000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "mango-live-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "14259.88"
+          },
+          "name": {
+            "S": "500000 Diamond"
+          },
+          "price": {
+            "S": "12399.89"
+          },
+          "productid": {
+            "S": "MGL500000YCX"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "itemname": {
+    "S": "store-tinder"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "tinder-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "450.9"
+          },
+          "name": {
+            "S": "Tinder Plus 1 month"
+          },
+          "price": {
+            "S": "392.09"
+          },
+          "productid": {
+            "S": "TINDPLUS1MTH-S22"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "tinder-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1024.98"
+          },
+          "name": {
+            "S": "Tinder Gold 1 month"
+          },
+          "price": {
+            "S": "891.29"
+          },
+          "productid": {
+            "S": "TINDGOLD1MTH-S22"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "itemname": {
+    "S": "store-xena-live"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "xena-live-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "14.61"
+          },
+          "name": {
+            "S": "1000 Coins"
+          },
+          "price": {
+            "S": "12.7"
+          },
+          "productid": {
+            "S": "1000xena"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "xena-live-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "29.22"
+          },
+          "name": {
+            "S": "2000 Coins"
+          },
+          "price": {
+            "S": "25.41"
+          },
+          "productid": {
+            "S": "2000xena"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "xena-live-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "73.04"
+          },
+          "name": {
+            "S": "5000 Coins"
+          },
+          "price": {
+            "S": "63.52"
+          },
+          "productid": {
+            "S": "5000xena"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "xena-live-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "146.09"
+          },
+          "name": {
+            "S": "10000 Coins"
+          },
+          "price": {
+            "S": "127.03"
+          },
+          "productid": {
+            "S": "10kxena"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "xena-live-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "292.18"
+          },
+          "name": {
+            "S": "20000 Coins"
+          },
+          "price": {
+            "S": "254.07"
+          },
+          "productid": {
+            "S": "20kxena"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "xena-live-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "365.22"
+          },
+          "name": {
+            "S": "25000 Coins"
+          },
+          "price": {
+            "S": "317.58"
+          },
+          "productid": {
+            "S": "25kxena"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "xena-live-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "730.44"
+          },
+          "name": {
+            "S": "50000 Coins"
+          },
+          "price": {
+            "S": "635.16"
+          },
+          "productid": {
+            "S": "50kxena"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "xena-live-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "1460.88"
+          },
+          "name": {
+            "S": "100000 Coins"
+          },
+          "price": {
+            "S": "1270.33"
+          },
+          "productid": {
+            "S": "100kxena"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "xena-live-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "7304.39"
+          },
+          "name": {
+            "S": "500000 Coins"
+          },
+          "price": {
+            "S": "6351.64"
+          },
+          "productid": {
+            "S": "500kxena"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "xena-live-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "14608.78"
+          },
+          "name": {
+            "S": "1000000 Coins"
+          },
+          "price": {
+            "S": "12703.28"
+          },
+          "productid": {
+            "S": "1jtxena"
+          }
+        }
+      }
+    ]
+  }
+}

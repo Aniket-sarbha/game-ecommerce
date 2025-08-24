@@ -1,0 +1,210 @@
+{
+  "itemname": {
+    "S": "store-livu"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "livu-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "260.38"
+          },
+          "name": {
+            "S": "299 Coin"
+          },
+          "price": {
+            "S": "226.42"
+          },
+          "productid": {
+            "S": "LIVU299-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "livu-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "535.62"
+          },
+          "name": {
+            "S": "650 Coin"
+          },
+          "price": {
+            "S": "465.75"
+          },
+          "productid": {
+            "S": "LIVU650-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "livu-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "867.93"
+          },
+          "name": {
+            "S": "990 Coin"
+          },
+          "price": {
+            "S": "754.72"
+          },
+          "productid": {
+            "S": "LIVU990-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "livu-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "969.58"
+          },
+          "name": {
+            "S": "1250 Coin"
+          },
+          "price": {
+            "S": "843.12"
+          },
+          "productid": {
+            "S": "LIVU1250-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "livu-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1774.96"
+          },
+          "name": {
+            "S": "2500 Coin"
+          },
+          "price": {
+            "S": "1543.45"
+          },
+          "productid": {
+            "S": "LIVU2500-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "livu-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3378.68"
+          },
+          "name": {
+            "S": "5000 Coin"
+          },
+          "price": {
+            "S": "2937.99"
+          },
+          "productid": {
+            "S": "LIVU5000-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "livu-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "6468.06"
+          },
+          "name": {
+            "S": "10000 Coin"
+          },
+          "price": {
+            "S": "5624.4"
+          },
+          "productid": {
+            "S": "LIVU10000-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "livu-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "12707.01"
+          },
+          "name": {
+            "S": "20000 Coin"
+          },
+          "price": {
+            "S": "11049.57"
+          },
+          "productid": {
+            "S": "LIVU20000-S51"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "livu-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "31036.82"
+          },
+          "name": {
+            "S": "50000 Coin"
+          },
+          "price": {
+            "S": "26988.54"
+          },
+          "productid": {
+            "S": "LIVU50000-S51"
+          }
+        }
+      }
+    ]
+  }
+}

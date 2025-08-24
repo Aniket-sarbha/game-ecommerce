@@ -1,0 +1,188 @@
+{
+  "itemname": {
+    "S": "store-guns-of-glory"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "guns-of-glory-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "596.27"
+          },
+          "name": {
+            "S": "500 Diamonds"
+          },
+          "price": {
+            "S": "518.49"
+          },
+          "productid": {
+            "S": "GOG500YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "guns-of-glory-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "1200.07"
+          },
+          "name": {
+            "S": "1000 Diamonds"
+          },
+          "price": {
+            "S": "1043.54"
+          },
+          "productid": {
+            "S": "GOG1000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "guns-of-glory-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "2634.12"
+          },
+          "name": {
+            "S": "2000 Diamonds"
+          },
+          "price": {
+            "S": "2290.54"
+          },
+          "productid": {
+            "S": "GOG2000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "guns-of-glory-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "6030.56"
+          },
+          "name": {
+            "S": "5000 Diamonds"
+          },
+          "price": {
+            "S": "5243.97"
+          },
+          "productid": {
+            "S": "GOG5000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "guns-of-glory-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "12068.67"
+          },
+          "name": {
+            "S": "10000 Diamonds"
+          },
+          "price": {
+            "S": "10494.49"
+          },
+          "productid": {
+            "S": "GOG10000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "guns-of-glory-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "26341.24"
+          },
+          "name": {
+            "S": "20000 Diamonds"
+          },
+          "price": {
+            "S": "22905.43"
+          },
+          "productid": {
+            "S": "GOG20000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "guns-of-glory-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "60305.59"
+          },
+          "name": {
+            "S": "50000 Diamonds"
+          },
+          "price": {
+            "S": "52439.65"
+          },
+          "productid": {
+            "S": "GOG50000YCX"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "guns-of-glory-crystals.png"
+          },
+          "isactive": {
+            "S": "false"
+          },
+          "mrp": {
+            "S": "120686.67"
+          },
+          "name": {
+            "S": "100000 Diamonds"
+          },
+          "price": {
+            "S": "104944.93"
+          },
+          "productid": {
+            "S": "GOG100000YCX"
+          }
+        }
+      }
+    ]
+  }
+}

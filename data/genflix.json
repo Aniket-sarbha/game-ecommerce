@@ -1,0 +1,100 @@
+{
+  "itemname": {
+    "S": "store-genflix"
+  },
+  "isactive": {
+    "S": "false"
+  },
+  "storeitems": {
+    "L": [
+      {
+        "M": {
+          "img": {
+            "S": "genflix-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "31.9"
+          },
+          "name": {
+            "S": "1 Day"
+          },
+          "price": {
+            "S": "27.74"
+          },
+          "productid": {
+            "S": "GFX1DYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "genflix-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "63.81"
+          },
+          "name": {
+            "S": "3 Days"
+          },
+          "price": {
+            "S": "55.49"
+          },
+          "productid": {
+            "S": "GFX3DYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "genflix-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "3751.73"
+          },
+          "name": {
+            "S": "540 Days"
+          },
+          "price": {
+            "S": "3262.37"
+          },
+          "productid": {
+            "S": "GFX540DYCGG"
+          }
+        }
+      },
+      {
+        "M": {
+          "img": {
+            "S": "genflix-crystals.png"
+          },
+          "isactive": {
+            "S": "true"
+          },
+          "mrp": {
+            "S": "7503.45"
+          },
+          "name": {
+            "S": "730 Days"
+          },
+          "price": {
+            "S": "6524.74"
+          },
+          "productid": {
+            "S": "GFX730DYCGG"
+          }
+        }
+      }
+    ]
+  }
+}

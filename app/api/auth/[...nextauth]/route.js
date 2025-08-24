@@ -69,13 +69,20 @@ export const authOptions = {
       }
       return session;
     },
-    async jwt({ token, user }) {
+    async jwt({ token, user, trigger }) {
       if (user) {
         token.id = user.id;
-        // Fetch user role from database
-        if (user.email) {
-          const dbUser = await getUserByEmail(user.email);
+      }
+      
+      // Always fetch fresh role data from database on every JWT call
+      // This ensures role changes are reflected immediately
+      if (token.email) {
+        try {
+          const dbUser = await getUserByEmail(token.email);
           token.role = dbUser?.role || 'USER';
+        } catch (error) {
+          console.error('Error fetching user role:', error);
+          token.role = token.role || 'USER'; // Fallback to existing role
         }
       }
       

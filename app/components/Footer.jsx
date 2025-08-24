@@ -192,12 +192,9 @@ function Footer() {
         <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent my-8"></div>
 
         {/* Copyright */}
-        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+        <div className="flex flex-col md:flex-row justify-between items-center text-md text-gray-500">
           <p>© {currentYear} Yokcash. All rights reserved.</p>
           <div className="flex items-center mt-4 md:mt-0">
-            <span className="flex items-center text-xs">
-              Made with <Heart size={12} className="mx-1 text-red-500" /> by the Yokcash Team
-            </span>
           </div>
         </div>
       </div>

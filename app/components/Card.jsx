@@ -23,7 +23,7 @@ const Card = ({ store }) => {
   return (
     <a
       onClick={handleCardClick}
-      className="group relative block w-full sm:max-w-[160px] md:max-w-[180px] lg:max-w-[200px] xl:max-w-[220px] cursor-pointer"
+      className="group relative block w-full cursor-pointer"
     >
       <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 opacity-70 blur group-hover:opacity-100 transition duration-300"></div>
       <div className="relative h-full rounded-xl bg-gray-900 p-1.5 overflow-hidden">
@@ -36,7 +36,7 @@ const Card = ({ store }) => {
           />
         </div>
         <div className="p-3 bg-gray-800 rounded-b-lg">
-          <h3 className="font-medium text-gray-100 truncate">
+          <h3 className="font-medium text-gray-100 truncate text-sm">
             {formattedName}
           </h3>
           <div className="mt-2 flex items-center text-xs font-medium text-purple-400">

@@ -10,38 +10,17 @@ import FeatureSection from "@/app/components/FeatureSection";
 import StatsSection from "@/app/components/StatsSection";
 import CTASection from "@/app/components/CTASection";
 import MarqueeLogos from "@/app/components/MarqueeLogos";
-
+import TestimonialsSection from "@/app/components/TestimonialsSection";
+import AnimatedGrid from "@/app/components/AnimatedGrid";
+import QuickActions from "@/app/components/QuickActions";
 
 export default function Home() {
-  const words = [
-    {
-      text: "In-game",
-    },
-    {
-      text: "currency",
-    },
-    {
-      text: "now",
-    },
-    {
-      text: "available",
-    },
-    {
-      text: "at",
-    },
-    {
-      text: "discounted",
-    },
-    {
-      text: "prices",
-      className: "text-blue-500 dark:text-blue-500",
-    },
-  ];
-
   return (
     <>
       <Navbar />
-      <div>
+      {/* Global animated subtle grid background */}
+      <AnimatedGrid />
+      <div className="relative ">
         <HeroGeometric
           title1="Discounted Game Currency"
           title2="for Every Gamer"
@@ -54,8 +33,10 @@ export default function Home() {
           <div className="absolute inset-0 opacity-40 mix-blend-plus-lighter bg-[radial-gradient(circle_at_30%_30%,rgba(99,102,241,0.15),transparent_60%),radial-gradient(circle_at_70%_70%,rgba(236,72,153,0.12),transparent_55%)]" />
         </div>
 
+        {/* Quick action cards overlapping hero */}
+        <QuickActions />
+
         {/* Carousel repositioned as promo banner */}
-        <Carousel />
 
         {/* Trust / Stats */}
         <StatsSection />
@@ -63,8 +44,12 @@ export default function Home() {
         {/* Brand / game marquee */}
         <MarqueeLogos />
 
+        <Carousel />
         {/* Features */}
         <FeatureSection />
+
+        {/* Testimonials */}
+        <TestimonialsSection />
 
         {/* Popular Items slider */}
         <div className="relative z-10">
